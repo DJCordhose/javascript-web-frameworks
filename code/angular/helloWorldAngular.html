@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>Angular Hello World!</title>
+    <script src="angular.js"></script>
+    <script>
+        angular.module('hello', [])
+                .controller('HelloController', function () {
+                    var vm = this;
+                    vm.model = 'Hello';
+                    vm.clear = function () {
+                        vm.model = '';
+                        document.getElementById('in').focus();
+                    };
+                });
+    </script>
+</head>
+<body ng-app="hello">
+<div ng-controller="HelloController as helloController">
+    <input ng-model='helloController.model' id="in">
+
+    <p>{{helloController.model}}, World!</p>
+    <input type="button" value="Clear"
+           ng-click="helloController.clear()">
+</div>
+</body>
+</html>
