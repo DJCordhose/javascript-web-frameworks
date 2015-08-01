@@ -155,17 +155,35 @@
         <section>
             <h2>Konvention vor Konfiguration: Ember</h2>
         <ul>
-            <li class="fragment">TODO
-            <li class="fragment">View Model als Basis
-            <li class="fragment">3 Ds
-                <ul>
-                    <li class="fragment">Data Binding (2-Wege)
-                    <li class="fragment">Dependency Injection
-                    <li class="fragment">Directives (=== Komponenten)
-                </ul>
-            </li>
+            <li class="fragment">Kommt mit wenig Code aus, da sich vieles aus Konvention ergibt
+            <li class="fragment">Kommt mit einem Router, der verschachtelte Routen unterstützt
+            <li class="fragment">Beliebt bei Ruby on Rails entwickeln, da ähnliche Philosophie
         </ul>
     </section>
+        <section>
+            <h3>Hello World Ember</h3>
+<pre><code data-trim contenteditable>
+// handlebars template
+{{input id="in" value=greeting}}
+<p>{{greeting}}, World</p>
+&lt;input type="button" value="Clear" {{action 'clear'}}>
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable class="javascript">export default Ember.Controller.extend({
+  greeting : "Hello",
+  actions: {
+    clear: function() {
+      this.set('greeting','');
+      $('#in').focus();
+    }
+  }
+});</code></pre>
+
+                <div  class="fragment">
+                    <p>Glue-Code: Implizit</p>
+                    <p>Start: ember server</p>
+                    <a target="_blank" href="http://localhost:4200/">Run</a>
+                </div>
+        </section>
         <section>
             <h2>Einfachheit: React</h2>
             <ul>
