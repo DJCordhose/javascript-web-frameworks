@@ -20,20 +20,20 @@
 
 
 		<!-- Code syntax highlighting -->
-		<!--<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">-->
-		<style>
-			pre code {
-				display: block;
-				padding: 0.5em;
-				background: #FFFFFF !important;
-				color: #000000 !important;
-			}
-			.right-img {
-				margin-left: 10px !important;
-				float: right;
-				height: 500px;
-			}
-		</style>
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+		<!--<style>-->
+			<!--pre code {-->
+				<!--display: block;-->
+				<!--padding: 0.5em;-->
+				<!--background: #FFFFFF !important;-->
+				<!--color: #000000 !important;-->
+			<!--}-->
+			<!--.right-img {-->
+				<!--margin-left: 10px !important;-->
+				<!--float: right;-->
+				<!--height: 500px;-->
+			<!--}-->
+		<!--</style>-->
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -75,8 +75,9 @@
         <p><small>Copyright 2015, Mike North (@michaellnorth), https://twitter.com/ModernWebUI/status/575532649948790784/photo/1</small></p>
     </section>
     <section>
-    <h2>Why client side (browser) rendering and frameworks in the first place?</h2>
-    <h3 class="fragment roll-in">Single Page Applications (SPAs) move the application to the browser</h3>
+    <h2>Wieso denn überhaupt ein JavaScript Web Framework?</h2>
+    <h3 class="fragment roll-in">Single Page Applications (SPAs) verschieben eure Anwendung in den Browser</h3>
+    <h3 class="fragment roll-in">Und im Browser läuft eben nur JavaScript</h3>
 </section>
     <section>
         <h3>Klassiche Webanwendung</h3>
@@ -107,74 +108,144 @@
     </section>
 
         <section>
-            <h2>Our candidates</h2>
+            <h2>Unsere Kandidaten</h2>
             <ol>
-                <li class="fragment grow">Ember <span style="color: red">TODO: fehlt</span>
-                <li class="fragment grow">Introducing Magic: Angular 1.x <span style="color: red">TODO: Umstellung auf Angular 1.4</span>
-                <li class="fragment grow">More Magic?: Angular 2.x
-                <li class="fragment grow">Back to simplicity: React
+                <li class="fragment grow">Magie: Angular 1.x
+                <!--<li class="fragment grow">Der Standard: Web-Components-->
+                <li class="fragment grow">Konvention vor Konfiguration: Ember
+                <li class="fragment grow">Einfachheit: React
+                <li class="fragment grow">Mehr Magie?: Angular 2
             </ol>
         </section>
         <section>
-            <h2>Introducing Magic: Angular</h2>
+            <h2>Magie: Angular</h2>
         <ul>
-            <li class="fragment">Current Hype
-            <li class="fragment">By Google
-            <li class="fragment">HTML enhanced for web apps!
-            <li class="fragment">HTML extended by <em>directives</em> (=== components)
-            <li class="fragment">Three Ds
+            <li class="fragment">Aktueller Hype von google
+            <li class="fragment">View Model als Basis
+            <li class="fragment">3 Ds
                 <ul>
-                    <li class="fragment">Data Binding (2-way)
+                    <li class="fragment">Data Binding (2-Wege)
                     <li class="fragment">Dependency Injection
-                    <li class="fragment">Directives (you can write your own directives)
+                    <li class="fragment">Directives (=== Komponenten)
                 </ul>
             </li>
-            <li class="fragment">designed for good testability
         </ul>
     </section>
 
                 <section>
                     <h3>Hello World AngularJS 1.4</h3>
-<pre><code data-trim contenteditable>&lt;body np-app ng-controller="HelloController as helloController">
-&lt;input ng-model="helloController.greeting.text">
-&lt;p>{{helloController.greeting.text}}, World!&lt;/p>
-&lt;input type="button" value="Clear" ng-click="helloController.clear()">
-&lt;/body></code></pre>
-<pre class="fragment"><code class="javascript" contenteditable>function HelloController() {
-    this.greeting = {
-        text: 'Hello'
+                    <p><a target="_blank" href="https://github.com/johnpapa/angular-styleguide/blob/master/README.md">
+                        Code-Stil basiert auf (halb-) offizieller Empfehlung</a></p>
+<pre><code data-trim contenteditable>function HelloController() {
+    var vm = this; // define view model
+    vm.greeting = 'Hello';
+    vm.clear = function () {
+        vm.greeting = '';
+        document.getElementById('in').focus();
     };
-}
-HelloController.prototype.clear = function() {
-    this.greeting.text = '';
-};
-</code></pre>
-        <a target="_blank" href="../framework-comparison/end/helloWorldAngular.html">Run</a>
+}</code></pre>
+<pre class="fragment"><code data-trim contenteditable>&lt;body np-app ng-controller="HelloController as helloController">
+  &lt;input ng-model="helloController.greeting">
+  &lt;p>{{helloController.greeting}}, World!&lt;/p>
+  &lt;input type="button" value="Clear"
+         ng-click="helloController.clear()">
+&lt;/body></code></pre>
+        <a target="_blank" href="code/angular/helloWorldAngular.html">Run</a>
                 </section>
         <section>
-            <h2>Angular 2.x</h2>
+            <h2>Konvention vor Konfiguration: Ember</h2>
         <ul>
-            <li class="fragment">
-            <a target="_blank" href="https://angular.io/">2.0 version</a> in the make
-            <li class="fragment">say goodbye to two-way data binding
-            <li class="fragment">say goodbye to controllers
-            <li class="fragment">say goodbye to scopes
-            <li class="fragment"><a target="_blank" href="http://angularjs.blogspot.de/2015/03/forms-in-angular-2.html?m=1">
-            Will eventually feature form support as a replacement for two-way data binding</a>
-            <li class="fragment">works very well with TypeScript
+            <li class="fragment">TODO
+            <li class="fragment">View Model als Basis
+            <li class="fragment">3 Ds
+                <ul>
+                    <li class="fragment">Data Binding (2-Wege)
+                    <li class="fragment">Dependency Injection
+                    <li class="fragment">Directives (=== Komponenten)
+                </ul>
+            </li>
+        </ul>
+    </section>
+        <section>
+            <h2>Einfachheit: React</h2>
+            <ul>
+                <li class="fragment">Der kommende Hype von Facebook
+                <li class="fragment">Framework für Facebook und viele andere
+                <li class="fragment">Basiert auf Komponenten, die Template und Logik enthalten
+                <li class="fragment">Templates sind einfach JavaScript
+                <li class="fragment">Templates können HTML artige JSX-Syntax enthalten
+                <li class="fragment">Ein-Weg-Data-Binding: Zustandsänderungen stellen Komponente neu dar
+                <li class="fragment">Kann im Browser und auf dem Server rendern
+            </ul>
+        </section>
+
+        <section>
+            <h3>Hello World React</h3>
+<pre><code data-trim contenteditable>class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        &lt;input value={this.state.greeting} ref="in"
+               onChange={this.updateModel.bind(this)} />
+        <p>{this.state.greeting}, World</p>
+        &lt;button onClick={this.reset.bind(this)}>Clear&lt;/button>
+      </div>);
+    }</code></pre>
+<pre class="fragment"><code data-trim contenteditable class="javascript">&nbsp;&nbsp;constructor(props) {
+    this.state = {greeting: this.props.greeting};
+  }
+  updateModel(event) {
+    this.setState({greeting: event.target.value});
+  }
+  reset() {
+    this.setState({greeting: ""});
+    this.refs.in.focus();
+  }
+}</code></pre>
+        </section>
+        <section>
+            <h3>Aufruf</h3>
+<pre><code data-trim contenteditable>
+// index.html
+&lt;body>
+  <div id="mount"></div>
+&lt;/body>
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable class="javascript">
+// main.js
+import HelloMessage from './HelloMessage';
+
+var mountNode = document.getElementById('mount');
+ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
+</code></pre>
+                <a target="_blank" href="code/react/public/index.html">Run</a>
+        </section>
+
+        <section>
+            <h2>Mehr Magie: Angular 2</h2>
+        <ul>
+            <li class="fragment">Nachfolger von Angular 1
+            <li class="fragment">Bisher nur als Alpha verfügbar
+            <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1UqxJSLD0XQ0tMWg3FFHtmcWTuXTQKcxNz285Z8LgXsk/edit#slide=id.g5a1291cfa_0_81">
+            Beta-Release bisher nicht absehbar</a>
+            <li class="fragment">Migratiospfad von Angular 1 unklar (mag sich mit Angular 1.5 ändern)
+            <li class="fragment">Optimiert für den Einsatz von Microsofts TypeScript
+            <li class="fragment">Nur simuliertes 2-Wege data binding
+            <li class="fragment">Basiert auf Komponenten
         </ul>
     </section>
                 <section>
                     <h3>Hello World AngularJS 2.x</h3>
-<pre><code class="xml" contenteditable>@Component({
+<pre class="fragment"><code class="xml" contenteditable>@Component({
   selector: 'hello-app'
 })
-@Template({
-inline: `&lt;input [value]="greeting" #in (keyup)="updateModel(in.value)">
-  &lt;p>{{greeting}}, World&lt;/p>
-  &lt;button (click)="reset(in)">Clear&lt;/button>`
+@View({
+template:
+  `&lt;input [value]="greeting" #in (keyup)="updateModel(in.value)">
+   &lt;p>{{greeting}}, World&lt;/p>
+   &lt;button (click)="reset(in)">Clear&lt;/button>`
 })</code></pre>
-<pre class="fragment"><code class="javascript" contenteditable>class HelloCmp {
+<pre><code class="javascript" contenteditable>class HelloCmp {
   greeting: string;
   constructor() {
     this.greeting = 'Hello';
@@ -188,73 +259,47 @@ inline: `&lt;input [value]="greeting" #in (keyup)="updateModel(in.value)">
   }
 }</code></pre>
                 </section>
+        <section>
+            <h3>Aufruf</h3>
+<pre><code data-trim contenteditable>
+bootstrap(HelloCmp);
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;body>
+    &lt;hello-app>&lt;/hello-app>
+    &lt;script>System.import('app');&lt;/script>
+&lt;/body>
+</code></pre>
+            <a target="_blank" href="code/angular2/index.html">Run</a>
+        </section>
 
 
-        <section>
-            <h2>Back to simplicity: React</h2>
-            <ul>
-                <li class="fragment">By Facebook
-                <li class="fragment">Framework for Facebook und Instagram
-                <li class="fragment">Based on components, holding both view and logic
-                <li class="fragment">Templates can be written in pure JavaScript or using the JSX template language
-                <li class="fragment">Reactive one-way data-binding: Changes to state will be rendered automatically
-                <li class="fragment">Smart diffing algorithm computes the changes between old and new virtual DOM
-                <li class="fragment">Browser DOM experiences minimal amount of updates
-                <li class="fragment">Can render both on server and on client side
-            </ul>
-        </section>
-
-                <section>
-            <h3>Hello World React</h3>
-<pre><code class="html" contenteditable>class HelloMessage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {greeting: this.props.greeting};
-    }
-    updateModel(event) {
-        this.setState({greeting: event.target.value});
-    }
-    reset() {
-        this.setState({greeting: ""});
-    }
-    render() {
-        return (<div>
-            <input value={this.state.greeting} onChange={this.updateModel.bind(this)} />
-            <p>{this.state.greeting}, World</p>
-            <input type="button" value="Clear" onClick={this.reset.bind(this)} />
-        </div>);
-    }
-}
-var mountNode = document.getElementById('example');
-React.render(&lt;HelloMessage greeting="Hello" />, mountNode);</code></pre>
-                <a target="_blank" href="../framework-comparison/react/index.html">Run</a>
-        </section>
-        <section>
-            <h1>The Verdict</h1>
-            <ul>
-                <li class="fragment">Hypes come and go quickly in JavaScript land
-                <li class="fragment">There is no perfect "silver bullet" framework
-                <li class="fragment">What is the framework for you depends on your context und requirements
-            </ul>
-        </section>
-    <section>
-        <h1>When to use...</h1>
-    </section>
-        <section>
-            <h1>Angular 1.x</h1>
-            <!--Angular-->
-            <!-&#45;&#45; geringe Komplexität, überschaubare Anwendung-->
-            <!-&#45;&#45; Java oder C#-Entwickler-->
-            <ul>
-                <li class="fragment">Angular is opinionated about almost everything
-                    <ul>
-                        <li class="fragment">this can be good to give you guidance
-                        <li class="fragment">this can be bad as everything now works the angular way
-                        <li class="fragment">you might have to relearn
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        <!--<section>-->
+            <!--<h1>The Verdict</h1>-->
+            <!--<ul>-->
+                <!--<li class="fragment">Hypes come and go quickly in JavaScript land-->
+                <!--<li class="fragment">There is no perfect "silver bullet" framework-->
+                <!--<li class="fragment">What is the framework for you depends on your context und requirements-->
+            <!--</ul>-->
+        <!--</section>-->
+    <!--<section>-->
+        <!--<h1>When to use...</h1>-->
+    <!--</section>-->
+        <!--<section>-->
+            <!--<h1>Angular 1.x</h1>-->
+            <!--&lt;!&ndash;Angular&ndash;&gt;-->
+            <!--<!-&#45;&#45; geringe Komplexität, überschaubare Anwendung&ndash;&gt;-->
+            <!--<!-&#45;&#45; Java oder C#-Entwickler&ndash;&gt;-->
+            <!--<ul>-->
+                <!--<li class="fragment">Angular is opinionated about almost everything-->
+                    <!--<ul>-->
+                        <!--<li class="fragment">this can be good to give you guidance-->
+                        <!--<li class="fragment">this can be bad as everything now works the angular way-->
+                        <!--<li class="fragment">you might have to relearn-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</section>-->
 
 
 

@@ -7,9 +7,9 @@
         angular.module('hello', [])
                 .controller('HelloController', function () {
                     var vm = this;
-                    vm.model = 'Hello';
+                    vm.greeting = 'Hello';
                     vm.clear = function () {
-                        vm.model = '';
+                        vm.greeting = '';
                         document.getElementById('in').focus();
                     };
                 });
@@ -17,9 +17,9 @@
 </head>
 <body ng-app="hello">
 <div ng-controller="HelloController as helloController">
-    <input ng-model='helloController.model' id="in">
+    <input ng-model='helloController.greeting' id="in">
 
-    <p>{{helloController.model}}, World!</p>
+    <p>{{helloController.greeting}}, World!</p>
     <input type="button" value="Clear"
            ng-click="helloController.clear()">
 </div>
