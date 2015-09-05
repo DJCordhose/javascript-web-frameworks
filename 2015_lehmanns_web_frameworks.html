@@ -163,6 +163,22 @@
             <li class="fragment">Google hält es für produktiv einsetzbar (unterstreicht dies mit dem 1.0 Release)
         </ul>
     </section>
+                <section id="webcomponents">
+                    <h2>Exkurs Web Components</h2>
+                    <ul>
+                        <li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components" target="_blank">Eine Erweiterung der DOM-API als Standard</a>
+                            <ol>
+                                <li class="fragment">Custom Elements: man kann eigene Tags definieren
+                                <li class="fragment">HTML Templates: einfache Templates innerhalb einer HTML-Seite
+                                <li class="fragment">Shadow DOM: Lokale Kapselung von DOM, JavaScript und CSS
+                                <li class="fragment">HTML Imports: Inkludieren von HTML/Web Components
+                            </ol>
+                        </li>
+                        <li class="fragment">Wird im Moment nur von Chrome komplett unterstützt
+                        <li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank">Firefox unterstützt HTML Imports nicht</a>
+                        <li class="fragment">Microsoft hat mit der Umsetzung begonnen
+                    </ul>
+                </section>
 
                 <section>
                     <h3>Hello World Polymer</h3>
@@ -170,7 +186,9 @@
 &lt;link rel="import" href="greeter-element.html">
 &lt;greeter-element greeting="Hello">&lt;/greeter-element></code></pre>
 
-<pre class="fragment"><code data-trim contenteditable class="javascript">Polymer({
+<pre class="fragment"><code data-trim contenteditable class="javascript">
+// greeter-element.html
+Polymer({
     is: "greeter-element",
     reset: function() {
         this.greeting = "";
