@@ -75,11 +75,13 @@
         <p><small>Copyright 2015, Mike North (@michaellnorth), https://twitter.com/ModernWebUI/status/575532649948790784/photo/1</small></p>
     </section>
     <section>
-    <h2>Wieso denn überhaupt ein JavaScript Web Framework?</h2>
-    <h3 class="fragment roll-in">Single Page Applications (SPAs) verschieben eure Anwendung in den Browser</h3>
-    <h3 class="fragment roll-in">Und im Browser läuft eben nur JavaScript</h3>
-</section>
-    <section>
+		<section>
+			<h2>Wieso denn überhaupt ein JavaScript Web Framework?</h2>
+			<h3 class="fragment roll-in">Single Page Applications (SPAs) verschieben eure Anwendung in den Browser</h3>
+			<h3 class="fragment roll-in">Und im Browser läuft eben nur JavaScript</h3>
+		</section>
+	</section>
+	<section>
         <h3>Klassiche Webanwendung</h3>
 		<!--<p>-->
 			<!--<small>(Blau: Server, Violett: Browser)</small>-->
@@ -106,213 +108,276 @@
         </ul>
         <p><small>Copyright 2015, Oliver Zeigermann</small></p>
     </section>
-
+	<section>
+		<h2 class="fragment roll-in roll-out">Trotzdem: Warum moderne Frameworks einsetzen?
+		<h5 class="fragment roll-in">Projekte werden größer
+		<h5 class="fragment roll-in">Buisness-Apps im Web <!-- TODO vllt Beispiele nennen -->
+		<h5 class="fragment roll-in">Framework = Ordnungsrahmen
+		<ul>
+			<li class="fragment roll-in">Schnelles Scaffolding mit gewissem Funktionsumfang
+			<li class="fragment roll-in">Community
+			<li class="fragment roll-in">neue Mitarbeiter finden sich zurecht
+		</ul>
+	</section>
         <section>
             <h2>Unsere Kandidaten</h2>
             <ol>
-                <li class="fragment grow">Magie: Angular 1.x
-                <li class="fragment grow">Reale Web Components: Polymer
-                <li class="fragment grow">Konvention vor Konfiguration: Ember
-                <li class="fragment grow">Einfachheit: React
-                <li class="fragment grow">Mehr Magie?: Angular 2
+                <li class="fragment grow">Magie: Angular 1.x... "Der Comunitylover"
+                <li class="fragment grow">Reale Web Components: Polymer... "Googles kleiner Schatz"
+                <li class="fragment grow">Konvention vor Konfiguration: Ember... "Mr. All-Inclusive"
+                <li class="fragment grow">Einfachheit: React... "Facebook reagiert!"
+                <li class="fragment grow">Mehr Magie?: Angular 2... "Zukunft?"
             </ol>
         </section>
         <section>
+			<section>
             <h2>Magie: Angular</h2>
-        <ul>
-            <li class="fragment">Aktueller Hype von google
-            <li class="fragment">View Model als Basis
-            <li class="fragment">3 Ds
-                <ul>
-                    <li class="fragment">Data Binding (2-Wege)
-                    <li class="fragment">Dependency Injection
-                    <li class="fragment">Directives (=== Komponenten)
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-                <section>
-                    <h3>Hello World AngularJS 1.4</h3>
-                    <p><a target="_blank" href="https://github.com/johnpapa/angular-styleguide/blob/master/README.md">
+			<ul>
+				<li class="fragment">Aktueller Hype von google
+				<li class="fragment">View Model als Basis
+				<li class="fragment">3 Ds
+					<ul>
+						<li class="fragment">Data Binding (2-Wege)
+						<li class="fragment">Dependency Injection
+						<li class="fragment">Directives (=== Komponenten)
+					</ul>
+				</li>
+			</ul>
+			</section>
+		</section>
+		<section>
+			<section>
+				<h3>Hello World AngularJS 1.4</h3>
+				<p><a target="_blank" href="https://github.com/johnpapa/angular-styleguide/blob/master/README.md">
                         Code-Stil basiert auf (halb-) offizieller Empfehlung</a></p>
-<pre><code data-trim contenteditable>function HelloController() {
-    var vm = this; // define view model
-    vm.greeting = 'Hello';
-    vm.clear = function () {
-        vm.greeting = '';
-        document.getElementById('in').focus();
-    };
-}</code></pre>
-<pre class="fragment"><code data-trim contenteditable>&lt;body np-app ng-controller="HelloController as helloController">
-  &lt;input ng-model="helloController.greeting">
-  &lt;p>{{helloController.greeting}}, World!&lt;/p>
-  &lt;input type="button" value="Clear"
-         ng-click="helloController.clear()">
-&lt;/body></code></pre>
-        <a target="_blank" href="code/angular/helloWorldAngular.html">Run</a>
-                </section>
-        <section>
+				<pre><code data-trim contenteditable>function HelloController() {
+					var vm = this; // define view model
+					vm.greeting = 'Hello';
+					vm.clear = function () {
+						vm.greeting = '';
+						document.getElementById('in').focus();
+					};
+				}</code></pre>
+				<pre class="fragment"><code data-trim contenteditable>&lt;body np-app ng-controller="HelloController as helloController">
+				  &lt;input ng-model="helloController.greeting">
+				  &lt;p>{{helloController.greeting}}, World!&lt;/p>
+				  &lt;input type="button" value="Clear"
+						 ng-click="helloController.clear()">
+				&lt;/body></code></pre>
+				<a target="_blank" href="code/angular/helloWorldAngular.html">Run</a>
+			</section>
+			<section>
+				<h3>Der Communitylover</h3>
+				<ul>
+					<li class="fragment">Massig Developer, Foren, Themes, usw
+					<li class="fragment">einfache Lernkurve		<!-- Kennst du on-click, kennst du auch ng-click -->
+					<li class="fragment">Abkömmling Ionic (Hybrid-App-Framework)	<!-- TODO Ionic reinbringen mit Bild -->				
+			</section>
+        </section>
+		<section>
+			<section>
             <h2>Reale Web Components: Polymer</h2>
-        <ul>
-            <li class="fragment">Von Google
-            <li class="fragment">Basiert auf dem Standard <em>Web Components</em>
-            <li class="fragment">Kommt mit Polyfills, damit Web Components auf allen Browsern laufen
-            <li class="fragment">Macht die API einfacher
-            <li class="fragment">Bietet eine ganze Reihe von Standard-Komponenten
-            <li class="fragment">Google hält es für produktiv einsetzbar (unterstreicht dies mit dem 1.0 Release)
-        </ul>
-    </section>
-
-                <section>
-                    <h3>Hello World Polymer</h3>
-<pre><code data-trim contenteditable>
-&lt;link rel="import" href="greeter-element.html">
-&lt;greeter-element greeting="Hello">&lt;/greeter-element></code></pre>
-
-<pre class="fragment"><code data-trim contenteditable class="javascript">Polymer({
-    is: "greeter-element",
-    reset: function() {
-        this.greeting = "";
-        this.$.in.focus();
-    }
-});</code></pre>
-<pre class="fragment"><code data-trim contenteditable>
-&lt;link rel="import"
-          href="http://www.polymer-project.org/1.0/samples/components/iron-input/iron-input.html">
-&lt;template>
-    &lt;input id="in" is="iron-input" bind-value="{{greeting}}">
-    <p><span>{{greeting}}</span>, World!</p>
-    &lt;input type="button" value="Clear" on-click="reset">
-&lt;/template></code></pre>
-                    <a target="_blank" href="code/polymer/index.html">Run</a>
-                </section>
-
+			<ul>
+				<li class="fragment">Von Google
+				<li class="fragment">Basiert auf dem Standard <em>Web Components</em>
+				<li class="fragment">Kommt mit Polyfills, damit Web Components auf allen Browsern laufen
+				<li class="fragment">Macht die API einfacher
+				<li class="fragment">Bietet eine ganze Reihe von Standard-Komponenten
+				<li class="fragment">Google hält es für produktiv einsetzbar (unterstreicht dies mit dem 1.0 Release)
+			</ul>
+			</section>
+		</section>
+		<section>
+			<section>
+				<h3>Hello World Polymer</h3>
+				<pre><code data-trim contenteditable>
+				&lt;link rel="import" href="greeter-element.html">
+				&lt;greeter-element greeting="Hello">&lt;/greeter-element></code></pre>
+				<pre class="fragment"><code data-trim contenteditable class="javascript">Polymer({
+					is: "greeter-element",
+					reset: function() {
+						this.greeting = "";
+						this.$.in.focus();
+					}
+				});</code></pre>
+				<pre class="fragment"><code data-trim contenteditable>
+				&lt;link rel="import"
+						  href="http://www.polymer-project.org/1.0/samples/components/iron-input/iron-input.html">
+				&lt;template>
+					&lt;input id="in" is="iron-input" bind-value="{{greeting}}">
+					<p><span>{{greeting}}</span>, World!</p>
+					&lt;input type="button" value="Clear" on-click="reset">
+				&lt;/template></code></pre>
+				<a target="_blank" href="code/polymer/index.html">Run</a>
+			</section>
+			<section>
+			<h2>Das Nunchako der Frameworks</h2> <!-- Todo Video einbinden? -->
+			<li class="fragment">Cool, but useless?
+			<li class="fragment">läuft gut nur in Chrome
+			<li class="fragment">Standardkomponenten -> Styling sehr Googlelastig
+			<li class="fragment">Wer benutzt es?
+			</section>
+		</section>
+		<section>
+			<section>
+				<h2>Konvention vor Konfiguration: Ember</h2>
+				<ul>
+					<li class="fragment">"Ordnungsrahmen": Sehr strukturiert und modularisiert
+					<li class="fragment">All-In-Ökosystem mit vielen Best-Practices
+					<li class="fragment">Super Router mit verschachteteln Routen</li>
+					<!-- Stefan Penner (Entwickler von Emberjs) bringt es auf den Punkt mit der Aussage -->
+					<blockquote class="fragment">"Don't waste time making trivial choices"<br><small>from emberjs.com</small></blockquote>
+				</ul>
+			</section>
+		</section>
         <section>
-            <h2>Konvention vor Konfiguration: Ember</h2>
-        <ul>
-            <li class="fragment">Kommt mit wenig Code aus, da sich vieles aus Konvention ergibt
-            <li class="fragment">Kommt mit einem Router, der verschachtelte Routen unterstützt
-            <li class="fragment">Beliebt bei Ruby on Rails entwickeln, da ähnliche Philosophie
-        </ul>
-    </section>
-        <section>
-            <h3>Hello World Ember</h3>
-<pre><code data-trim contenteditable>
-// handlebars template
-{{input id="in" value=greeting}}
-<p>{{greeting}}, World</p>
-&lt;input type="button" value="Clear" {{action 'clear'}}>
-</code></pre>
-<pre class="fragment"><code data-trim contenteditable class="javascript">export default Ember.Controller.extend({
-  greeting : "Hello",
-  actions: {
-    clear: function() {
-      this.set('greeting','');
-      $('#in').focus();
-    }
-  }
-});</code></pre>
-
-                <div  class="fragment">
-                    <p>Glue-Code: Implizit</p>
-                    <p>Start: ember server</p>
-                    <a target="_blank" href="http://localhost:4200/">Run</a>
-                </div>
+            <section>
+				<h3>Hello World Ember</h3>
+				<pre><code data-trim contenteditable>
+				// handlebars/htmlbars template
+				{{input id="in" value=greeting}}
+				<p>{{greeting}}, World</p>
+				&lt;input type="button" value="Clear" {{action 'clear'}}></code></pre>
+				<pre class="fragment"><code data-trim contenteditable class="javascript">export default Ember.Controller.extend({
+				  greeting : "Hello",
+				  actions: {
+					clear: function() {
+					  this.set('greeting','');
+					  $('#in').focus();
+					}
+				  }
+				});</code></pre>
+				<div  class="fragment">
+					<p>Glue-Code: Implizit</p>
+					<p>Start: ember server</p>
+					<a target="_blank" href="http://localhost:4200/">Run</a>
+				</div>
+			</section>
+			<section>
+				<h2>The Upside: All-In</h2>
+				<ul>
+					<li class="fragment">starkes Command-Line-Interface Ember-CLI
+					<li class="fragment">Taskrunner zum Testen, entwicklen, builden, usw.
+					<li class="fragment">Storekonzept (Restadapter, Localstorage, uvm.)
+					<li class="fragment">Templating Engine (Handlebars / HTMLBars)
+					<li class="fragment">Data-Binding
+					<li class="fragment">Router
+					<li class="fragment">(Web-)Komponentenorientierte Entwicklung
+					<li class="fragment">Ember Addons
+				</ul>
+			</section>
+			<section>
+				<h2>The Downside: the Ember Way</h2>
+				<ul>
+					<li class="fragment">viele Veränderungen und Depractions von Release zu Release (Hoffnung seit Ember 2.0)
+					<li class="fragment">Wenig Raum für eigene Strukturierungen
+				</ul>
+				<blockquote class="fragment">If you follow the Ember way<br> you will like the Ember way<br><small>Janos Koschwitz</small></blockquote>
+			</section>
         </section>
         <section>
-            <h2>Einfachheit: React</h2>
-            <ul>
-                <li class="fragment">Der kommende Hype von Facebook
-                <li class="fragment">Framework für Facebook und viele andere
-                <li class="fragment">Basiert auf Komponenten, die Template und Logik enthalten
-                <li class="fragment">Templates sind einfach JavaScript
-                <li class="fragment">Templates können HTML artige JSX-Syntax enthalten
-                <li class="fragment">Ein-Weg-Data-Binding: Zustandsänderungen stellen Komponente neu dar
-                <li class="fragment">Kann im Browser und auf dem Server rendern
-            </ul>
-        </section>
-
-        <section>
-            <h3>Hello World React</h3>
-<pre><code data-trim contenteditable>class HelloMessage extends React.Component {
-  render() {
-    return (
-      <div>
-        &lt;input value={this.state.greeting} ref="in"
-               onChange={this.updateModel.bind(this)} />
-        <p>{this.state.greeting}, World</p>
-        &lt;button onClick={this.reset.bind(this)}>Clear&lt;/button>
-      </div>);
-    }</code></pre>
-<pre class="fragment"><code data-trim contenteditable class="javascript">&nbsp;&nbsp;constructor(props) {
-    this.state = {greeting: this.props.greeting};
-  }
-  updateModel(event) {
-    this.setState({greeting: event.target.value});
-  }
-  reset() {
-    this.setState({greeting: ""});
-    this.refs.in.focus();
-  }
-}</code></pre>
+			<section>
+				<h2>Einfachheit: React</h2>
+				<ul>
+					<li class="fragment">Der kommende Hype von Facebook
+					<li class="fragment">Framework für Facebook und viele andere
+					<li class="fragment">Basiert auf Komponenten, die Template und Logik enthalten
+					<li class="fragment">Templates sind einfach JavaScript
+					<li class="fragment">Templates können HTML artige JSX-Syntax enthalten
+					<li class="fragment">Ein-Weg-Data-Binding: Zustandsänderungen stellen Komponente neu dar
+					<li class="fragment">Kann im Browser und auf dem Server rendern
+				</ul>
+			</section>
         </section>
         <section>
-            <h3>Aufruf</h3>
-<pre><code data-trim contenteditable>
-// index.html
-&lt;body>
-  <div id="mount"></div>
-&lt;/body>
-</code></pre>
-<pre class="fragment"><code data-trim contenteditable class="javascript">
-// main.js
-import HelloMessage from './HelloMessage';
+            <section>
+				<h3>Hello World React</h3>
+					<pre><code data-trim contenteditable>class HelloMessage extends React.Component {
+					  render() {
+						return (
+						  <div>
+							&lt;input value={this.state.greeting} ref="in"
+								   onChange={this.updateModel.bind(this)} />
+							<p>{this.state.greeting}, World</p>
+							&lt;button onClick={this.reset.bind(this)}>Clear&lt;/button>
+						  </div>);
+						  }</code></pre>
+					<pre class="fragment"><code data-trim contenteditable class="javascript">&nbsp;&nbsp;constructor(props) {
+						this.state = {greeting: this.props.greeting};
+					  }
+					  updateModel(event) {
+						this.setState({greeting: event.target.value});
+					  }
+					  reset() {
+						this.setState({greeting: ""});
+						this.refs.in.focus();
+					  }
+					}</code></pre>
+			</section>
+			<section>
+				<h3>Aufruf</h3>
+				<pre><code data-trim contenteditable>
+				// index.html
+				&lt;body>
+				  <div id="mount"></div>
+				&lt;/body>
+				</code></pre>
+				<pre class="fragment"><code data-trim contenteditable class="javascript">
+				// main.js
+				import HelloMessage from './HelloMessage';
 
-var mountNode = document.getElementById('mount');
-ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
-</code></pre>
+				var mountNode = document.getElementById('mount');
+				ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
+				</code></pre>
                 <a target="_blank" href="code/react/public/index.html">Run</a>
-        </section>
-
+			</section>
+			<section>
+				<h3>Hype, Hyper, React</h3>
+				<ul>
+					<li class="fragment">Macht genau, was es soll!
+					<li class="fragment">Schnell!
+					<li class="fragment">Mehr "Lib" als Framework
+				</ul>
+			</section>
+		</section>
         <section>
             <h2>Mehr Magie: Angular 2</h2>
-        <ul>
-            <li class="fragment">Nachfolger von Angular 1
-            <li class="fragment">Bisher nur als Alpha verfügbar
-            <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1UqxJSLD0XQ0tMWg3FFHtmcWTuXTQKcxNz285Z8LgXsk/edit#slide=id.g5a1291cfa_0_81">
-            Beta-Release bisher nicht absehbar</a>
-            <li class="fragment">Migratiospfad von Angular 1 unklar (mag sich mit Angular 1.5 ändern)
-            <li class="fragment">Optimiert für den Einsatz von Microsofts TypeScript
-            <li class="fragment">Nur simuliertes 2-Wege data binding
-            <li class="fragment">Basiert auf Komponenten
-        </ul>
-    </section>
-                <section>
-                    <h3>Hello World AngularJS 2.x</h3>
-<pre class="fragment"><code class="xml" contenteditable>@Component({
-  selector: 'hello-app'
-})
-@View({
-template:
-  `&lt;input [value]="greeting" #in (keyup)="updateModel(in.value)">
-   &lt;p>{{greeting}}, World&lt;/p>
-   &lt;button (click)="reset(in)">Clear&lt;/button>`
-})</code></pre>
-<pre><code class="javascript" contenteditable>class HelloCmp {
-  greeting: string;
-  constructor() {
-    this.greeting = 'Hello';
-  }
-  reset(input) {
-    this.greeting = '';
-    input.focus();
-  }
-  updateModel(value) {
-    this.greeting = value;
-  }
-}</code></pre>
-                </section>
+			<ul>
+				<li class="fragment">Nachfolger von Angular 1
+				<li class="fragment">Bisher nur als Alpha verfügbar
+				<li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1UqxJSLD0XQ0tMWg3FFHtmcWTuXTQKcxNz285Z8LgXsk/edit#slide=id.g5a1291cfa_0_81">
+				Beta-Release bisher nicht absehbar</a>
+				<li class="fragment">Migratiospfad von Angular 1 unklar (mag sich mit Angular 1.5 ändern)
+				<li class="fragment">Optimiert für den Einsatz von Microsofts TypeScript
+				<li class="fragment">Nur simuliertes 2-Wege data binding
+				<li class="fragment">Basiert auf Komponenten
+			</ul>
+		</section>
+		<section>
+			<h3>Hello World AngularJS 2.x</h3>
+			<pre class="fragment"><code class="xml" contenteditable>@Component({
+			  selector: 'hello-app'
+			})
+			@View({
+			template:
+			  `&lt;input [value]="greeting" #in (keyup)="updateModel(in.value)">
+			   &lt;p>{{greeting}}, World&lt;/p>
+			   &lt;button (click)="reset(in)">Clear&lt;/button>`
+			})</code></pre>
+			<pre><code class="javascript" contenteditable>class HelloCmp {
+			  greeting: string;
+			  constructor() {
+				this.greeting = 'Hello';
+			  }
+			  reset(input) {
+				this.greeting = '';
+				input.focus();
+			  }
+			  updateModel(value) {
+				this.greeting = value;
+			  }
+			}</code></pre>
+		</section>
         <section>
             <h3>Aufruf</h3>
 <pre><code data-trim contenteditable>
