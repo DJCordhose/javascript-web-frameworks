@@ -5,7 +5,9 @@
 <dom-module id="greeter-element">
 
     <template>
-        <input id="in" is="iron-input" bind-value="{{greeting}}">
+        <!--<input id="in" is="iron-input" bind-value="{{greeting}}">-->
+        <!--https://www.polymer-project.org/1.0/docs/devguide/data-binding.html-->
+        <input id="in" value="{{greeting::keyup}}">
         <p><span>{{greeting}}</span>, World!</p>
         <input type="button" value="Clear" on-click="reset">
     </template>

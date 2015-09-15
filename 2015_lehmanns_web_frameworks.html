@@ -238,11 +238,9 @@ Polymer({
     }
 });</code></pre>
 <pre class="fragment"><code data-trim contenteditable>
-&lt;link rel="import"
-          href="http://www.polymer-project.org/1.0/samples/components/iron-input/iron-input.html">
 &lt;dom-module id="greeter-element">
     &lt;template>
-        &lt;input id="in" is="iron-input" bind-value="{{greeting}}">
+        &lt;input id="in" value="{{greeting::keyup}}">
         <p><span>{{greeting}}</span>, World!</p>
         &lt;input type="button" value="Clear" on-click="reset">
     &lt;/template>
