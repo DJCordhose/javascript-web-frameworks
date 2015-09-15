@@ -106,17 +106,27 @@
         </ul>
         <p><small>Copyright 2015, Oliver Zeigermann</small></p>
     </section>
-
-        <section>
-            <h2>Unsere Kandidaten</h2>
-            <ol>
-                <li class="fragment grow"><a href="#angular1">Magie: Angular 1.x</a>
-                <li class="fragment grow"><a href="#polymer">Reale Web Components: Polymer</a>
-                <li class="fragment grow"><a href="#ember">Konvention vor Konfiguration: Ember</a>
-                <li class="fragment grow"><a href="#react">Einfachheit: React</a>
-                <li class="fragment grow"><a href="#angular2">Mehr Magie?: Angular 2</a>
-            </ol>
-        </section>
+                <section>
+                    <h2>Trotzdem: Warum moderne Frameworks einsetzen?</h2>
+                    <h5 class="fragment roll-in">Projekte werden größer</h5>
+                    <h5 class="fragment roll-in">Buisness-Apps im Web</h5> <!-- TODO vllt Beispiele nennen -->
+                    <h5 class="fragment roll-in">Framework = Ordnungsrahmen</h5>
+                    <ul>
+                        <li class="fragment roll-in">Schnelles Scaffolding mit gewissem Funktionsumfang
+                        <li class="fragment roll-in">Community
+                        <li class="fragment roll-in">neue Mitarbeiter finden sich zurecht
+                    </ul>
+                </section>
+                <section>
+                    <h2>Unsere Kandidaten</h2>
+                    <ol>
+                        <li class="fragment grow">Magie: Angular 1.x... "Der Comunitylover"
+                        <li class="fragment grow">Reale Web Components: Polymer... "Googles kleiner Schatz"
+                        <li class="fragment grow">Konvention vor Konfiguration: Ember... "Mr. All-Inclusive"
+                        <li class="fragment grow">Einfachheit: React... "Facebook reagiert!"
+                        <li class="fragment grow">Mehr Magie?: Angular 2... "Zukunft?"
+                    </ol>
+                </section>
 
                 <section>
                     <h3>Trends September 2015</h3>
@@ -174,6 +184,15 @@
 &lt;/body></code></pre>
         <a target="_blank" href="code/angular/helloWorldAngular.html">Run</a>
                 </section>
+            <section>
+				<h3>Der Communitylover</h3>
+				<ul>
+					<li class="fragment">Massig Developer, Foren, Themes, usw
+					<li class="fragment">einfache Lernkurve		<!-- Kennst du on-click, kennst du auch ng-click -->
+					<li class="fragment">Abkömmling Ionic (Hybrid-App-Framework)	<!-- TODO Ionic reinbringen mit Bild -->
+                </ul>
+			</section>
+
         <section id="polymer">
             <h2>Reale Web Components: Polymer</h2>
         <ul>
@@ -227,19 +246,30 @@ Polymer({
 &lt;/template></code></pre>
                     <a target="_blank" href="code/polymer/index.html">Run</a>
                 </section>
+                <section>
+                    <h2>Das Nunchako der Frameworks</h2> <!-- Todo Video einbinden? -->
+                    <ul>
+                        <li class="fragment">Cool, but useless?
+                        <li class="fragment">läuft gut nur in Chrome
+                        <li class="fragment">Standardkomponenten -> Styling sehr Googlelastig
+                        <li class="fragment">Wer benutzt es?
+                    </ul>
+                </section>
 
-        <section id="ember">
-            <h2>Konvention vor Konfiguration: Ember</h2>
-        <ul>
-            <li class="fragment">Kommt mit wenig Code aus, da sich vieles aus Konvention ergibt
-            <li class="fragment">Kommt mit einem Router, der verschachtelte Routen unterstützt
-            <li class="fragment">Beliebt bei Ruby on Rails entwickeln, da ähnliche Philosophie
-        </ul>
-    </section>
+                <section id="ember">
+                    <h2>Konvention vor Konfiguration: Ember</h2>
+                    <ul>
+                        <li class="fragment">"Ordnungsrahmen": Sehr strukturiert und modularisiert
+                        <li class="fragment">All-In-Ökosystem mit vielen Best-Practices
+                        <li class="fragment">Super Router mit verschachteteln Routen</li>
+                        <!-- Stefan Penner (Entwickler von Emberjs) bringt es auf den Punkt mit der Aussage -->
+                        <blockquote class="fragment">"Don't waste time making trivial choices"<br><small>from emberjs.com</small></blockquote>
+                    </ul>
+                </section>
         <section>
             <h3>Hello World Ember</h3>
 <pre><code data-trim contenteditable>
-// handlebars template
+// handlebars/htmlbars template
 {{input id="in" value=greeting}}
 <p>{{greeting}}, World</p>
 &lt;input type="button" value="Clear" {{action 'clear'}}>
@@ -260,6 +290,29 @@ Polymer({
                     <a target="_blank" href="http://localhost:4200/">Run (läuft leider nur lokal)</a>
                 </div>
         </section>
+            <section>
+				<h2>The Upside: All-In</h2>
+				<ul>
+					<li class="fragment">starkes Command-Line-Interface Ember-CLI
+					<li class="fragment">Taskrunner zum Testen, entwicklen, builden, usw.
+					<li class="fragment">Storekonzept (Restadapter, Localstorage, uvm.)
+					<li class="fragment">Templating Engine (Handlebars / HTMLBars)
+					<li class="fragment">Data-Binding
+					<li class="fragment">Router
+					<li class="fragment">(Web-)Komponentenorientierte Entwicklung
+					<li class="fragment">Ember Addons
+				</ul>
+			</section>
+			<section>
+				<h2>The Downside: the Ember Way</h2>
+				<ul>
+					<li class="fragment">viele Veränderungen und Depractions von Release zu Release (Hoffnung seit Ember 2.0)
+					<li class="fragment">Wenig Raum für eigene Strukturierungen
+				</ul>
+				<blockquote class="fragment">If you follow the Ember way<br> you will like the Ember way<br><small>Janos Koschwitz</small></blockquote>
+			</section>
+        </section>
+
         <section id="react">
             <h2>Einfachheit: React</h2>
             <ul>
@@ -314,6 +367,14 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
 </code></pre>
                 <a target="_blank" href="code/react/public/index.html">Run</a>
         </section>
+			<section>
+				<h3>Hype, Hyper, React</h3>
+				<ul>
+					<li class="fragment">Macht genau, was es soll!
+					<li class="fragment">Schnell!
+					<li class="fragment">Mehr "Lib" als Framework
+				</ul>
+			</section>
 
         <section id="angular2">
             <h2>Mehr Magie: Angular 2</h2>
