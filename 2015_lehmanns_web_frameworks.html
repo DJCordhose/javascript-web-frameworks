@@ -178,13 +178,18 @@
     };
 }</code></pre>
 <pre class="fragment"><code data-trim contenteditable>&lt;body np-app ng-controller="HelloController as helloController">
-  &lt;input ng-model="helloController.greeting">
+  &lt;input ng-model="helloController.greeting" id="in">
   &lt;p>{{helloController.greeting}}, World!&lt;/p>
   &lt;input type="button" value="Clear"
          ng-click="helloController.clear()">
 &lt;/body></code></pre>
         <a target="_blank" href="code/angular/helloWorldAngular.html">Run</a>
                 </section>
+    <section>
+        <img src="ng-click.png" style="height: 500px;">
+        <p><small><a href="https://twitter.com/hollandben/status/526792275041746944" target="_blank">@hollandben</a></small></p>
+    </section>
+
             <section>
 				<h3>Der Communitylover</h3>
 				<ul>
@@ -375,6 +380,8 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
 					<li class="fragment">Macht genau, was es soll!
 					<li class="fragment">Schnell!
 					<li class="fragment">Mehr "Lib" als Framework
+                    <li class="fragment">wird für komplette Anwendung typischerweise mit React Router und einem Flux-Framework gekoppelt
+                    <li class="fragment">viel Inspiration aus der funktionalen Ecke (Immutable, pure functions, stateless)
 				</ul>
 			</section>
 
@@ -435,6 +442,19 @@ bootstrap(HelloCmp);
 </code></pre>
             <a target="_blank" href="code/angular2/index.html">Run</a>
         </section>
+        <section>
+            <h1>Fazit</h1>
+            <ul>
+                <li class="fragment">Hypes kommen und gehen schnell im JavaScript-Land
+                <li class="fragment">Technisch sind alle Frameworks brauchbar
+                <li class="fragment">Mit allen sind ähnliche Arbeitsergebnisse erreichbar
+                <li class="fragment">Welches Framework für dich das richtige ist, hängt von hauptsächlich von strategischen Überlegungen ab
+                <li class="fragment">Langlebigkeit? Wartbarkeit?
+                <li class="fragment">Einarbeitungsaufwand? Welcher Code-Stil passt zu dir?
+                <li class="fragment">Diese Fragen kann man nur in Zusammenhang mit individuellen Anforderungen beantworten
+            </ul>
+        </section>
+
                 <section>
                     <h4>Bewertung</h4>
                     <small>
@@ -484,19 +504,6 @@ bootstrap(HelloCmp);
                         <p>Disclaimer: basierend auf unseren Erfahrungen</p>
                     </small>
                 </section>
-        <section>
-            <h1>Fazit</h1>
-            <ul>
-                <li class="fragment">Hypes kommen und gehen schnell im JavaScript-Land
-                <li class="fragment">Technisch sind alle Frameworks brauchbar
-                <li class="fragment">Mit allen sind ähnliche Arbeitsergebnisse erreichbar
-                <li class="fragment">Welches Framework für dich das richtige ist, hängt von hauptsächlich von strategischen Überlegungen ab
-                <li class="fragment">Langlebigkeit? Wartbarkeit?
-                <li class="fragment">Einarbeitungsaufwand? Welcher Code-Stil passt zu dir?
-                <li class="fragment">Diese Fragen kann man nur in Zusammenhang mit individuellen Anforderungen beantworten
-            </ul>
-        </section>
-
     <section>
             <h1>Vielen Dank!</h1>
 
