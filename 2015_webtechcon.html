@@ -139,7 +139,6 @@
                     <ol>
                         <li class="fragment grow"><a href="#angular1">Magie: Angular 1.x</a><span class="fragment">... "Der Comunitylover"</span>
                         <li class="fragment grow"><a href="#polymer">Reale Web Components: Polymer</a><span class="fragment">... "Googles kleiner Schatz"</span>
-                        <li class="fragment grow"><a href="#ember">Konvention vor Konfiguration: Ember</a><span class="fragment">... "Mr. All-Inclusive"</span>
                         <li class="fragment grow"><a href="#react">Einfachheit: React</a><span class="fragment">... "Facebook reagiert!"</span>
                         <li class="fragment grow"><a href="#angular2">Mehr Magie?: Angular 2</a><span class="fragment">... "Zukunft?"</span>
                     </ol>
@@ -278,63 +277,6 @@ Polymer({
                         <li class="fragment">Wer benutzt es?
                     </ul>
                 </section>
-
-                <section id="ember">
-                    <h2>Konvention vor Konfiguration: Ember</h2>
-                    <ul>
-                        <li class="fragment">"Ordnungsrahmen": Sehr strukturiert und modularisiert
-                        <li class="fragment">All-In-Ökosystem mit vielen Best-Practices
-                        <li class="fragment">Super Router mit verschachteteln Routen</li>
-                        <!-- Stefan Penner (Entwickler von Emberjs) bringt es auf den Punkt mit der Aussage -->
-                        <blockquote class="fragment">"Don't waste time making trivial choices"<br><small>from emberjs.com</small></blockquote>
-                    </ul>
-                </section>
-        <section>
-            <h3>Hello World Ember</h3>
-<pre><code data-trim contenteditable>
-// handlebars/htmlbars template
-{{input id="in" value=greeting}}
-<p>{{greeting}}, World</p>
-&lt;input type="button" value="Clear" {{action 'clear'}}>
-</code></pre>
-<pre class="fragment"><code data-trim contenteditable class="javascript">export default Ember.Controller.extend({
-  greeting : "Hello",
-  actions: {
-    clear: function() {
-      this.set('greeting','');
-      $('#in').focus();
-    }
-  }
-});</code></pre>
-
-                <div  class="fragment">
-                    <p>Glue-Code: Implizit</p>
-                    <p>Start: ember server</p>
-                    <a target="_blank" href="http://localhost:4200/">Run (läuft leider nur lokal)</a>
-                </div>
-        </section>
-            <section>
-				<h2>The Upside: All-In</h2>
-				<ul>
-					<li class="fragment">starkes Command-Line-Interface Ember-CLI
-					<li class="fragment">Taskrunner zum Testen, entwicklen, builden, usw.
-					<li class="fragment">Storekonzept (Restadapter, Localstorage, uvm.)
-					<li class="fragment">Templating Engine (Handlebars / HTMLBars)
-					<li class="fragment">Data-Binding
-					<li class="fragment">Router
-					<li class="fragment">(Web-)Komponentenorientierte Entwicklung
-					<li class="fragment">Ember Addons
-				</ul>
-			</section>
-			<section>
-				<h2>The Downside: the Ember Way</h2>
-				<ul>
-					<li class="fragment">viele Veränderungen und Depractions von Release zu Release (Hoffnung seit Ember 2.0)
-					<li class="fragment">Wenig Raum für eigene Strukturierungen
-				</ul>
-				<blockquote class="fragment">If you follow the Ember way<br> you will like the Ember way<br><small>Janos Koschwitz</small></blockquote>
-			</section>
-        </section>
 
         <section id="react">
             <h2>Einfachheit: React</h2>
@@ -493,13 +435,6 @@ bootstrap(HelloCmp);
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(1.0, aber wer setzt das ein?)
                                 </span></td>
                             </tr>
-                            <tr><td>Ember</td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+ (Ember Way)<br>
-                                    - (Ember Way)</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(stabile Community)</span></td>
-                            </tr>
                             <tr><td>React</td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">Für JS-Dev: ++ (Turnaroundzeiten)
@@ -532,6 +467,20 @@ bootstrap(HelloCmp);
             <a href="http://www.embarc.de/"><img src="embarc13.png"
                                                  height="150"></a>
         </section>
+        <section>
+            <h1>Bonus Level</h1>
+        </section>
+        <section id="aurelia">
+            <h2>Next Generation?: Aurelia</h2>
+        <ul>
+
+            <li class="fragment"><a target="_blank" href="http://aurelia.io">http://aurelia.io</a>
+            <li class="fragment">Rob Eisenberg (Hauptentwickler) ist dem Angular 2 Team erst beigetreten und dann hat es wieder verlassen
+            <li class="fragment">ES7, Babel, npm, jspm.io, gulp
+            <li class="fragment"><a target="_blank" href="http://blog.durandal.io/2015/03/16/aurelia-and-angular-2-code-side-by-side/">Aurelia vs Angular 2</a>
+            <li class="fragment">Ähnliche Ideen wie Angular 2, aber mit dem Versprechen: Weniger Code, mehr Konventionen, einfacher
+        </ul>
+    </section>
 
 			</div>
 
