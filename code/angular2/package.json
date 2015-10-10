@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "angular2": "^2.0.0-alpha.36"
+    "angular2": "^2.0.0-alpha.40"
   }
 }
