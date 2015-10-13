@@ -4,14 +4,15 @@
   "description": "",
   "scripts": {
     "clean": "rm -rf dist/ public/dist/",
-    "webpack": "webpack --dist",
+    "webpack": "webpack --dist --watch",
     "devserver": "webpack-dev-server --devtool source-map --progress --colors --hot --content-base public"
   },
   "license": "ISC",
   "dependencies": {
+    "babel": "*",
     "react": "0.14.0",
     "react-dom": "0.14.0",
-    "babel": "*"
+    "whatwg-fetch": "^0.10.0"
   },
   "devDependencies": {
     "babel-loader": "*",
@@ -26,5 +27,4 @@
     "webpack-dev-server": "*",
     "yargs": "*"
   }
-
 }

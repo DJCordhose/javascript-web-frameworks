@@ -1,0 +1,19 @@
+{
+  "name": "polymer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/DJCordhose/javascript-web-frameworks",
+  "authors": [
+    "Oliver Zeigermann <oliver.zeigermann@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}
