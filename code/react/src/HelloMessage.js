@@ -23,8 +23,6 @@ export default class HelloMessage extends React.Component {
         this.refs.in.focus();
     }
     updateModel(event) {
-        // this breaks in 0.14.beta1, but should not
-        //this.setState({greeting: event.target.value});
-        this.setState({greeting: event.currentTarget.value});
+        this.setState({greeting: event.target.value});
     }
 }

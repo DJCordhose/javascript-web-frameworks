@@ -92,16 +92,6 @@
         <p><small>Copyright 2015, Mike North (@michaellnorth), https://twitter.com/ModernWebUI/status/575532649948790784/photo/1</small></p>
     </section>
     <section>
-    <h3>Wieso denn überhaupt ein JavaScript?</h3>
-    <h4 class="fragment roll-in">Single Page Applications (SPAs) verschieben eure Anwendung in den Browser</h4>
-        <ul>
-            <li class="fragment roll-in">Nutzer erwartet Bedienbarkeit wie im Desktop
-            <li class="fragment roll-in">Langlebigkeit der Anwendung steigt
-            <li class="fragment roll-in">mehr Logik im Browser
-        </ul>
-    <h4 class="fragment roll-in">Und im Browser läuft eben nur JavaScript</h4>
-</section>
-    <section>
         <h3>Klassiche Webanwendung</h3>
 		<!--<p>-->
 			<!--<small>(Blau: Server, Violett: Browser)</small>-->
@@ -112,7 +102,43 @@
         </ul>
         <p><small>Copyright 2015, Oliver Zeigermann</small></p>
     </section>
+        <section>
+            <h2>Klassische Web-Anwendung als Referenz: hapi</h2>
+            <ul>
+                <li class="fragment">Server Side JavaScript framework
+                <li class="fragment">Entwickelt bei Walmart
+                <li class="fragment">läuft auf node.js
+                <li class="fragment">Request/Response basiert
+                <li class="fragment">Server side rendering mit Template-Engine deiner Wahl
+            </ul>
+        </section>
+                <section>
+            <h3>Hello World Hapi / Handlebars Template</h3>
+<pre><code class="xml" contenteditable>&lt;form>
+    &lt;input name="greeting" value="{{greeting}}">
+    &lt;p>{{greeting}}, World&lt;/p>
+    &lt;a href="/?greeting=">Clear&lt;/a>
+    &lt;input type="submit" value="Send">
+&lt;/form></code></pre>
+<pre class="fragment"><code class="javascript" contenteditable>var server = new Hapi.Server();
+server.route({
+  method: 'GET',
+  path: '/',
+  handler: function (request, reply) {
+    reply.view('index', { greeting: request.query.greeting || 'Hello' });
+  }
+});</code></pre>
+                <a target="_blank" href="http://localhost:8080">Run: node index.js</a>
+        </section>
 
+                <section>
+                    <h3>Single Page Applications (SPAs) verschieben eure Anwendung in den Browser</h3>
+                    <ul>
+                        <li class="fragment roll-in">Nutzer erwartet Bedienbarkeit wie im Desktop
+                        <li class="fragment roll-in">Langlebigkeit der Anwendung steigt
+                        <li class="fragment roll-in">mehr Logik im Browser
+                    </ul>
+                </section>
     <section>
         <h3>SPA Lean</h3>
         <ul>

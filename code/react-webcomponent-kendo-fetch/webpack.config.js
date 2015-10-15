@@ -33,7 +33,7 @@ module.exports = {
   resolve: {
     // Make sure, Webpack finds import'ed and require'd files specified without extension
     // so 'import Bla from './Bla' makes webpack to look for files 'Bla', 'Bla.js' and 'Bla.jsx'
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.ts']
   },
   entry:   entries(),
   output:  {
@@ -53,6 +53,7 @@ module.exports = {
       // * babel-loader: uses Babel to transform your JSX/ES6 JavaScript to ECMAScript 5
       // * react-hot: Reloads your React Component on code changes without loosing the application state
       {test: /\.js$/, exclude: /node_modules/, loaders: babelLoaders()},
+      {test: /\.ts$/, exclude: /node_modules/, loader: 'ts-loader'},
 
       //{test: /\.js$/, exclude: /node_modules|libs/, loader: "eslint-loader"},
       // CSS handling
