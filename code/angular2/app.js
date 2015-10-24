@@ -27,10 +27,12 @@ var HelloCmp = (function () {
             selector: 'hello-app',
         }),
         angular2_1.View({
-            templateUrl: 'hello.html'
+            templateUrl: 'hello.html',
+            directives: [angular2_1.FORM_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
     ], HelloCmp);
     return HelloCmp;
 })();
 angular2_1.bootstrap(HelloCmp);
+//# sourceMappingURL=app.js.map

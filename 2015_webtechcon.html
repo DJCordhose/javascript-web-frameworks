@@ -171,9 +171,9 @@ server.route({
                     <h2>Unsere Kandidaten</h2>
                     <ol>
                         <li class="fragment grow"><a href="#angular1">Magie: Angular 1.x</a><span class="fragment">... "Der Comunitylover"</span>
+                        <li class="fragment grow"><a href="#angular2">Mehr Magie?: Angular 2</a><span class="fragment">... "Zukunft?"</span>
                         <li class="fragment grow"><a href="#polymer">Reale Web Components: Polymer</a><span class="fragment">... "Googles kleiner Schatz"</span>
                         <li class="fragment grow"><a href="#react">Einfachheit: React</a><span class="fragment">... "Facebook reagiert!"</span>
-                        <li class="fragment grow"><a href="#angular2">Mehr Magie?: Angular 2</a><span class="fragment">... "Zukunft?"</span>
                     </ol>
                 </section>
 
@@ -247,6 +247,78 @@ server.route({
 					<li class="fragment">Abkömmling Ionic (Hybrid-App-Framework)
                 </ul>
 			</section>
+        <section id="angular2">
+            <h2>Mehr Magie: Angular 2</h2>
+        <ul>
+            <li class="fragment">Nachfolger von Angular 1
+            <li class="fragment">Optimiert für Geschwindigkeit
+            <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1UqxJSLD0XQ0tMWg3FFHtmcWTuXTQKcxNz285Z8LgXsk/edit#slide=id.g5a1291cfa_0_81">
+                Beta-Release bisher nicht absehbar</a>
+            <li class="fragment">Ankündigung (Herbst 2014) hat zu Verunsicherung geführt
+            <ul>
+                <li class="fragment">Konzepte deutlich anders als Angular 1
+                <li class="fragment">Kein Migrationspfad absehbar
+            </ul>
+            </li>
+            <li class="fragment">Optimiert für den Einsatz von Microsofts TypeScript
+            <li class="fragment">Basiert auf Komponenten
+        </ul>
+    </section>
+                <section>
+                    <h3>Hello World AngularJS 2.x</h3>
+<pre class="fragment"><code class="xml" contenteditable>@Component({
+  selector: 'hello-app'
+})
+@View({
+template:
+  `&lt;input [value]="greeting" #in (keyup)="updateModel(in.value)">
+   &lt;p>{{greeting}}, World&lt;/p>
+   &lt;button (click)="reset(in)">Clear&lt;/button>`
+})</code></pre>
+<pre><code class="javascript" contenteditable>class HelloCmp {
+  greeting: string;
+  constructor() {
+    this.greeting = 'Hello';
+  }
+  reset(input) {
+    this.greeting = '';
+    input.focus();
+  }
+  updateModel(value) {
+    this.greeting = value;
+  }
+}</code></pre>
+                </section>
+        <section>
+            <h3>Aufruf</h3>
+<pre><code data-trim contenteditable>
+bootstrap(HelloCmp);
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;body>
+    &lt;hello-app>&lt;/hello-app>
+    &lt;script>System.import('app');&lt;/script>
+&lt;/body>
+</code></pre>
+            <a target="_blank" href="code/angular2/index.html">Run</a>
+        </section>
+                <section>
+                    <h2>Angular 1 und Angular 2</h2>
+                    <ul>
+                        <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1r1ffV-shRXHXct9DbJRVesNs6oLLk8PFGQvlE1zLpRE/preview?slide=id.ge4d624f6e_1_47">93% der Zugriffe auf Angular 1 Site (Stand Oktober 2015)</a>
+                        <li class="fragment"><a target="_blank" href="http://angularjs.blogspot.de/2015/08/angular-1-and-angular-2-coexistence.html">
+                            sanfter Migrationspfad inzwischen denkbar</a>
+                        <li class="fragment"><a target="_blank" href="https://angular.io/docs/ts/latest/api/core/NgFormModel-class.html">
+                        Angular 2 hat simuliertes 2-Wege-Data-Binding für Formulare</a>
+                        <pre><code>&lt;input [(ng-model)]="greeting" #in></code></pre>
+                        <li class="fragment">Angular 1.5 wird Angular Router enthalten
+                            <ul>
+                                <li class="fragment">funktioniert mit Angular 1 und 2
+                                <li class="fragment">flexibel genug für alle Einsatzgebiete (inkl. nested Routes)
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
 
         <section id="polymer">
             <h2>Reale Web Components: Polymer</h2>
@@ -377,65 +449,7 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
 				</ul>
 			</section>
 
-        <section id="angular2">
-            <h2>Mehr Magie: Angular 2</h2>
-        <ul>
-            <li class="fragment">Nachfolger von Angular 1
-            <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1UqxJSLD0XQ0tMWg3FFHtmcWTuXTQKcxNz285Z8LgXsk/edit#slide=id.g5a1291cfa_0_81">
-                Beta-Release bisher nicht absehbar</a>
-            <li class="fragment">Ankündigung (Herbst 2014) hat zu Verunsicherung geführt
-            <ul>
-                <li class="fragment">Konzepte deutlich anders als Angular 1
-                <li class="fragment">Kein Migrationspfad absehbar
-            </ul>
-            </li>
-            <li class="fragment"><a target="_blank" href="http://angularjs.blogspot.de/2015/08/angular-1-and-angular-2-coexistence.html">
-                sanfter Migrationspfad inzwischen denkbar</a>
-            <li class="fragment">Optimiert für den Einsatz von Microsofts TypeScript
-            <li class="fragment"><a target="_blank" href="https://angular.io/docs/ts/latest/api/core/NgFormModel-class.html">
-            Simuliertes 2-Wege-Data-Binding für Formulare</a>
-            <li class="fragment">Basiert auf Komponenten
-        </ul>
-    </section>
                 <section>
-                    <h3>Hello World AngularJS 2.x</h3>
-<pre class="fragment"><code class="xml" contenteditable>@Component({
-  selector: 'hello-app'
-})
-@View({
-template:
-  `&lt;input [value]="greeting" #in (keyup)="updateModel(in.value)">
-   &lt;p>{{greeting}}, World&lt;/p>
-   &lt;button (click)="reset(in)">Clear&lt;/button>`
-})</code></pre>
-<pre><code class="javascript" contenteditable>class HelloCmp {
-  greeting: string;
-  constructor() {
-    this.greeting = 'Hello';
-  }
-  reset(input) {
-    this.greeting = '';
-    input.focus();
-  }
-  updateModel(value) {
-    this.greeting = value;
-  }
-}</code></pre>
-                </section>
-        <section>
-            <h3>Aufruf</h3>
-<pre><code data-trim contenteditable>
-bootstrap(HelloCmp);
-</code></pre>
-<pre class="fragment"><code data-trim contenteditable>
-&lt;body>
-    &lt;hello-app>&lt;/hello-app>
-    &lt;script>System.import('app');&lt;/script>
-&lt;/body>
-</code></pre>
-            <a target="_blank" href="code/angular2/index.html">Run</a>
-        </section>
-        <section>
             <h1>Fazit</h1>
             <ul>
                 <li class="fragment">Hypes kommen und gehen schnell im JavaScript-Land
