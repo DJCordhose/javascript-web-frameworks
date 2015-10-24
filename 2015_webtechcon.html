@@ -251,16 +251,13 @@ server.route({
             <h2>Mehr Magie: Angular 2</h2>
         <ul>
             <li class="fragment">Nachfolger von Angular 1
-            <li class="fragment">Optimiert für Geschwindigkeit
-            <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1UqxJSLD0XQ0tMWg3FFHtmcWTuXTQKcxNz285Z8LgXsk/edit#slide=id.g5a1291cfa_0_81">
-                Beta-Release bisher nicht absehbar</a>
             <li class="fragment">Ankündigung (Herbst 2014) hat zu Verunsicherung geführt
             <ul>
                 <li class="fragment">Konzepte deutlich anders als Angular 1
                 <li class="fragment">Kein Migrationspfad absehbar
             </ul>
             </li>
-            <li class="fragment">Optimiert für den Einsatz von Microsofts TypeScript
+            <li class="fragment">Entwickelt in Microsofts TypeScript (ES5, ES6 und Dart auch unterstützt)
             <li class="fragment">Basiert auf Komponenten
         </ul>
     </section>
@@ -288,29 +285,33 @@ template:
     this.greeting = value;
   }
 }</code></pre>
+                    <a target="_blank" href="code/angular2/index.html">Run</a>
                 </section>
-        <section>
-            <h3>Aufruf</h3>
-<pre><code data-trim contenteditable>
-bootstrap(HelloCmp);
-</code></pre>
-<pre class="fragment"><code data-trim contenteditable>
-&lt;body>
-    &lt;hello-app>&lt;/hello-app>
-    &lt;script>System.import('app');&lt;/script>
-&lt;/body>
-</code></pre>
-            <a target="_blank" href="code/angular2/index.html">Run</a>
-        </section>
+        <!--<section>-->
+            <!--<h3>Aufruf</h3>-->
+<!--<pre><code data-trim contenteditable>-->
+<!--bootstrap(HelloCmp);-->
+<!--</code></pre>-->
+<!--<pre class="fragment"><code data-trim contenteditable>-->
+<!--&lt;body>-->
+    <!--&lt;hello-app>&lt;/hello-app>-->
+    <!--&lt;script>System.import('app');&lt;/script>-->
+<!--&lt;/body>-->
+<!--</code></pre>-->
+            <!--<a target="_blank" href="code/angular2/index.html">Run</a>-->
+        <!--</section>-->
                 <section>
-                    <h2>Angular 1 und Angular 2</h2>
+                    <h2>Von Angular 1 zu Angular 2</h2>
                     <ul>
+                        <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1r1ffV-shRXHXct9DbJRVesNs6oLLk8PFGQvlE1zLpRE/preview?slide=id.ge4d624f6e_1_816">
+                            Angular 2 Beta-Release bald</a>
                         <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1r1ffV-shRXHXct9DbJRVesNs6oLLk8PFGQvlE1zLpRE/preview?slide=id.ge4d624f6e_1_47">93% der Zugriffe auf Angular 1 Site (Stand Oktober 2015)</a>
                         <li class="fragment"><a target="_blank" href="http://angularjs.blogspot.de/2015/08/angular-1-and-angular-2-coexistence.html">
                             sanfter Migrationspfad inzwischen denkbar</a>
-                        <li class="fragment"><a target="_blank" href="https://angular.io/docs/ts/latest/api/core/NgFormModel-class.html">
-                        Angular 2 hat simuliertes 2-Wege-Data-Binding für Formulare</a>
+                        <li class="fragment"><a target="_blank" href="https://angular.io/docs/js/latest/api/core/NgModel-class.html">
+                        Angular 2 hat simuliertes 2-Wege-Data-Binding</a>
                         <pre><code>&lt;input [(ng-model)]="greeting" #in></code></pre>
+                        <li class="fragment">Datenfluss in 1 beliebigt, in 2 nur vom Parent zum Child
                         <li class="fragment">Angular 1.5 wird Angular Router enthalten
                             <ul>
                                 <li class="fragment">funktioniert mit Angular 1 und 2
@@ -325,10 +326,8 @@ bootstrap(HelloCmp);
         <ul>
             <li class="fragment">Von Google
             <li class="fragment">Basiert auf dem Standard <em>Web Components</em>
-            <li class="fragment">Kommt mit Polyfills, damit Web Components auf allen Browsern laufen
             <li class="fragment">Macht die API einfacher
             <li class="fragment"><a target="_blank" href="https://elements.polymer-project.org/">Bietet eine ganze Reihe von Standard-Komponenten</a>
-            <li class="fragment"><a target="_blank" href="http://vaadin.github.io/components-examples/">Vaadin bietet ein darauf aufbauendes Grid</a>
             <li class="fragment">Google hält es für produktiv einsetzbar (unterstreicht dies mit dem 1.0 Release)
         </ul>
     </section>
@@ -343,9 +342,17 @@ bootstrap(HelloCmp);
                                 <li class="fragment">HTML Imports: Inkludieren von HTML/Web Components
                             </ol>
                         </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Web Components: Unterstützung</h2>
+                    <ul>
                         <li class="fragment">Wird im Moment nur von Chrome komplett unterstützt
                         <li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank">Firefox unterstützt HTML Imports nicht</a>
                         <li class="fragment">Microsoft hat mit der Umsetzung begonnen
+                        <li class="fragment"><a target="_blank" href="http://webcomponents.org/polyfills/">Polyfills</a> für Unterstützung in allen Browsern verfügbar
+                        <li class="fragment"><a target="_blank" href="http://docs.telerik.com/kendo-ui/webcomponents">Kendo UI Widgets</a> auch als Web Components möglich
+                        <li class="fragment"><a target="_blank" href="https://vaadin.com/elements">Vaadin bietet Grid und verspricht mehr</a>
                     </ul>
                 </section>
 
@@ -381,6 +388,7 @@ Polymer({
                         <li class="fragment">läuft nur in Chrome optimal
                         <li class="fragment">Standardkomponenten -> Styling sehr Googlelastig
                         <li class="fragment">Wer benutzt es?
+                        <li class="fragment">Alternative: Web Components mit anderem Framework nutzen (Angular 2 oder React)
                     </ul>
                 </section>
 
@@ -474,7 +482,7 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
                                 </span></td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">-<br>(Angular-way eher Java-Stil)
                                 </span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(muss migriert werden)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o (muss migriert werden)<br>++ (hohe Verbreitung)</span></td>
                             </tr>
                             <tr><td>Polymer</td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(nur in Chrome optimal)</span></td>
@@ -486,20 +494,20 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
                             </tr>
                             <tr><td>React</td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">JS-Dev: ++ (Turnaroundzeiten)
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++ (Turnaroundzeiten)
                                     <br>
-                                    Neueinsteiger: o (viel neues)
+                                    o (vieles neu)
                                     <br>
-                                    Für klassiches Web: - (keine Trennung von Markup und UI-Logik)
+                                    - (keine Trennung von Markup und UI-Logik)
                                 </span></td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">+</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(Einsatz bei Facebook, Rückwärtskompatibilität, Stabilität)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(Einsatz bei Facebook, Rückwärtskompatibilität, Stabilität, Reife)</span></td>
                             </tr>
                             <tr><td>Angular 2</td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++ (vermutlich)</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(vieles neu)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o (vieles neu)<br>++ (sehr flexibel)</span></td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">+</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">-<br>(bisher kein Release)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">- (kein Release)</span></td>
                             </tr>
                         </tbody>
                     </table>

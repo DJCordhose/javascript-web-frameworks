@@ -2,8 +2,6 @@
     <!--(keyup)="updateModel(in.value)">-->
 <!-- Option: -->
 <!--(keyup)="updateModel($event.target.value)">-->
-<!--Mentioned here, but does not work-->
-<!--https://docs.google.com/presentation/d/1r1ffV-shRXHXct9DbJRVesNs6oLLk8PFGQvlE1zLpRE/preview?slide=id.ge4d624f6e_1_295-->
 <input [(ng-model)]="greeting" #in>
 <p>{{greeting}}, World</p>
 <button (click)="reset(in)">Clear</button>
