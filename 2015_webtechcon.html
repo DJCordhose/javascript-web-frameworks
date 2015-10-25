@@ -79,10 +79,6 @@
                 <li>Arbeitet für <a target="_blank" href="http://www.embarc.de/"><i>embarc Software Consulting
                     GmbH</i></a>
                 <li><a target="_blank" href="https://twitter.com/DJCordhose">@DJCordhose</a>
-                <li><a target="_blank"
-                       href="https://entwickler.de/press/javascript-fuer-java-entwickler-4-168852.html">Buch:
-                    JavaScript für
-                    Java-Entwickler</a>
             </ul>
         </section>
 
@@ -311,7 +307,7 @@ template:
                         <li class="fragment"><a target="_blank" href="https://angular.io/docs/js/latest/api/core/NgModel-class.html">
                         Angular 2 hat simuliertes 2-Wege-Data-Binding</a>
                         <pre><code>&lt;input [(ng-model)]="greeting" #in></code></pre>
-                        <li class="fragment">Datenfluss in 1 beliebigt, in 2 nur vom Parent zum Child
+                        <li class="fragment">Transclusion (Komponenten-Hierarchien) in Angular 2 deutlich klarer und performanter
                         <li class="fragment">Angular 1.5 wird Angular Router enthalten
                             <ul>
                                 <li class="fragment">funktioniert mit Angular 1 und 2
@@ -449,8 +445,8 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
 			<section>
 				<h3>Hype, Hyper, React</h3>
 				<ul>
-					<li class="fragment">Macht genau, was es soll!
-					<li class="fragment">Schnell!
+					<li class="fragment">Abstraktion vom DOM: Übersetzt Daten durch Komponenten in Darstellung
+					<li class="fragment">Minimale API
 					<li class="fragment">Mehr "Lib" als Framework
                     <li class="fragment">wird für komplette Anwendung typischerweise mit React Router und einem Flux-Framework gekoppelt
                     <li class="fragment">viel Inspiration aus der funktionalen Ecke (Immutable, pure functions, stateless)
@@ -474,15 +470,18 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
                     <h4>Bewertung</h4>
                     <small>
                     <table>
-                        <thead><th></th><th>User Experience</th><th>Developer Experience</th><th>Standards</th><th>Investitionssicherheit</th></thead>
+                        <thead><th></th><th align="center">User Experience</th>
+                        <th align="center">Developer Experience</th>
+                        <th align="center">Standards</th>
+                        <th align="center">Investitionssicherheit</th></thead>
                         <tbody>
                             <tr><td>Angular 1</td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(langsam bei vielen Komponenten)</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(viel Magie, Komponenten unnötig komplex)
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(langsam bei vielen Komponenten)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(viel Magie, Komponenten kompliziert)
                                 </span></td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">-<br>(Angular-way eher Java-Stil)
                                 </span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o (muss migriert werden)<br>++ (hohe Verbreitung)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">- (Auslaufmodell)<br>++ (hohe Verbreitung)</span></td>
                             </tr>
                             <tr><td>Polymer</td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(nur in Chrome optimal)</span></td>
@@ -494,24 +493,28 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
                             </tr>
                             <tr><td>React</td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++ (Turnaroundzeiten)
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++ (minimale API, Entwicklungszyklus)
                                     <br>
                                     o (vieles neu)
                                     <br>
-                                    - (keine Trennung von Markup und UI-Logik)
+                                    +/- (keine Trennung von Markup und UI-Logik)
                                 </span></td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">+</span></td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(Einsatz bei Facebook, Rückwärtskompatibilität, Stabilität, Reife)</span></td>
                             </tr>
                             <tr><td>Angular 2</td>
                                 <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o (vieles neu)<br>++ (sehr flexibel)</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+</span></td>
-                                <td align="center" style="vertical-align: middle"><span style="color: yellow">- (kein Release)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o (vieles neu)
+                                    <br>
+                                    - (komplexe API, Eierlegende Wollmilchsau)
+                                    <br>
+                                    ++ (sehr flexibel)
+                                </span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">-<br>(kein Release)</span></td>
                             </tr>
                         </tbody>
                     </table>
-                        <p>Disclaimer: basierend auf unseren Erfahrungen</p>
                     </small>
                 </section>
         <section>
