@@ -5,6 +5,7 @@
 <dom-module id="greeter-element">
 
     <template>
+        <!--When you extend a native element you have to use is="..." instead of simply using the new tag name-->
         <!--<input id="in" is="iron-input" bind-value="{{greeting}}">-->
         <!--https://www.polymer-project.org/1.0/docs/devguide/data-binding.html-->
         <input id="in" value="{{greeting::keyup}}">
