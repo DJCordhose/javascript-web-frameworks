@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JavaScript Web Frameworks</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">-->
+		<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+		<!--<link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">-->
+
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+		<!--<style>-->
+			<!--pre code {-->
+				<!--display: block;-->
+				<!--padding: 0.5em;-->
+				<!--background: #FFFFFF !important;-->
+				<!--color: #000000 !important;-->
+			<!--}-->
+			<!--.right-img {-->
+				<!--margin-left: 10px !important;-->
+				<!--float: right;-->
+				<!--height: 500px;-->
+			<!--}-->
+		<!--</style>-->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+    <h2>JavaScript Single Page Application Web Frameworks</h2>
+
+    <p>
+        <small><a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a>
+        </small>
+	</p>
+
+        <p>Online-Version: <a href="http://bit.ly/1YG2e63">http://bit.ly/1YG2e63</a></p>
+        <p>Code auf Github: <a href="https://github.com/DJCordhose/javascript-web-frameworks/tree/gh-pages">https://github.com/DJCordhose/javascript-web-frameworks/tree/gh-pages</a></p>
+</section>
+
+        <section>
+            <h2>Oliver Zeigermann</h2>
+            <img src="embarc13.png" height="50" align="left">
+            <img src="SF-Olli.jpg" height="100" align="right">
+            <ul>
+                <li>Programmierer, Architekt, Berater und Coach
+                <li>Hamburg, Germany
+                <li><a target="_blank" href="http://zeigermann.eu">http://zeigermann.eu</a>
+                <li>Arbeitet für <a target="_blank" href="http://www.embarc.de/"><i>embarc Software Consulting
+                    GmbH</i></a>
+                <li><a target="_blank" href="https://twitter.com/DJCordhose">@DJCordhose</a>
+            </ul>
+        </section>
+
+    <section>
+        <h2>Überblick</h2>
+        <img src="js-frameworks.jpg" height="500px">
+        <p><small>Copyright 2015, Mike North (@michaellnorth), https://twitter.com/ModernWebUI/status/575532649948790784/photo/1</small></p>
+    </section>
+
+        <section>
+            <h3>Klassische Web-Anwendung als Referenz: hapi</h3>
+            <ul>
+                <li class="fragment">Server Side JavaScript framework
+                <li class="fragment">läuft auf node.js
+                <li class="fragment">Request/Response basiert
+                <li class="fragment">Unobtrusive JavaScript
+                    <ul>
+                        <li class="fragment">punktuelles, optionales JavaScript
+                        <li class="fragment">gibt der Seite mehr dynamic
+                        <li class="fragment">lokaler Zustand geht nach jedem Request/Response-Roundtrip verloren
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+                <h4>Hello World, Unobtrusive Hapi</h4>
+                <!-- node  ./code/hapi-jquery/index.js to start local server -->
+                <a target="_blank" href="http://localhost:8080">
+                    <img src="screenshot-unobtrusive-hapi.png">
+                </a>
+        </section>
+
+
+    <section>
+        <h3>Klassiche Webanwendung</h3>
+		<!--<p>-->
+			<!--<small>(Blau: Server, Violett: Browser)</small>-->
+		<!--</p>-->
+
+        <ul>
+            <img src="Classic_Web_Application.png" style="height: 500px;">
+        </ul>
+        <p><small>Copyright 2015, Oliver Zeigermann</small></p>
+    </section>
+                <section>
+                    <h3>Single Page Applications (SPAs) verschieben eure Anwendung in den Browser</h3>
+                    <ul>
+                        <li class="fragment roll-in">Nutzer erwartet Bedienbarkeit wie im Desktop
+                        <li class="fragment roll-in">Langlebigkeit der Anwendung steigt
+                        <li class="fragment roll-in">mehr Logik im Browser
+                    </ul>
+                </section>
+    <section>
+        <h3>SPA Lean</h3>
+        <ul>
+            <img src="SPA_Lean.jpg" style="height: 500px;">
+        </ul>
+        <p><small>Copyright 2015, Oliver Zeigermann</small></p>
+    </section>
+
+    <section>
+        <h3>SPA Fat</h3>
+        <ul>
+            <img src="SPA_Fat.jpg" style="height: 500px;">
+        </ul>
+        <p><small>Copyright 2015, Oliver Zeigermann</small></p>
+    </section>
+        <section>
+            <h3>Und wieso dann ein JavaScript Web Framework?</h3>
+            <h4 class="fragment roll-in">Einheitliche Entwicklung wird wichtiger</h4>
+            <h4 class="fragment roll-in">Entweder nimmt man ein Standard-Framework</h4>
+            <h4 class="fragment roll-in">... oder man schreibt sein eigenes (manchmal ohne es zu merken)</h4>
+            <h4 class="fragment roll-in">Standard-Framework bietet</h4>
+            <ul>
+                <li class="fragment roll-in">einen erprobten Rahmen
+                <li class="fragment roll-in">Community, Dokumentation
+                <li class="fragment roll-in">neue Mitarbeiter finden sich zurecht
+            </ul>
+
+        </section>
+                <section>
+                    <h2>Unsere Kandidaten</h2>
+                    <ol>
+                        <li class="fragment grow"><a href="#angular1">Magie: Angular 1.x</a><span class="fragment">... "Der Comunitylover"</span>
+                        <li class="fragment grow"><a href="#angular2">Mehr Magie?: Angular 2</a><span class="fragment">... "Zukunft?"</span>
+                        <li class="fragment grow"><a href="#polymer">Reale Web Components: Polymer</a><span class="fragment">... "Googles kleiner Schatz"</span>
+                        <li class="fragment grow"><a href="#react">Einfachheit: React</a><span class="fragment">... "Facebook reagiert!"</span>
+                    </ol>
+                </section>
+
+                <section>
+                    <h3>Trends September 2015</h3>
+                    <ul>
+                        <img src="trends-september-2015.png" style="height: 500px;">
+                    </ul>
+                    <p><small><a target="_blank" href="https://www.google.de/trends/explore#q=angular%202%20javascript%2C%20react%20javascript%2C%20ember%20javascript%2C%20web%20components%20polymer%2C%20angular%20javascript&cmpt=q&tz=Etc%2FGMT-2">
+                        Google Trends
+                    </a>
+                                 </small></p>
+                </section>
+                <section>
+                    <h3>Trends September 2015 ohne Angular 1</h3>
+                    <ul>
+                        <img src="trends-september-2015-wo-angular.png" style="height: 500px;">
+                    </ul>
+                    <p><small><a target="_blank" href="https://www.google.de/trends/explore#q=angular%202%20javascript%2C%20react%20javascript%2C%20ember%20javascript%2C%20web%20components%20polymer&cmpt=q&tz=Etc%2FGMT-2">
+                        Google Trends
+                    </a>
+                    </small></p>
+                </section>
+
+                <section id="angular1">
+            <h2>Magie: Angular</h2>
+        <ul>
+            <li class="fragment">Aktueller Hype von Google
+            <li class="fragment">View Model als Basis
+            <li class="fragment">3 Ds
+                <ul>
+                    <li class="fragment">Data Binding (2-Wege)
+                    <li class="fragment">Dependency Injection
+                    <li class="fragment">Directives (=== Komponenten)
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+                <section>
+                    <h3>Hello World AngularJS 1.4</h3>
+                    <p><a target="_blank" href="https://github.com/johnpapa/angular-styleguide/blob/master/README.md">
+                        Code-Stil basiert auf (halb-) offizieller Empfehlung</a></p>
+<pre><code data-trim contenteditable>function HelloController() {
+    var vm = this; // define view model
+    vm.greeting = 'Hello';
+    vm.clear = function () {
+        vm.greeting = '';
+        document.getElementById('in').focus();
+    };
+}</code></pre>
+<pre class="fragment"><code data-trim contenteditable>&lt;body np-app ng-controller="HelloController as helloController">
+  &lt;input ng-model="helloController.greeting" id="in">
+  &lt;p>{{helloController.greeting}}, World!&lt;/p>
+  &lt;input type="button" value="Clear"
+         ng-click="helloController.clear()">
+&lt;/body></code></pre>
+        <a target="_blank" href="code/angular/helloWorldAngular.html">Run</a>
+                </section>
+    <section>
+        <img src="ng-click.png" style="height: 500px;">
+        <p><small><a href="https://twitter.com/hollandben/status/526792275041746944" target="_blank">@hollandben</a></small></p>
+    </section>
+
+            <section>
+				<h3>Der Communitylover</h3>
+				<ul>
+					<li class="fragment">Massig Developer, Foren, Themes, usw
+					<li class="fragment">einfache Lernkurve
+                    <li class="fragment">Entwicklungstil unter JavaScript-Entwicklern umstritten
+					<li class="fragment">Abkömmling Ionic (Hybrid-App-Framework)
+                </ul>
+			</section>
+        <section id="angular2">
+            <h2>Mehr Magie: Angular 2</h2>
+        <ul>
+            <li class="fragment">Nachfolger von Angular 1
+            <li class="fragment">Ankündigung (Herbst 2014) hat zu Verunsicherung geführt
+            <ul>
+                <li class="fragment">Konzepte deutlich anders als Angular 1
+                <li class="fragment">Kein Migrationspfad absehbar
+            </ul>
+            </li>
+            <li class="fragment">Entwickelt in Microsofts TypeScript (ES5, ES6 und Dart auch unterstützt)
+            <li class="fragment">Basiert auf Komponenten
+        </ul>
+    </section>
+                <section>
+                    <h3>Hello World AngularJS 2.x</h3>
+<pre class="fragment"><code class="xml" contenteditable>@Component({
+  selector: 'hello-app'
+})
+@View({
+template:
+  `&lt;input [value]="greeting" #in (keyup)="updateModel(in.value)">
+   &lt;p>{{greeting}}, World&lt;/p>
+   &lt;button (click)="reset(in)">Clear&lt;/button>`
+})</code></pre>
+<pre><code class="javascript" contenteditable>class HelloCmp {
+  greeting: string;
+  constructor() {
+    this.greeting = 'Hello';
+  }
+  reset(input) {
+    this.greeting = '';
+    input.focus();
+  }
+  updateModel(value) {
+    this.greeting = value;
+  }
+}</code></pre>
+                    <a target="_blank" href="code/angular2/index.html">Run</a>
+                </section>
+        <!--<section>-->
+            <!--<h3>Aufruf</h3>-->
+<!--<pre><code data-trim contenteditable>-->
+<!--bootstrap(HelloCmp);-->
+<!--</code></pre>-->
+<!--<pre class="fragment"><code data-trim contenteditable>-->
+<!--&lt;body>-->
+    <!--&lt;hello-app>&lt;/hello-app>-->
+    <!--&lt;script>System.import('app');&lt;/script>-->
+<!--&lt;/body>-->
+<!--</code></pre>-->
+            <!--<a target="_blank" href="code/angular2/index.html">Run</a>-->
+        <!--</section>-->
+                <section>
+                    <h2>Von Angular 1 zu Angular 2</h2>
+                    <ul>
+                        <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1r1ffV-shRXHXct9DbJRVesNs6oLLk8PFGQvlE1zLpRE/preview?slide=id.ge4d624f6e_1_816">
+                            Angular 2 Beta-Release bald</a>
+                        <li class="fragment"><a target="_blank" href="https://docs.google.com/presentation/d/1r1ffV-shRXHXct9DbJRVesNs6oLLk8PFGQvlE1zLpRE/preview?slide=id.ge4d624f6e_1_47">93% der Zugriffe auf Angular 1 Site (Stand Oktober 2015)</a>
+                        <li class="fragment"><a target="_blank" href="http://angularjs.blogspot.de/2015/08/angular-1-and-angular-2-coexistence.html">
+                            sanfter Migrationspfad inzwischen denkbar</a>
+                        <li class="fragment"><a target="_blank" href="https://angular.io/docs/js/latest/api/core/NgModel-class.html">
+                        Angular 2 hat simuliertes 2-Wege-Data-Binding</a>
+                        <pre><code>&lt;input [(ng-model)]="greeting" #in></code></pre>
+                        <li class="fragment">Transclusion (Komponenten-Hierarchien) in Angular 2 deutlich klarer und performanter
+                        <li class="fragment">Angular 1.5 wird Angular Router enthalten
+                            <ul>
+                                <li class="fragment">funktioniert mit Angular 1 und 2
+                                <li class="fragment">flexibel genug für alle Einsatzgebiete (inkl. nested Routes)
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+        <section id="polymer">
+            <h2>Reale Web Components: Polymer</h2>
+        <ul>
+            <li class="fragment">Von Google
+            <li class="fragment">Basiert auf dem Standard <em>Web Components</em>
+            <li class="fragment">Macht die API einfacher
+            <li class="fragment"><a target="_blank" href="https://elements.polymer-project.org/">Bietet eine ganze Reihe von Standard-Komponenten</a>
+            <li class="fragment">Google hält es für produktiv einsetzbar (unterstreicht dies mit dem 1.0 Release)
+        </ul>
+    </section>
+                <section id="webcomponents">
+                    <h2>Exkurs Web Components</h2>
+                    <ul>
+                        <li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components" target="_blank">Eine Erweiterung der DOM-API als Standard</a>
+                            <ol>
+                                <li class="fragment">Custom Elements: man kann eigene Tags definieren
+                                <li class="fragment">HTML Templates: einfache Templates innerhalb einer HTML-Seite
+                                <li class="fragment">Shadow DOM: Lokale Kapselung von DOM, JavaScript und CSS
+                                <li class="fragment">HTML Imports: Inkludieren von HTML/Web Components
+                            </ol>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Web Components: Unterstützung</h2>
+                    <ul>
+                        <li class="fragment">Wird im Moment nur von Chrome komplett unterstützt
+                        <li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank">Firefox unterstützt HTML Imports nicht</a>
+                        <li class="fragment">Microsoft hat mit der Umsetzung begonnen
+                        <li class="fragment"><a target="_blank" href="http://webcomponents.org/polyfills/">Polyfills</a> für Unterstützung in allen Browsern verfügbar
+                        <li class="fragment"><a target="_blank" href="http://docs.telerik.com/kendo-ui/webcomponents">Kendo UI Widgets</a> auch als Web Components möglich
+                        <li class="fragment"><a target="_blank" href="https://vaadin.com/elements">Vaadin bietet Grid und verspricht mehr</a>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Hello World Polymer</h3>
+<pre><code data-trim contenteditable>
+&lt;link rel="import" href="greeter-element.html">
+&lt;greeter-element greeting="Hello">&lt;/greeter-element></code></pre>
+
+<pre class="fragment"><code data-trim contenteditable class="javascript">
+// greeter-element.html
+Polymer({
+    is: "greeter-element",
+    reset: function() {
+        this.greeting = "";
+        this.$.in.focus();
+    }
+});</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;dom-module id="greeter-element">
+    &lt;template>
+        &lt;input id="in" value="{{greeting::keyup}}">
+        <p><span>{{greeting}}</span>, World!</p>
+        &lt;input type="button" value="Clear" on-click="reset">
+    &lt;/template>
+&lt;/dom-module></code></pre>
+                    <a target="_blank" href="code/polymer/index.html">Run</a>
+                </section>
+                <section>
+                    <h2>Das Nunchaku der Frameworks</h2> <!-- Todo Video einbinden? -->
+                    <ul>
+                        <li class="fragment">Cool, but useless?
+                        <li class="fragment">läuft nur in Chrome optimal
+                        <li class="fragment">Standardkomponenten -> Styling sehr Googlelastig
+                        <li class="fragment">Wer benutzt es?
+                        <li class="fragment">Alternative: Web Components mit anderem Framework nutzen (Angular 2 oder React)
+                    </ul>
+                </section>
+
+        <section id="react">
+            <h2>Einfachheit: React</h2>
+            <ul>
+                <li class="fragment">Der kommende Hype von Facebook
+                <li class="fragment">Framework für Facebook und viele andere
+                <li class="fragment">Basiert auf Komponenten, die Template und Logik enthalten
+                <li class="fragment">Templates sind einfach JavaScript
+                <li class="fragment">Templates können HTML artige JSX-Syntax enthalten
+                <li class="fragment">Ein-Weg-Data-Binding: Zustandsänderungen stellen Komponente neu dar
+                <li class="fragment">Kann im Browser und auf dem Server rendern
+            </ul>
+        </section>
+
+        <section>
+            <h3>Hello World React</h3>
+<pre><code data-trim contenteditable>class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        &lt;input value={this.state.greeting} ref="in"
+               onChange={this.updateModel.bind(this)} />
+        <p>{this.state.greeting}, World</p>
+        &lt;button onClick={this.reset.bind(this)}>Clear&lt;/button>
+      </div>);
+    }</code></pre>
+<pre class="fragment"><code data-trim contenteditable class="javascript">&nbsp;&nbsp;constructor(props) {
+    this.state = {greeting: this.props.greeting};
+  }
+  updateModel(event) {
+    this.setState({greeting: event.target.value});
+  }
+  reset() {
+    this.setState({greeting: ""});
+    this.refs.in.focus();
+  }
+}</code></pre>
+        </section>
+        <section>
+            <h3>Aufruf</h3>
+<pre><code data-trim contenteditable>
+// index.html
+&lt;body>
+  <div id="mount"></div>
+&lt;/body>
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable class="javascript">
+// main.js
+import HelloMessage from './HelloMessage';
+
+var mountNode = document.getElementById('mount');
+ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
+</code></pre>
+                <a target="_blank" href="code/react/public/index.html">Run</a>
+        </section>
+			<section>
+				<h3>Hype, Hyper, React</h3>
+				<ul>
+					<li class="fragment">Abstraktion vom DOM: <em>f(model) -> UI</em>
+					<li class="fragment">Minimale API
+					<li class="fragment">Mehr "Lib" als Framework
+                    <li class="fragment">wird für komplette Anwendung typischerweise mit React Router und einem Flux-Framework gekoppelt
+                    <li class="fragment">viel Inspiration aus der funktionalen Ecke (Immutable, pure functions, stateless)
+				</ul>
+			</section>
+
+                <section>
+            <h1>Fazit</h1>
+            <ul>
+                <li class="fragment">Hypes kommen und gehen schnell im JavaScript-Land
+                <li class="fragment">Technisch sind alle Frameworks brauchbar
+                <li class="fragment">Mit allen sind ähnliche Arbeitsergebnisse erreichbar
+                <li class="fragment">Welches Framework für dich das richtige ist, hängt von hauptsächlich von strategischen Überlegungen ab
+                <li class="fragment">Langlebigkeit? Wartbarkeit?
+                <li class="fragment">Einarbeitungsaufwand? Welcher Code-Stil passt zu dir?
+                <li class="fragment">Diese Fragen kann man nur in Zusammenhang mit individuellen Anforderungen beantworten
+            </ul>
+        </section>
+
+                <section>
+                    <h4>Bewertung</h4>
+                    <small>
+                    <table>
+                        <thead><th></th><th align="center">User Experience</th>
+                        <th align="center">Developer Experience</th>
+                        <th align="center">Standards</th>
+                        <th align="center">Investitionssicherheit</th></thead>
+                        <tbody>
+                            <tr><td>Angular 1</td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(langsam bei vielen Komponenten)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(viel Magie, Komponenten kompliziert)
+                                </span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">-<br>(Angular-way eher Java-Stil)
+                                </span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">- (Auslaufmodell)<br>++ (hohe Verbreitung)</span></td>
+                            </tr>
+                            <tr><td>Polymer</td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(nur in Chrome optimal)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(bisher nur geringe Toolunterstützung)</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(basiert auf Standard und 1.0)
+                                </span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o<br>(1.0, aber wer setzt das ein?)
+                                </span></td>
+                            </tr>
+                            <tr><td>React</td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++ (minimale API, Entwicklungszyklus)
+                                    <br>
+                                    o (vieles neu)
+                                    <br>
+                                    +/- (keine Trennung von Markup und UI-Logik)
+                                </span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">+<br>(Einsatz bei Facebook, Rückwärtskompatibilität, Stabilität, Reife)</span></td>
+                            </tr>
+                            <tr><td>Angular 2</td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">o (vieles neu)
+                                    <br>
+                                    - (komplexe API, Eierlegende Wollmilchsau)
+                                    <br>
+                                    ++ (sehr flexibel)
+                                </span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">++</span></td>
+                                <td align="center" style="vertical-align: middle"><span style="color: yellow">-<br>(kein Release)</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </small>
+                </section>
+        <section>
+            <h1>Vielen Dank!</h1>
+
+            <h3>Fragen / Diskussion</h3>
+
+            <p>
+                <small><a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a>
+                </small>
+            </p>
+            <a href="http://www.embarc.de/"><img src="embarc13.png"
+                                                 height="150"></a>
+        </section>
+        <section>
+            <h1>Bonus Level</h1>
+        </section>
+        <section id="aurelia">
+            <h2>Aurelia: Next Generation?</h2>
+        <ul>
+
+            <li class="fragment"><a target="_blank" href="http://aurelia.io">http://aurelia.io</a>
+            <li class="fragment">Rob Eisenberg (Hauptentwickler) ist dem Angular 2 Team erst beigetreten und dann hat es wieder verlassen
+            <li class="fragment">ES7, Babel, npm, jspm.io, gulp
+            <li class="fragment"><a target="_blank" href="http://blog.durandal.io/2015/03/16/aurelia-and-angular-2-code-side-by-side/">Aurelia vs Angular 2</a>
+            <li class="fragment">Ähnliche Ideen wie Angular 2, aber mit dem Versprechen: Weniger Code, mehr Konventionen, einfacher
+        </ul>
+    </section>
+        <section id="elm">
+            <h2>Elm: Hype 2016?</h2>
+        <ul>
+            <li class="fragment"><a target="_blank" href="http://elm-lang.org/">http://elm-lang.org/</a>
+            <li class="fragment">Eine funkionale, responsive Sprache mit festgelegter Architektur
+            <li class="fragment">Ähnliche Ideen wie Redux/Flux für React, aber Architektur in die Sprache eingebaut
+            <li class="fragment">Browser als einzige Zielplattform
+            <li class="fragment">Wird durch Compiler nach JavaScript übersetzt
+            <li class="fragment">Nutzt ähnliche Ideen wie React für das Rendering
+            <li class="fragment">Statische Typisierung und Null-Types
+        </ul>
+    </section>
+
+			</div>
+
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

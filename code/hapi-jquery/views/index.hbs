@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unobtrusive hapi Hello World!</title>
+</head>
+<body>
+<form>
+    <input name="greeting" value="{{greeting}}" id="in">
+    <p><span id="log">{{greeting}}</span>, World</p>
+    <a href="/?greeting=">Clear</a>
+    <input type="submit" value="Send">
+</form>
+<script src="lib/jquery-2.1.4.js"></script>
+<script>
+    $(function () {
+        $("#in").on("keyup", function (event) {
+            $("#log").text(event.target.value);
+        });
+    });
+</script>
+</body>
+</html>
+                        

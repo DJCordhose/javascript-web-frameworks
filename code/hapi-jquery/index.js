@@ -14,6 +14,16 @@ server.views({
 });
 
 server.route({
+    method:  'GET', //
+    path:    '/lib/{param*}', //
+    handler: {
+        directory: {
+            path: `${__dirname}/public/lib`
+        }
+    }
+});
+
+server.route({
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
