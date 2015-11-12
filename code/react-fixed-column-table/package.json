@@ -1,0 +1,30 @@
+{
+  "name": "react-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rm -rf dist/ public/dist/",
+    "webpack": "webpack --dist",
+    "devserver": "webpack-dev-server --devtool source-map --progress --colors --hot --content-base public"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react": "0.14.0",
+    "react-dom": "0.14.0",
+    "babel": "*"
+  },
+  "devDependencies": {
+    "babel-loader": "*",
+    "bundle-loader": "*",
+    "css-loader": "*",
+    "file-loader": "*",
+    "json-loader": "*",
+    "react-hot-loader": "*",
+    "style-loader": "*",
+    "url-loader": "*",
+    "webpack": "1.12.2",
+    "webpack-dev-server": "1.12.2",
+    "yargs": "*"
+  }
+
+}

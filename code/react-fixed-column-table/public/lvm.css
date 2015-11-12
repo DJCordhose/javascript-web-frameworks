@@ -1,0 +1,19 @@
+.fixed-column {
+    display: inline-block;
+    overflow-y: scroll;
+    /*border: 1px solid blue;*/
+    height: 50px;
+}
+
+.fixed-body {
+    vertical-align: top;
+    width: 50px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    display: inline-block;
+    height: 50px;
+}
+
+.fixed-body tr th {
+    white-space: nowrap;
+}
