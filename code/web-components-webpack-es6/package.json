@@ -1,0 +1,22 @@
+{
+  "name": "web-components-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dist": "webpack -p",
+    "webpack": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.18",
+    "html-loader": "^0.3.0",
+    "webpack": "^1.12.6"
+  },
+  "dependencies": {
+    "babel": "^6.1.18"
+  }
+}
