@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World Vanilla API</title>
+</head>
+<body>
+<div id="app"></div>
+<script>
+    (function () {
+        var model;
+        var input, span, button;
+
+        function bind() {
+            // binding view => model
+            // input.addEventListener("change", function (event) {
+            input.addEventListener("keyup", function (event) {
+                setModel(event.target.value);
+            });
+            button.addEventListener("click", function (event) {
+                setModel("");
+                input.focus();
+            });
+        }
+
+        function setModel(value) {
+            model = value;
+            span.textContent = model;
+            var oldValue = input.value;
+            if (oldValue !== value) input.value = model;
+        }
+
+        function render() {
+            var app = document.querySelector('#app');
+            // not possible: new HTMLInputElement()
+            input = document.createElement('input');
+            app.appendChild(input);
+            var p = document.createElement('p');
+            span = document.createElement('span');
+            p.appendChild(span);
+            var text = document.createTextNode(', World');
+            p.appendChild(text);
+            app.appendChild(p);
+            button = document.createElement('input');
+            button.type = 'button';
+            button.value = 'Clear';
+            app.appendChild(button);
+        }
+
+        window.onload = function () {
+            render();
+            bind();
+            setModel("Hello");
+        };
+    })();
+</script>
+</body>
+</html>

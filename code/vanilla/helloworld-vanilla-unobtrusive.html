@@ -19,9 +19,9 @@
             if (oldValue !== value) document.getElementById("in").value = model;
         }
 
-        window.onload = function () {
+        function bind() {
             // binding view => model
-//            document.getElementById("in").addEventListener("change", function (event) {
+            // document.getElementById("in").addEventListener("change", function (event) {
             document.getElementById("in").addEventListener("keyup", function (event) {
                 setModel(document.getElementById("in").value);
             });
@@ -29,6 +29,10 @@
                 setModel("");
                 document.getElementById("in").focus();
             });
+        }
+
+        window.onload = function () {
+            bind();
             // init
             setModel("Hello");
         };
