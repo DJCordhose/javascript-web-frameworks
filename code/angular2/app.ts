@@ -1,20 +1,21 @@
-/// <reference path="typings/angular2/angular2.d.ts" />
+import {bootstrap}    from 'angular2/platform/browser'
+//import {Component, View, FORM_DIRECTIVES} from 'angular2/angular2';
 
-import {Component, View, bootstrap, FORM_DIRECTIVES} from 'angular2/angular2';
+import {Component, View } from 'angular2/core';
 
 @Component({
     selector: 'hello-app',
 })
 @View({
-    templateUrl: 'hello.html',
-    directives: [FORM_DIRECTIVES]
+    templateUrl: 'hello.html'
+    //directives: [FORM_DIRECTIVES]
 })
 class HelloCmp {
     greeting: string;
     constructor() {
         this.greeting = 'Hello';
     }
-    reset(input) {
+    reset(input: HTMLInputElement) {
         this.greeting = '';
         input.focus();
     }
