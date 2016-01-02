@@ -1,7 +1,7 @@
-<input [value]="greeting" #in
-    (keyup)="updateModel(in.value)">
-<!-- Option: -->
+<!--<input [value]="greeting" #in-->
+    <!--(keyup)="updateModel(in.value)">-->
+ <!--Option: -->
 <!--(keyup)="updateModel($event.target.value)">-->
-<!--<input [(ng-model)]="greeting" #in>-->
+<input [(ngModel)]="greeting" #in>
 <p>{{greeting}}, World</p>
 <button (click)="reset(in)">Clear</button>
