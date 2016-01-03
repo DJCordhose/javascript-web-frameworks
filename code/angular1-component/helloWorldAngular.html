@@ -7,7 +7,7 @@
         angular.module('hello', [])
                 .component('greeter', {
                     bindings: {
-                        greeting: "="
+                        greeting: "@"
                     },
                     controller: function () {
                         this.clear = function () {
@@ -26,7 +26,6 @@
     </script>
 </head>
 <body ng-app="hello">
-<!--Weird, need to quote string otherwise we get a parsing error-->
-<greeter greeting="'Hello'"></greeter>
+<greeter greeting="Hello"></greeter>
 </body>
 </html>
