@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="new structure for wjax talk">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2016_jax.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2016_wjax.html" afterPath="" />
+    <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_jax.html" afterPath="$PROJECT_DIR$/2016_jax.html" />
     </list>
     <ignored path="javascript-web-frameworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="2016_jax.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2016_jax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73002756">
-              <caret line="413" column="0" selection-start-line="413" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.41322315">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/2015_webtechcon.html" />
         <option value="$PROJECT_DIR$/code/hapi/package.json" />
         <option value="$PROJECT_DIR$/code/hapi/index.js" />
         <option value="$PROJECT_DIR$/code/hapi-jquery/index.js" />
@@ -199,6 +197,7 @@
         <option value="$PROJECT_DIR$/code/web-components-webpack-es6/greeter.js" />
         <option value="$PROJECT_DIR$/code/web-components-webpack-es6/index.html" />
         <option value="$PROJECT_DIR$/2016_wjax.html" />
+        <option value="$PROJECT_DIR$/2016_jax.html" />
       </list>
     </option>
   </component>
@@ -552,12 +551,6 @@
       <option name="number" value="Default" />
       <updated>1438337636488</updated>
     </task>
-    <task id="LOCAL-00002" summary="first version of lehmanns talk - still missing ember example">
-      <created>1438438122757</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1438438122757</updated>
-    </task>
     <task id="LOCAL-00003" summary="completed lehmanns slides and added additional frameworks in code">
       <created>1438441413439</created>
       <option name="number" value="00003" />
@@ -846,7 +839,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451845645613</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="new structure for jax talk">
+      <created>1451845688881</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1451845688881</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -915,7 +914,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="link to online link (talk done, aurelia hello world missing)" />
     <MESSAGE value="preparation for webtechcon complete" />
     <MESSAGE value="elm" />
     <MESSAGE value="hapi Beispiel als Referenz eingezogen" />
@@ -940,7 +938,8 @@
     <MESSAGE value="updated angular1 example to angular 1.5" />
     <MESSAGE value="angular 2 with property" />
     <MESSAGE value="brushed up exmaples" />
-    <option name="LAST_COMMIT_MESSAGE" value="brushed up exmaples" />
+    <MESSAGE value="new structure for jax talk" />
+    <option name="LAST_COMMIT_MESSAGE" value="new structure for jax talk" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1333,8 +1332,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016_jax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73002756">
-          <caret line="413" column="0" selection-start-line="413" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.41322315">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
       </provider>
