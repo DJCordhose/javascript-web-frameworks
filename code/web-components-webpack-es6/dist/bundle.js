@@ -84,7 +84,14 @@
 	        value: function createdCallback() {
 	            this.render();
 	            this.bind();
-	            this.setModel("Hello");
+	            this.setModel(this.getAttribute("greeting"));
+	        }
+	    }, {
+	        key: "attributeChangedCallback",
+	        value: function attributeChangedCallback(name, oldValue, newValue) {
+	            if (name === "greeting") {
+	                this.setModel(newValue);
+	            }
 	        }
 	    }, {
 	        key: "render",

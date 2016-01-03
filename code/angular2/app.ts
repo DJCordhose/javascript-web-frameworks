@@ -1,24 +1,23 @@
-import {Component, View, Input} from 'angular2/core';
+import {Component, Input} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser'
 
 @Component({
-    selector: 'hello-app',
+    selector: 'greeter',
+    templateUrl: 'greeter.html'
 })
-@View({
-    templateUrl: 'hello.html'
-})
-class HelloCmp {
+class Greeter {
     @Input() greeting: string;
     reset(input: HTMLInputElement) {
         this.greeting = '';
         input.focus();
     }
-    //updateModel(value) {
-    //    this.greeting = value;
-    //}
 }
 
+@Component({
+    selector: 'hello-app',
+    directives: [Greeter],
+    template: '<greeter greeting="Hello"></greeter>'
+})
 class App {
-
 }
-bootstrap(HelloCmp);
+bootstrap(App);

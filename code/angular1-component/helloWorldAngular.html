@@ -4,25 +4,20 @@
     <title>Angular Hello World!</title>
     <script src="angular.js"></script>
     <script>
-        angular.module('hello', [])
-                .component('greeter', {
-                    bindings: {
-                        greeting: "@"
-                    },
-                    controller: function () {
-                        this.clear = function () {
-                            this.greeting = '';
-                            document.getElementById('in').focus();
-                        };
-                    },
-                    template: [
-                    '<div>',
-                        '<input ng-model="greeter.greeting" id="in">',
-                        '<p>{{greeter.greeting}}, World!</p>',
-                        '<input type="button" value="Clear" ng-click="greeter.clear()">',
-                        '</div>'
-                    ].join('')
-                });
+angular.module('hello', [])
+    .component('greeter', {
+        bindings: {
+            greeting: "@"
+        },
+        controller: function () {
+            var vm = this;
+            vm.clear = function () {
+                vm.greeting = '';
+                document.getElementById('in').focus();
+            };
+        },
+        templateUrl: 'greeter.html'
+    });
     </script>
 </head>
 <body ng-app="hello">

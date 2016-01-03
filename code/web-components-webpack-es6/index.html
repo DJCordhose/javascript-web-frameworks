@@ -9,5 +9,11 @@
 </head>
 <body>
 <greeter-element greeting="Hello"></greeter-element>
+<script>
+    setTimeout(function() {
+        var greeter = document.querySelector('greeter-element');
+        greeter.setAttribute('greeting', 'Hi');
+    }, 1000)
+</script>
 </body>
 </html>

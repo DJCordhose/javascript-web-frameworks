@@ -6,7 +6,13 @@ class Greeter extends HTMLElement {
     createdCallback() {
         this.render();
         this.bind();
-        this.setModel("Hello");
+        this.setModel(this.getAttribute("greeting"));
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (name === "greeting") {
+            this.setModel(newValue);
+        }
     }
 
     render() {
