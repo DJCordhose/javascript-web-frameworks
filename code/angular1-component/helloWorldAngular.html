@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>Angular Hello World!</title>
+    <script src="angular.js"></script>
+    <script>
+        angular.module('hello', [])
+                .component('greeter', {
+                    bindings: {
+                        greeting: "="
+                    },
+                    controller: function () {
+                        this.clear = function () {
+                            this.greeting = '';
+                            document.getElementById('in').focus();
+                        };
+                    },
+                    template: [
+                    '<div>',
+                        '<input ng-model="greeter.greeting" id="in">',
+                        '<p>{{greeter.greeting}}, World!</p>',
+                        '<input type="button" value="Clear" ng-click="greeter.clear()">',
+                        '</div>'
+                    ].join('')
+                });
+    </script>
+</head>
+<body ng-app="hello">
+<!--Weird, need to quote string otherwise we get a parsing error-->
+<greeter greeting="'Hello'"></greeter>
+</body>
+</html>
