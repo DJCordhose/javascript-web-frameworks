@@ -1,21 +1,14 @@
-import {bootstrap}    from 'angular2/platform/browser'
-
-import {Component, View} from 'angular2/core';
-// https://angular.io/cheatsheet
-import {FORM_DIRECTIVES} from 'angular2/common';
+import {Component, View, Input} from 'angular2/core';
+import {bootstrap} from 'angular2/platform/browser'
 
 @Component({
     selector: 'hello-app',
 })
 @View({
-    templateUrl: 'hello.html',
-    directives: [FORM_DIRECTIVES]
+    templateUrl: 'hello.html'
 })
 class HelloCmp {
-    greeting: string;
-    constructor() {
-        this.greeting = 'Hello';
-    }
+    @Input() greeting: string;
     reset(input: HTMLInputElement) {
         this.greeting = '';
         input.focus();
@@ -23,5 +16,9 @@ class HelloCmp {
     //updateModel(value) {
     //    this.greeting = value;
     //}
+}
+
+class App {
+
 }
 bootstrap(HelloCmp);
