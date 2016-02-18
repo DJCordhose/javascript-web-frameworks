@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/angular-cli-greetings/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/angular-cli-greetings/ember-cli-build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/angular-cli-greetings/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/app.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/app/hello.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/app/hello.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/app.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/angular2/greeter.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/angular2/app/app.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/angular2/app/greeter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/angular2/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/angular2/tsd.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/angular2/typings/es6-promise/es6-promise.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/angular2/typings/rx/rx-lite.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/angular2/typings/rx/rx.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/angular2/typings/tsd.d.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_jax.html" afterPath="$PROJECT_DIR$/2016_jax.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/angular2/.gitignore" afterPath="$PROJECT_DIR$/code/angular2/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/angular2/index.html" afterPath="$PROJECT_DIR$/code/angular2/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/angular2/tsconfig.json" afterPath="$PROJECT_DIR$/code/angular2/tsconfig.json" />
     </list>
     <ignored path="javascript-web-frameworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,28 +36,60 @@
       <file leaf-file-name="2016_jax.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2016_jax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+            <state relative-caret-position="217">
+              <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/angular2/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/angular2/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="165">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="greeter.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/angular2/app/greeter.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/angular2/app/app.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/angular2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -100,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/react-universal/public/index.html" />
         <option value="$PROJECT_DIR$/code/react-universal/src/server/app.js" />
         <option value="$PROJECT_DIR$/code/react-universal/src/client/main.js" />
         <option value="$PROJECT_DIR$/code/polymer/greeter-element.html" />
@@ -149,6 +176,7 @@
         <option value="$PROJECT_DIR$/code/react-sandbox/package.json" />
         <option value="$PROJECT_DIR$/code/react/package.json" />
         <option value="$PROJECT_DIR$/code/react-sandbox/src/main.js" />
+        <option value="$PROJECT_DIR$/code/angular2/app/app.ts" />
         <option value="$PROJECT_DIR$/2016_jax.html" />
         <option value="$PROJECT_DIR$/code/angular2/.gitignore" />
       </list>
@@ -189,7 +217,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -264,11 +292,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-vote-example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rxjs-playground" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -386,12 +414,6 @@
       <created>1438337636488</created>
       <option name="number" value="Default" />
       <updated>1438337636488</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added raw (and ugly) web components sample code">
-      <created>1438638957913</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1438638957913</updated>
     </task>
     <task id="LOCAL-00008" summary="fazit hinzugefügt">
       <created>1440406014529</created>
@@ -681,7 +703,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455151850042</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="updated angular2 example to latest angular 2 beta">
+      <created>1455391832584</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1455391832584</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -689,13 +717,13 @@
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37883684" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38449112" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31277534" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35095447" sideWeight="0.503231" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34508076" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38913363" sideWeight="0.49676898" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3876652" sideWeight="0.49676898" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -750,7 +778,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="angular2 2-way data binding" />
     <MESSAGE value="changes to angular 2 and polymer content" />
     <MESSAGE value="add angular cli example" />
     <MESSAGE value="preparation for webtechcon 2015" />
@@ -775,27 +802,14 @@
     <MESSAGE value="Details" />
     <MESSAGE value="new versions of libs" />
     <MESSAGE value="added qr code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added qr code" />
+    <MESSAGE value="updated angular2 example to latest angular 2 beta" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated angular2 example to latest angular 2 beta" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/react-redux/src/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/react-redux/src/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/polymer/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -824,13 +838,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/angular2/node_modules/angular2/typings/tsd.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/code/angular2/node_modules/angular2/typings/tsd.d.ts" />
     <entry file="file://$PROJECT_DIR$/code/react-universal/src/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1077,14 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2016_jax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/react-sandbox/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1093,39 +1093,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/app.ts">
+    <entry file="file://$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/app.ts" />
+    <entry file="file://$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/app/hello.ts" />
+    <entry file="file://$PROJECT_DIR$/code/angular2/app.ts" />
+    <entry file="file://$PROJECT_DIR$/code/angular2/greeter.html" />
+    <entry file="file://$PROJECT_DIR$/code/angular2/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/angular2/angular-cli-greetings/src/app/hello.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="165">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/angular2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="90">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/angular2/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/angular2/greeter.html">
+    <entry file="file://$PROJECT_DIR$/code/angular2/app/greeter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -1133,18 +1121,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/angular2/.gitignore">
+    <entry file="file://$PROJECT_DIR$/code/angular2/app/app.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2016_jax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/angular2/package.json">
+    <entry file="file://$PROJECT_DIR$/code/angular2/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
