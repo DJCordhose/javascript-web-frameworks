@@ -4,9 +4,6 @@
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_jax.html" afterPath="$PROJECT_DIR$/2016_jax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/web-components-webpack-es6/dist/bundle.js" afterPath="$PROJECT_DIR$/code/web-components-webpack-es6/dist/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/web-components-webpack-es6/dist/bundle.js.map" afterPath="$PROJECT_DIR$/code/web-components-webpack-es6/dist/bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/web-components-webpack-es6/greeter.js" afterPath="$PROJECT_DIR$/code/web-components-webpack-es6/greeter.js" />
     </list>
     <ignored path="javascript-web-frameworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +27,13 @@
       <file leaf-file-name="2016_jax.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2016_jax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#section#22;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#section#23;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1460284283000" expanded="true" signature="6849:6860" placeholder="..." />
+                <marker date="1460284283000" expanded="false" signature="7193:7207" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -434,14 +433,7 @@
       <workItem from="1458594649780" duration="87000" />
       <workItem from="1459263152248" duration="672000" />
       <workItem from="1459364986683" duration="41000" />
-      <workItem from="1459593140660" duration="11415000" />
-    </task>
-    <task id="LOCAL-00012" summary="added links to sections">
-      <created>1441183514469</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1441183514469</updated>
+      <workItem from="1459593140660" duration="12323000" />
     </task>
     <task id="LOCAL-00013" summary="changes with Janos">
       <created>1441443057174</created>
@@ -779,11 +771,18 @@
       <option name="project" value="LOCAL" />
       <updated>1457032849227</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="updates for JAX 2016">
+      <created>1460281129781</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1460281129781</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12734000" />
+    <option name="totallyTimeSpent" value="13642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -852,7 +851,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="preparation for webtechcon 2015" />
     <MESSAGE value="preparation for w-jax 2016" />
     <MESSAGE value="react universal rendering example" />
     <MESSAGE value="details" />
@@ -877,7 +875,8 @@
     <MESSAGE value="updated angular2 example to latest angular 2 beta" />
     <MESSAGE value="ressourcen" />
     <MESSAGE value="eich tc39" />
-    <option name="LAST_COMMIT_MESSAGE" value="eich tc39" />
+    <MESSAGE value="updates for JAX 2016" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates for JAX 2016" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1222,11 +1221,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016_jax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#section#22;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#section#23;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1460284283000" expanded="true" signature="6849:6860" placeholder="..." />
+            <marker date="1460284283000" expanded="false" signature="7193:7207" placeholder="..." />
           </folding>
         </state>
       </provider>
