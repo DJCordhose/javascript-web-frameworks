@@ -27,13 +27,12 @@
       <file leaf-file-name="2016_jax.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2016_jax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="365" column="78" selection-start-line="365" selection-start-column="78" selection-end-line="365" selection-end-column="78" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#section#22;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#section#23;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1460284283000" expanded="true" signature="6849:6860" placeholder="..." />
-                <marker date="1460284283000" expanded="false" signature="7193:7207" placeholder="..." />
+                <marker date="1460303012000" expanded="false" signature="7193:7207" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -433,14 +432,7 @@
       <workItem from="1458594649780" duration="87000" />
       <workItem from="1459263152248" duration="672000" />
       <workItem from="1459364986683" duration="41000" />
-      <workItem from="1459593140660" duration="12323000" />
-    </task>
-    <task id="LOCAL-00013" summary="changes with Janos">
-      <created>1441443057174</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1441443057175</updated>
+      <workItem from="1459593140660" duration="12755000" />
     </task>
     <task id="LOCAL-00014" summary="added web components excursion">
       <created>1441444943103</created>
@@ -778,11 +770,18 @@
       <option name="project" value="LOCAL" />
       <updated>1460281129781</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="details">
+      <created>1460284295596</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1460284295596</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13642000" />
+    <option name="totallyTimeSpent" value="14074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -853,7 +852,6 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="preparation for w-jax 2016" />
     <MESSAGE value="react universal rendering example" />
-    <MESSAGE value="details" />
     <MESSAGE value="fixed-column-example" />
     <MESSAGE value="added pure api (no html) vanilla example" />
     <MESSAGE value="added polyfill to make web component example run in any browser" />
@@ -876,7 +874,8 @@
     <MESSAGE value="ressourcen" />
     <MESSAGE value="eich tc39" />
     <MESSAGE value="updates for JAX 2016" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates for JAX 2016" />
+    <MESSAGE value="details" />
+    <option name="LAST_COMMIT_MESSAGE" value="details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1221,13 +1220,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016_jax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="365" column="78" selection-start-line="365" selection-start-column="78" selection-end-line="365" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#section#22;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#section#23;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1460284283000" expanded="true" signature="6849:6860" placeholder="..." />
-            <marker date="1460284283000" expanded="false" signature="7193:7207" placeholder="..." />
+            <marker date="1460303012000" expanded="false" signature="7193:7207" placeholder="..." />
           </folding>
         </state>
       </provider>
