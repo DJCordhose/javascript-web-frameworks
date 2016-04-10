@@ -41,3 +41,6 @@ class Greeter extends HTMLElement {
 
 }
 document.registerElement('greeter-element', Greeter);
+// Standard now speaks of define
+// https://w3c.github.io/webcomponents/spec/custom/#custom-elements-custom-tag-example
+// document.define('greeter-element', Greeter);
