@@ -78,7 +78,15 @@
     </p>
     </section>
 
-    <!--<section>-->
+            <section>
+                <h2>Chess-Timer-Talk</h2>
+                <h3 class="fragment">10 Minuten sind für Q&A reserviert</h3>
+                <h3 class="fragment">Wann das passiert, ist mir egal</h3>
+                <h3 class="fragment">Fragen daher jederzeit erlaubt</h3>
+                <h3 class="fragment">Bei jeder Frage läuft die Uhr herunter</h3>
+            </section>
+
+                <!--<section>-->
         <!--<h3>Überblick</h3>-->
         <!--<img src="js-frameworks.jpg" height="500px">-->
         <!--<p><small>Copyright 2015, Mike North (@michaellnorth), https://twitter.com/ModernWebUI/status/575532649948790784/photo/1</small></p>-->
@@ -305,7 +313,12 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
                         </li>
                     </ul>
                 </section>
-        <section id="angular2">
+
+                <section>
+                    <h1 style="color: red">React Native</h1>
+                </section>
+
+                <section id="angular2">
             <h2>Angular 2</h2>
         <ul class="fragment">
             <li>Nachfolger von Angular 1
@@ -392,7 +405,7 @@ bootstrap(App);
                 </section>
                 <section>
                     <h2 style="color: red">ACHTUNG #2</h2>
-                    <h3 class="fragment">Die <a href=https://w3c.github.io/webcomponents/spec/custom/">
+                    <h3 class="fragment">Die <a target="_blank" href="https://w3c.github.io/webcomponents/spec/custom/">
                         aktuellste Spec vom 8.4.2016</a> enthält Neuerungen, die jedoch bisher nicht umgesetzt sind</h3>
                 </section>
                 <section>
@@ -430,6 +443,7 @@ class Greeter extends HTMLElement {
 import template from './template.html';
 
 render() {
+  // this.attachShadow({mode: 'closed'}).innerHTML = template;
   this.createShadowRoot().innerHTML = template;
   this.input = this.shadowRoot.querySelector("#in");
   this.span = this.shadowRoot.querySelector("#log");

@@ -97,6 +97,9 @@
 	        key: "render",
 	        value: function render() {
 	            this.createShadowRoot().innerHTML = _template2.default;
+	            // https://webkit.org/blog/4096/introducing-shadow-dom-api/
+	            // http: //w3c.github.io/webcomponents/spec/shadow/#widl-Element-attachShadow-ShadowRoot-ShadowRootInit-shadowRootInitDict
+	            // this.attachShadow({mode: 'closed'}).innerHTML = template;
 	            this.input = this.shadowRoot.querySelector("#in");
 	            this.span = this.shadowRoot.querySelector("#log");
 	            this.button = this.shadowRoot.querySelector("#btn");
