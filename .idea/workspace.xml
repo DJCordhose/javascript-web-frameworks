@@ -27,8 +27,8 @@
       <file leaf-file-name="2016_jax.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2016_jax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="801" column="0" selection-start-line="801" selection-start-column="0" selection-end-line="801" selection-end-column="0" />
+            <state relative-caret-position="572">
+              <caret line="771" column="0" selection-start-line="771" selection-start-column="0" selection-end-line="771" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#section#27;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#section#28;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -349,14 +349,7 @@
       <workItem from="1459364986683" duration="41000" />
       <workItem from="1459593140660" duration="15882000" />
       <workItem from="1460744035924" duration="5872000" />
-      <workItem from="1460913636879" duration="5143000" />
-    </task>
-    <task id="LOCAL-00020" summary="final preparation for lehmanns talk">
-      <created>1442412066771</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1442412066771</updated>
+      <workItem from="1460913636879" duration="7129000" />
     </task>
     <task id="LOCAL-00021" summary="added webtechcon 2015 version">
       <created>1443202714352</created>
@@ -694,11 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1460965942251</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="details">
+      <created>1460974914116</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1460974914116</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28216000" />
+    <option name="totallyTimeSpent" value="30202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -786,13 +786,13 @@
     <MESSAGE value="ressourcen" />
     <MESSAGE value="eich tc39" />
     <MESSAGE value="updates for JAX 2016" />
-    <MESSAGE value="details" />
     <MESSAGE value="Details" />
     <MESSAGE value="Angular 2 way data binding" />
     <MESSAGE value="embarc reference" />
     <MESSAGE value="removed chess timer info" />
     <MESSAGE value="more images" />
-    <option name="LAST_COMMIT_MESSAGE" value="more images" />
+    <MESSAGE value="details" />
+    <option name="LAST_COMMIT_MESSAGE" value="details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1128,8 +1128,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016_jax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="801" column="0" selection-start-line="801" selection-start-column="0" selection-end-line="801" selection-end-column="0" />
+        <state relative-caret-position="572">
+          <caret line="771" column="0" selection-start-line="771" selection-start-column="0" selection-end-line="771" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#section#27;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#section#28;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
