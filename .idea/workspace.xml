@@ -27,8 +27,8 @@
       <file leaf-file-name="2016_jax.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2016_jax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="663" column="0" selection-start-line="663" selection-start-column="0" selection-end-line="663" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="675" column="75" selection-start-line="675" selection-start-column="75" selection-end-line="675" selection-end-column="75" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#section#27;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#section#28;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -349,14 +349,7 @@
       <workItem from="1459364986683" duration="41000" />
       <workItem from="1459593140660" duration="15882000" />
       <workItem from="1460744035924" duration="5872000" />
-      <workItem from="1460913636879" duration="8228000" />
-    </task>
-    <task id="LOCAL-00022" summary="adding aurelia">
-      <created>1443206102880</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1443206102880</updated>
+      <workItem from="1460913636879" duration="8428000" />
     </task>
     <task id="LOCAL-00023" summary="link to online link (talk done, aurelia hello world missing)">
       <created>1443209552101</created>
@@ -694,11 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1460983847755</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="added tech stack">
+      <created>1461051233023</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1461051233024</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31301000" />
+    <option name="totallyTimeSpent" value="31501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -767,7 +767,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added web components es6 / webpack / babel / example" />
     <MESSAGE value="added redux react example" />
     <MESSAGE value="updating angular2 to beta" />
     <MESSAGE value="updated react example to babel 6" />
@@ -792,7 +791,8 @@
     <MESSAGE value="more images" />
     <MESSAGE value="details" />
     <MESSAGE value="added data binding" />
-    <option name="LAST_COMMIT_MESSAGE" value="added data binding" />
+    <MESSAGE value="added tech stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tech stack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1128,8 +1128,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016_jax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="663" column="0" selection-start-line="663" selection-start-column="0" selection-end-line="663" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="675" column="75" selection-start-line="675" selection-start-column="75" selection-end-line="675" selection-end-column="75" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#section#27;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#section#28;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
