@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "clean": "rm -rf dist/ public/dist/",
-    "webpack": "webpack --watch"
+    "start": "webpack --watch"
   },
   "license": "ISC",
   "devDependencies": {
@@ -16,7 +16,7 @@
     "webpack": "^1.12.6"
   },
   "dependencies": {
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react": "^15",
+    "react-dom": "^15"
   }
 }
