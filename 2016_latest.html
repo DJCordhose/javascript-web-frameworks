@@ -15,11 +15,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
-        <!--<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">-->
+        <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 		<!--<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">-->
         <!--<link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">-->
 		<!--<link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">-->
-        <link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">-->
 
 
 		<!-- Code syntax highlighting -->
@@ -36,7 +36,13 @@
 				/*float: right;*/
 				/*height: 500px;*/
 			/*}*/
-		</style>
+            .todo:before {
+                content: 'TODO: ';
+            }
+            .todo {
+                color: red !important;
+            }
+        </style>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -79,7 +85,7 @@
                     <h4 class="fragment">... und warum möchte ich eine haben</h4>
                 </section>
 
-    <section>
+                <section>
         <h3>Klassiche Webanwendung</h3>
         <p><small>jeder Boot tut gut, jeder Roundtrip setzt Zustand zurück</small></p>
 
@@ -140,7 +146,15 @@
                     </p>
                 </section>
 
-                <section id="angular1">
+                <section>
+                    <h2>Kriterium</h2>
+                    <p class="fragment"><em>Simple things should be simple, complex things should be possible.</em>
+                    </p>
+                    <p><small>Alan Kay<br> (<a target="_blank" href="https://en.wikiquote.org/wiki/Alan_Kay">https://en.wikiquote.org/wiki/Alan_Kay</a>)</small></p>
+                </section>
+
+
+        <section id="angular1">
             <h2>Angular 1</h2>
         <ul class="fragment">
             <li>Der Klassiker von Google
