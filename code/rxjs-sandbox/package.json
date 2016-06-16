@@ -1,0 +1,10 @@
+{
+  "name": "rxjs-sandbox",
+  "version": "",
+  "script": {
+    "start": "node sandbox.js"
+  },
+  "dependencies": {
+    "@reactivex/rxjs": "^5.0.0-beta.9"
+  }
+}
