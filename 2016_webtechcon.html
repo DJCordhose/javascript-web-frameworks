@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JavaScript SPA Frameworks</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+		<!--<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">-->
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">-->
+		<!--<link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">-->
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">-->
+
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+		<style>
+			/*pre code {*/
+				/*display: block;*/
+				/*padding: 0.5em;*/
+				/*background: #FFFFFF !important;*/
+				/*color: #000000 !important;*/
+			/*}*/
+			/*.right-img {*/
+				/*margin-left: 10px !important;*/
+				/*float: right;*/
+				/*height: 500px;*/
+			/*}*/
+            .todo:before {
+                content: 'TODO: ';
+            }
+            .todo {
+                color: red !important;
+            }
+            code span.line-number {
+                color: lightcoral;
+            }
+
+        </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+    <!--https://webtechcon.de/session/javascript-frameworks-for-single-page-applications/-->
+
+    <!--Single Page Applications (SPAs) let your applications run in the browser using JavaScript.-->
+    <!--They can thus be an alternative to classic server rendered applications –-->
+    <!--in particular if you need more interactivity or the programming model of a classic web application-->
+    <!--just does not cut it.-->
+
+    <!--In this talk I will explain what makes SPAs different from classic web applications-->
+    <!--and give you a quick overview over the most popular SPA frameworks-->
+    <!--Angular 1 and 2, React, and Web Components.-->
+    <!--I will also compare them based on features that might be relevant in your project.-->
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+                    <h2>JavaScript Frameworks for Single Page Applications</h2>
+                    <h3>Webtechcon 2016</h3>
+                    <p>
+                        <small><a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a>
+                        </small>
+                    </p>
+
+                    <p>Slides:
+                        <a href="http://djcordhose.github.io/javascript-web-frameworks/2016_webtechcon.html">
+                            http://djcordhose.github.io/javascript-web-frameworks/2016_webtechcon.html
+                        </a></p>
+                </section>
+
+                <section class="todo">
+                    <pre>
+- finish 3rd-Party Criterion
+- translate ELM to German
+                    </pre>
+                </section>
+
+                <section>
+                    <h2>Plan</h2>
+                    <ol>
+                        <li>Introduction to SPAs
+                        <li>SPA Frameworks
+                        <li>Comparision
+                        <!--<li>Deep Dive on the Hype-->
+                    </ol>
+                </section>
+
+                <section>
+                    <h1>Part I: Introduction to SPAs</h1>
+                </section>
+
+                <section>
+                    <h2>Classic Web Application</h2>
+                    <ul>
+                        <li>Browser sends HTTP-Request and receivers HTML
+                        <li>Content is renderer on the server side
+                        <li>Each interaction repeats this cycle
+                        <li>UI/UX restricted by this rendering cycle
+                        <li>Pure form hardly seen anymore
+                        <li>Minor UI-changes can be done on client side using JavaScript snippets
+                        <li>Sometimes full blown Single-Page Applications sort of happen as parts of Classic Web Applications
+                    </ul>
+                </section>
+
+                <section>
+        <h3>Classic Web Application</h3>
+
+        <ul>
+            <img src="Classic_Web_Application.png" style="height: 500px;">
+        </ul>
+        <!--<p><small>Copyright 2015, Oliver Zeigermann</small></p>-->
+    </section>
+                <section>
+                    <h3>Single-Page Applications (SPAs)</h3>
+                    <ul>
+                        <li>only a single page containing the application is loaded into the browser
+                        <li>all rendering and controll now in the browser using JavaScript
+                        <li>thus, major parts of the application now in the browser
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>SPA #1</h3>
+                    <ul>
+                        <img src="SPA_Lean.jpg" style="height: 500px;">
+                    </ul>
+                    <!--<p><small>Copyright 2015, Oliver Zeigermann</small></p>-->
+                </section>
+
+                <section>
+                    <h3>SPAs to an extreme</h3>
+                    <ul>
+                        <li>you can also move (parts of) the business logic into the browser
+                        <li>allowing for offline option
+                        <li>you can even go as far as to move the complete application into the browser
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>SPA #2</h3>
+                    <ul>
+                        <img src="SPA_Fat.jpg" style="height: 500px;">
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Part II: Introducing SPA frameworks</h1>
+                </section>
+
+                <section>
+                    <h3>Why not just jQuery?</h3>
+                    <ul>
+                        <li>jQuery is very good at changing sets of existing elements
+                        <li>good if there already are existing elements
+                        <li>unobtrusive
+                        <li>not so good, if there is nothing to begin with
+                        <li>not so good for controlling page flow
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Why use a standard Framework?</h3>
+                    <ul>
+                        <li>avoid the risk of accidentally creating your own
+                        <li>use something proven and tested
+                        <li>community, documentation
+                        <li>easily find skill and talent
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Your Options</h2>
+                    <ol>
+                        <li class="fragment grow">The Classic: Angular 1.x
+                        <li class="fragment grow">From Anti-Patterns to Best-Practices: React
+                        <li class="fragment grow">One for all: Angular 2
+                        <li class="fragment grow">The Standard: Web Components
+                        <li class="fragment grow">(I know there is more)
+                    </ol>
+                </section>
+
+                <section>
+                    <h1>Part III: Comparision</h1>
+                </section>
+
+                <section>
+                    <h2>Global Criterion</h2>
+                    <p><em>Simple things should be simple, complex things should be possible.</em>
+                    </p>
+                    <p><small>Alan Kay<br> (<a target="_blank" href="https://en.wikiquote.org/wiki/Alan_Kay">https://en.wikiquote.org/wiki/Alan_Kay</a>)</small></p>
+                </section>
+
+                <section>
+                    <h2>Criterion: Coding Style</h2>
+                </section>
+
+                <section>
+                    <h4>AngularJS 1.5: Angular Style</h4>
+<pre><code data-trim contenteditable class="line-numbers" data-leftpad><!--greeter.html-->
+&lt;input ng-model="greeter.greeting" id="in">
+&lt;p>{{greeter.greeting}}, World!&lt;/p>
+&lt;input type="button" value="Clear" ng-click="greeter.clear()">
+</code></pre>
+<pre><code data-trim contenteditable class="line-numbers" data-leftpad><!--index.html-->
+&lt;body ng-app="hello">
+  &lt;greeter greeting="Hello">&lt;/greeter>
+&lt;/body></code></pre>
+<pre><code data-trim contenteditable class="line-numbers">
+// component.js
+angular.module('hello', [])
+    .component('greeter', {
+        bindings: {
+            greeting: "@"
+        },
+        controller: function () {
+            var vm = this;
+            vm.clear = function () {
+                vm.greeting = '';
+                document.getElementById('in').focus();
+            };
+        },
+        templateUrl: 'greeter.html'
+    });
+</code></pre>
+
+                </section>
+                <section>
+                    <img src="ng-click.png" style="height: 500px;">
+                    <p><small><a href="https://twitter.com/hollandben/status/526792275041746944" target="_blank">@hollandben</a></small></p>
+                </section>
+
+               <section>
+                    <h4>Web Components: procedural, free style (here ES6)</h4>
+<pre><code data-trim contenteditable class="javascript line-numbers">
+class Greeter extends HTMLElement {
+  constructor() {
+    this.attachShadow({mode: 'closed'}).innerHTML = template;
+    this.shadowRoot.querySelector("#in").addEventListener("keyup",
+        event => this.setModel(event.target.value));
+    this.setModel(this.getAttribute("greeting"));
+  }
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === "greeting") {
+      this.setModel(newValue);
+    }
+  }
+  setModel(value) {
+    this.shadowRoot.querySelector("#log").textContent = value;
+    this.shadowRoot.querySelector("#in").value = value;
+  }
+}
+</code></pre>
+<pre><code data-trim contenteditable class="javascript">
+document.define('greeter-element', Greeter);
+</code></pre>
+<pre><code data-trim contenteditable class="html">
+&lt;greeter-element greeting="Hello">&lt;/greeter-element>
+</code></pre>
+                </section>
+
+                <section>
+                    <h3>React: ES6 with JSX (optionally Flow)</h3>
+<pre><code data-trim contenteditable class="line-numbers">
+class HelloMessage extends React.Component {
+  render() {
+    return <div>
+      &lt;input value={this.state.greeting} ref="in"
+        onChange={e => this.setState({greeting: e.target.value}} />
+      <p>{this.state.greeting}, World</p>
+      &lt;button onClick={this.reset.bind(this)}>Clear&lt;/button>
+    </div>;
+  }
+  constructor(props) {
+    this.state = {greeting: this.props.greeting};
+  }
+  reset() {
+    this.setState({greeting: ""});
+    this.refs.in.focus();
+  }
+}</code></pre>
+<pre><code data-trim contenteditable class="html">
+&lt;body>&lt;div id="mount">&lt;/div>&lt;/body>
+</code></pre>
+<pre><code data-trim contenteditable class="javascript line-numbers">
+import HelloMessage from './HelloMessage';
+
+const mountNode = document.getElementById('mount');
+ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
+</code></pre>
+                </section>
+
+            <section>
+                <h4>Angular2: TypeScript with Annotations</h4>
+            </section>
+
+                <section>
+                    <h2>Criteria: Can I really use it?</h2>
+                </section>
+
+                <section>
+                    <h3>Angular 2</h3>
+                    <ul>
+                        <li>just recently went final
+                        <li>not a lot experience, yet
+                        <li>Google does not use it for their crucial systems (,yet?)
+                        <li>Will Angular 2 take off?: <a href="http://developer.telerik.com/featured/will-angular-2-take-off/">'Angular 1 had the right solution at the right time for the right community. Angular 2 has none of that ...'</a>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Angular 1</h3>
+                    <ul>
+                        <li>you know there is version 2 now
+                        <li>Style gradually comes closer to Angular 2 (<a target="_blank" href="https://toddmotto.com/exploring-the-angular-1-5-component-method/">
+                        https://toddmotto.com/exploring-the-angular-1-5-component-method/</a>)
+                        <li>migration easier if you use a standard coding style
+                        <li>1 and 2 share the same <a target="_blank" href="https://docs.angularjs.org/guide/component-router">Component Router</a>
+                        <li>Migration and Mixing 1 und 2 with <em>ngUpgrade</em>
+                        <li>but: should you migrate at all?
+                    </ul>
+                </section>
+                <section>
+                    <img src="angular2-mtn.png">
+                    <p><small><a href="https://daveceddia.com/angular-2-should-you-upgrade/" target="_blank">https://daveceddia.com/angular-2-should-you-upgrade/</a></small></p>
+                </section>
+
+                <section>
+                    <h3>Web Components: Really a standard?</h3>
+                    <ul>
+                        <li>To be standardised by W3C
+                        <li><a href="https://hacks.mozilla.org/2015/06/the-state-of-web-components/" target="_blank">
+                            Original implementaion by Google in Chrome mostly deprecated</a>
+                        <li><a href="https://github.com/w3c/webcomponents/wiki/Custom-Elements:-Contentious-Bits" target="_blank">
+                            Final Spec not nearly done</a>
+                        <li><a href="http://caniuse.com/#search=components" target="_blank">
+                            All vendors started implementing, but progress not looking good</a>
+                        <li><a target="_blank" href="http://webcomponents.org/polyfills/">Polyfills</a> exist, though
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank">
+                        Firefox will not support parts of Spec</a>
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="eich-tc39.jpg" height="600">
+                    <p><small><a href="https://twitter.com/hichaelmart/status/667749535440084992/photo/1>https://twitter.com/hichaelmart/status/667749535440084992/photo/1">https://twitter.com/hichaelmart/status/667749535440084992/photo/1</a></small></p>
+                </section>
+
+                <section>
+                    <h3>React</h3>
+                    <ul>
+                        <li>has been there for many years
+                        <li>releases show interest in backward compatibility
+                        <li>used inside Facebook, Instagram, Netflix, and many more
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Criteria: Architecture and Model</h2>
+                </section>
+
+                <section>
+                    <h3>Angular 1</h3>
+                    <ul>
+                        <li>2-Way Data-Binding with Mutable State!
+                        <li>Convoluted change detection
+                        <li>Automatic updates of UI
+                        <li>Good for simple forms
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>2-Way Data-Binding with Mutable State</h3>
+                    <p>A good idea?</p>
+                    <img class="fragment" src="2-way-data-binding.gif">
+                </section>
+
+
+                <section>
+                    <h3>React</h3>
+                    <ul>
+                        <li>1-Way Data-Binding
+                        <li>Immutable state recommended (Immutable.js)
+                        <li>Data should flow in hierarchy only
+                        <li>Model is <em>special state</em>-property of component
+                        <li>Re-Rendering triggered by <code>setState</code>
+                        <li>Clear and fast change detection on level of <em>virtual DOM</em>
+                        <li>Flux Architecture for larger apps
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Angular 2</h3>
+                    <ul>
+                        <li>1-Way Data-Binding
+                        <li>Immutable state recommended (Immutable.js)
+                        <li>Data flows inside of clear hierarchy (@Input, @Output)
+                        <li>Model can be <em>any property</em> of component
+                        <li>Clear and fast change detection on <em>model</em> level
+                        <li>Re-Rendering triggered when model-change is detected, using <code>zones</code>
+                        <li>https://github.com/ngrx/store for larger apps
+                        <li>Observables for events
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Web Components</h3>
+                    <ul>
+                        <li>Whatever you want as a model
+                        <li>Might be tricky to synchronize Properties and Attributes
+                        <li>no change detection of model or automatic re-rendering
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Criteria: Scope of Application</h3>
+                    <ul>
+                        <li class="fragment"><em>Angular 1, 2</em>
+                            <ul>
+                                <li>JEE style, Batteries included
+                                <li>Full framework
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>React</em>
+                            <ul>
+                                <li>Create your own stack
+                                <li>Starter Kits exist
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Web Components</em>
+                            <ul>
+                                <li>Just needs the Browser
+                                <li>The rest is up to you
+                                <li>Standard stacks do <em>NOT</em> exist (,yet?)
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="todo">
+                    <h2>Criteria: 3rd Party Integration</h2>
+                    <pre>
+- 3rd Party Integration
+- http://www.treegrid.com/
+- Kendo, dojo, extjs, d3, etc.
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>React Fagigue</h3>
+                    <div>
+                        <img src="react-fatigue.png">
+                        <p><small><a href="https://forums.meteor.com/t/meteor-tooling-is-the-cure-for-javascript-fatigue/21292" target="_blank">https://forums.meteor.com/t/meteor-tooling-is-the-cure-for-javascript-fatigue/21292</a></small></p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Criteria: How to make fun of them?</h3>
+                    <ul>
+                        <li class="fragment"><em>Angular 1</em>
+                            <ul>
+                                <li>JavaScript for Java-People
+                                <li>Magic that you need a Magician (Consultant) for
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>React</em>
+                            <ul>
+                                <li>Hipster-Framework
+                                <li>JavaScript-Fatigue
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Angular 2</em>
+                            <ul>
+                                <li>Second-System-Syndrom
+                                <li>"This time we make everything right"!
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Web Components</em>
+                            <ul>
+                                <li>Not even important enough to make jokes about :D
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="Webcomponents-Bashing.png" style="width: 900px;">
+                    <p><small><a href="https://twitter.com/mjackson/status/639907104560541696" target="_blank">@mjackson</a></small></p>
+                </section>
+
+
+                <!--<section>-->
+                    <!--<h1>Part IV: Deep Dive on the Hype</h1>-->
+                    <!--<h3 class="fragment">Angular 2 vs React</h3>-->
+<!--<pre class="todo">-->
+<!-- - im 2. Teil React vs Angular 2 Deep Dive, nachdem Web Components und Angular 1 ausgeschieden sind-->
+  <!-- - Genauerer Vergleich von React und Angular 2-->
+  <!-- - Komponenten verschachteln, Properties übergeben. 3rd Party einbinden.-->
+  <!-- - Schleife machen, ober-Komponente mit Architektur-->
+  <!-- - Die anderen Frameworks auch beachten, aber komplexe Lösungen auslassen-->
+<!--</pre>-->
+                <!--</section>-->
+
+        <section>
+            <h3>Wrap-Up</h3>
+            <ul>
+                <li class="fragment">use <em>SPAs</em> for a highly interactive (part of) app or need of offline
+                <li class="fragment">use <em>Angular 1.x</em> for simple form based app or not much JavaScript knowledge
+                <li class="fragment">use <em>Angular 2</em> for everything and nothing or if you want to use TypeScript
+                <li class="fragment">use <em>React</em> for a real app and if you like to choose for own stack
+                <li class="fragment">use <em>Web Components</em> if you like procedural code and trust in the standard
+            </ul>
+        </section>
+
+                <section id="elm" class="todo">
+                    <h3>Elm: Hype 2017?</h3>
+                    <ul>
+                        <li class="fragment"><a target="_blank" href="http://elm-lang.org/">http://elm-lang.org/</a>
+                        <li class="fragment">Eine funkionale, reactive Sprache mit festgelegter Architektur
+                        <li class="fragment">Statische Typisierung und keine Null-Typen
+                        <li class="fragment">Ähnliche Ideen wie Redux/Flux für React, aber Architektur in die Sprache eingebaut
+                        <li class="fragment">Browser als einzige Zielplattform
+                        <li class="fragment">Wird durch Compiler nach JavaScript übersetzt
+                        <li class="fragment">Nutzt ähnliche Ideen wie React für das Rendering
+                    </ul>
+                </section>
+
+                <section>
+            <h1>Thank you!</h1>
+
+            <h2>Questions / Discussion</h2>
+            <p>
+                <a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a>
+
+            </p>
+            <p><a href="http://djcordhose.github.io/javascript-web-frameworks/2016_webtechcon.html">
+                http://djcordhose.github.io/javascript-web-frameworks/2016_webtechcon.html
+            </a></p>
+
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+        <script src="lib/jquery-2.2.4.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+                    { src: 'lib/js/line-numbers.js'}
+                ]
+			});
+
+		</script>
+
+	</body>
+</html>
