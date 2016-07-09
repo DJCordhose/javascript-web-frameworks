@@ -20872,15 +20872,9 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _redux = __webpack_require__(159);
-	
-	var _reactRedux = __webpack_require__(168);
-	
 	var _actions = __webpack_require__(178);
 	
-	var Actions = _interopRequireWildcard(_actions);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	var _reactRedux = __webpack_require__(168);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -20938,17 +20932,17 @@
 	    return HelloMessage;
 	})(_react2.default.Component);
 	
-	function mapStateToProps(state) {
+	exports.default = (0, _reactRedux.connect)(function (state) {
 	    return {
 	        greeting: state.greeting
 	    };
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	    return (0, _redux.bindActionCreators)(Actions, dispatch);
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(HelloMessage);
+	}, function (dispatch) {
+	    return {
+	        updateGreeting: function updateGreeting() {
+	            return dispatch(_actions.updateGreeting.apply(undefined, arguments));
+	        }
+	    };
+	})(HelloMessage);
 
 /***/ }
 /******/ ]);

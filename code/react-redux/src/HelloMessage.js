@@ -1,5 +1,5 @@
 import React from 'react';
-import { bindActionCreators } from 'redux';
+import {updateGreeting} from './actions';
 import { connect } from 'react-redux';
 
 class HelloMessage extends React.Component {
@@ -21,16 +21,12 @@ class HelloMessage extends React.Component {
             </div>);
     }
 }
-import * as Actions from './actions';
 
-function mapStateToProps(state) {
-    return {
+export default connect(
+    state => ({
         greeting: state.greeting
-    };
-}
-
-function mapDispatchToProps(dispatch) {
-    return bindActionCreators(Actions, dispatch);
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(HelloMessage);
+    }),
+    dispatch => ({
+        updateGreeting: (...args) => dispatch(updateGreeting(...args))
+    })
+)(HelloMessage);
