@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="created generic version">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2016.html" />
+    <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="added generic version">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_webtechcon.html" afterPath="$PROJECT_DIR$/2016_webtechcon.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016.html" afterPath="$PROJECT_DIR$/2016.html" />
     </list>
     <ignored path="javascript-web-frameworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2016.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="640" column="52" selection-start-line="640" selection-start-column="52" selection-end-line="640" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -1069,14 +1078,7 @@
       <workItem from="1470555005347" duration="1223000" />
       <workItem from="1471863610569" duration="1197000" />
       <workItem from="1472140564562" duration="11000" />
-      <workItem from="1473405806148" duration="5787000" />
-    </task>
-    <task id="LOCAL-00036" summary="react universal rendering example">
-      <created>1446108953115</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1446108953115</updated>
+      <workItem from="1473405806148" duration="5937000" />
     </task>
     <task id="LOCAL-00037" summary="details">
       <created>1446150660222</created>
@@ -1414,11 +1416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473413478995</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="added generic version">
+      <created>1473414064681</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1473414064681</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131617000" />
+    <option name="totallyTimeSpent" value="131767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1497,7 +1506,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="new versions of libs" />
     <MESSAGE value="added qr code" />
     <MESSAGE value="updated angular2 example to latest angular 2 beta" />
     <MESSAGE value="ressourcen" />
@@ -1522,14 +1530,14 @@
     <MESSAGE value="webtechcon 2016 almost done" />
     <MESSAGE value="added todos" />
     <MESSAGE value="rc1" />
-    <option name="LAST_COMMIT_MESSAGE" value="rc1" />
+    <MESSAGE value="added generic version" />
+    <option name="LAST_COMMIT_MESSAGE" value="added generic version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/angular2-webpack/src/app/app.component.ts" />
     <entry file="file://$PROJECT_DIR$/code/angular2-systemjs/app/main.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1866,8 +1874,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="640" column="52" selection-start-line="640" selection-start-column="52" selection-end-line="640" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding />
         </state>
       </provider>
