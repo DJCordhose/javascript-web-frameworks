@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/code/angular2-playground" libraries="{javascript-web-frameworks/code/angular2-playground/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/angular2-systemjs" libraries="{javascript-web-frameworks/code/angular2-systemjs/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/angular2-tutorial" libraries="{javascript-web-frameworks/code/angular2-tutorial/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/angular2-webpack" libraries="{javascript-web-frameworks/code/angular2-webpack/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/aurelia" libraries="{javascript-web-frameworks/code/aurelia/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/complex/react" libraries="{javascript-web-frameworks/code/complex/react/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/ember" libraries="{javascript-web-frameworks/code/ember/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/hapi" libraries="{javascript-web-frameworks/code/hapi/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/hapi-jquery" libraries="{javascript-web-frameworks/code/hapi-jquery/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/react" libraries="{javascript-web-frameworks/code/react/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/react-fixed-column-table" libraries="{javascript-web-frameworks/code/react-fixed-column-table/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/react-redux" libraries="{javascript-web-frameworks/code/react-redux/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/react-sandbox" libraries="{javascript-web-frameworks/code/react-sandbox/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/react-universal" libraries="{javascript-web-frameworks/code/react-universal/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/react-webcomponent-kendo-fetch" libraries="{javascript-web-frameworks/code/react-webcomponent-kendo-fetch/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/rxjs-sandbox" libraries="{javascript-web-frameworks/code/rxjs-sandbox/node_modules}" />
+    <file url="file://$PROJECT_DIR$/code/web-components-webpack-es6" libraries="{javascript-web-frameworks/code/web-components-webpack-es6/node_modules}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
   </component>
 </project>
