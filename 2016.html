@@ -226,6 +226,20 @@
                         <li>Server side rendering also supported
                     </ul>
                 </section>
+
+                <section>
+                    <h3>Angular 2 Final Release</h3>
+                    <a href="http://angularjs.blogspot.de/2016/09/angular2-final.html" target="_blank">
+                        <img src="twitter-angular2-final.png">
+                    </a>
+                    <p>
+                    <a href="http://angularjs.blogspot.de/2016/09/angular2-final.html" target="_blank">
+                        http://angularjs.blogspot.de/2016/09/angular2-final.html
+                    </a>
+                    </p>
+
+                </section>
+
                 <section id="webcomponents">
                     <h2>Web Components</h2>
                     <ul>
@@ -289,7 +303,13 @@ angular.module('hello', [])
                 </section>
                <section>
                     <h4>Web Components: procedural, free style (here ES6)</h4>
-<pre class="fragment" data-fragment-index="3"><code data-trim contenteditable class="javascript line-numbers">
+<pre class="fragment" data-fragment-index="4"><code data-trim contenteditable class="javascript">
+// just plain HTML using ES6 import
+import template from './template.html';
+</code></pre>
+
+
+                   <pre class="fragment" data-fragment-index="3"><code data-trim contenteditable class="javascript line-numbers">
 class Greeter extends HTMLElement {
   constructor() {
     this.attachShadow({mode: 'closed'}).innerHTML = template;
@@ -309,7 +329,7 @@ class Greeter extends HTMLElement {
 }
 </code></pre>
 <pre class="fragment" data-fragment-index="2"><code data-trim contenteditable class="javascript">
-document.define('greeter-element', Greeter);
+customElements.define('greeter-element', Greeter); // v1
 </code></pre>
 <pre class="fragment" data-fragment-index="1"><code data-trim contenteditable class="html">
 &lt;greeter-element greeting="Hello">&lt;/greeter-element>
@@ -571,6 +591,33 @@ bootstrap(App);
                     <p><small><a href="https://twitter.com/hollandben/status/526792275041746944" target="_blank">@hollandben</a></small></p>
                 </section>
 
+                <section>
+                    <h3>Criterion: Server Side Rendering</h3>
+                    <p>Relevant mostly for SEO and fast first-page-impression</p>
+                    <ul>
+                        <li class="fragment"><em>Angular 2, React</em>
+                            <ul>
+                                <li>can also render on server side with at lot of shared code
+                                <li>need JavaScript on server side
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Angular 1, Web Components</em>
+                            <ul>
+                                <li>need a DOM to render
+                                <li>only possible via pre-rendering using headless browser
+                                <li><a href="http://phantomjs.org/" target="_blank">Phantomjs</a>
+                                <li><a href="https://scotch.io/tutorials/server-side-web-components-how-and-why"
+                                target="_blank">Rendering Web-Components using Electron</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="Webcomponents-Bashing.png" style="width: 900px;">
+                    <p><small><a href="https://twitter.com/mjackson/status/639907104560541696" target="_blank">@mjackson</a></small></p>
+                </section>
+
 
                 <section>
                     <h3>Criterion: How to make fun of them?</h3>
@@ -599,11 +646,6 @@ bootstrap(App);
                             </ul>
                         </li>
                     </ul>
-                </section>
-
-                <section>
-                    <img src="Webcomponents-Bashing.png" style="width: 900px;">
-                    <p><small><a href="https://twitter.com/mjackson/status/639907104560541696" target="_blank">@mjackson</a></small></p>
                 </section>
 
 
