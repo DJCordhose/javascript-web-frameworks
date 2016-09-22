@@ -98,6 +98,23 @@
                 </section>
 
                 <section>
+                    <p>
+                        <a target="_blank" href="https://entwickler.de/press/javascript-fuer-java-entwickler-4-168852.html">
+                            <img src="intro/s-k_JavaScript_fuer_JavaEntwickler_Auflage3_2400x_rgb-220x353@2x.jpg" width="200">
+                        </a>
+                        <a target="_blank" href="http://entwickler.de/press/JavaScript-und-TypeScript-fuer-C-Entwickler-174972">
+                            <img src="intro/javascript_und_typescript_1400px.jpg" width="200" >
+                        </a>
+                        <a target="_blank" href="http://reactbuch.de/">
+                            <img src="intro/react.jpg" width="250">                </a>
+                    </p>
+                    <a href="http://zeigermann.eu" target="_blank"><img src="intro/SF-Olli.jpg" height="200" align="right"></a>
+                    <a href="http://www.embarc.de/" target="_blank"><img src="intro/embarc13.png" height="200" align="left"></a>
+
+                </section>
+
+
+                <section>
                     <h2>Plan</h2>
                     <ol>
                         <li>Introduction to SPAs
@@ -242,6 +259,20 @@
                         <li>Server side rendering also supported
                     </ul>
                 </section>
+
+                <section>
+                    <h3>Angular 2 Final Release</h3>
+                    <a href="http://angularjs.blogspot.de/2016/09/angular2-final.html" target="_blank">
+                        <img src="twitter-angular2-final.png">
+                    </a>
+                    <p>
+                    <a href="http://angularjs.blogspot.de/2016/09/angular2-final.html" target="_blank">
+                        http://angularjs.blogspot.de/2016/09/angular2-final.html
+                    </a>
+                    </p>
+
+                </section>
+
                 <section id="webcomponents">
                     <h2>Web Components</h2>
                     <ul>
@@ -305,7 +336,13 @@ angular.module('hello', [])
                 </section>
                <section>
                     <h4>Web Components: procedural, free style (here ES6)</h4>
-<pre class="fragment" data-fragment-index="3"><code data-trim contenteditable class="javascript line-numbers">
+<pre class="fragment" data-fragment-index="4"><code data-trim contenteditable class="javascript">
+// just plain HTML using ES6 import
+import template from './template.html';
+</code></pre>
+
+
+                   <pre class="fragment" data-fragment-index="3"><code data-trim contenteditable class="javascript line-numbers">
 class Greeter extends HTMLElement {
   constructor() {
     this.attachShadow({mode: 'closed'}).innerHTML = template;
@@ -325,7 +362,7 @@ class Greeter extends HTMLElement {
 }
 </code></pre>
 <pre class="fragment" data-fragment-index="2"><code data-trim contenteditable class="javascript">
-document.define('greeter-element', Greeter);
+customElements.define('greeter-element', Greeter); // v1
 </code></pre>
 <pre class="fragment" data-fragment-index="1"><code data-trim contenteditable class="html">
 &lt;greeter-element greeting="Hello">&lt;/greeter-element>
@@ -419,7 +456,7 @@ bootstrap(App);
                         <li>Style gradually comes closer to Angular 2 (<a target="_blank" href="https://toddmotto.com/exploring-the-angular-1-5-component-method/">
                         https://toddmotto.com/exploring-the-angular-1-5-component-method/</a>)
                         <li>migration easier if you use a standard coding style
-                        <li>1 and 2 share the same <a target="_blank" href="https://docs.angularjs.org/guide/component-router">Component Router</a>
+                        <!--<li>1 and 2 share the same <a target="_blank" href="https://docs.angularjs.org/guide/component-router">Component Router</a>-->
                         <li>Migration and Mixing 1 und 2 with <em>ngUpgrade</em>
                         <li>but: should you migrate at all?
                     </ul>
@@ -441,6 +478,13 @@ bootstrap(App);
                         <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank">
                         Firefox will not support parts of Spec</a>
                         <li>Parts (HTML-Templates and Shaddow-DOM) moved into DOM-/HTML-Spec
+                        <li>
+                        <a href="https://www.polymer-project.org/1.0/" target="_blank">
+                            Polymer</a> the standard lib on top of it (
+                        <a href="https://www.polymer-project.org/1.0/blog/2016-09-09-polymer-2.0.html" target="_blank">
+                            2.0
+                        </a>
+                        will support upcoming standard)
                     </ul>
                 </section>
 
@@ -582,9 +626,36 @@ bootstrap(App);
 
                 </section>
 
+                <!--<section>-->
+                    <!--<img src="ng-click.png" style="height: 500px;">-->
+                    <!--<p><small><a href="https://twitter.com/hollandben/status/526792275041746944" target="_blank">@hollandben</a></small></p>-->
+                <!--</section>-->
+
                 <section>
-                    <img src="ng-click.png" style="height: 500px;">
-                    <p><small><a href="https://twitter.com/hollandben/status/526792275041746944" target="_blank">@hollandben</a></small></p>
+                    <h3>Criterion: Server Side Rendering</h3>
+                    <p>Relevant mostly for SEO and fast first-page-impression</p>
+                    <ul>
+                        <li class="fragment"><em>Angular 2, React</em>
+                            <ul>
+                                <li>can also render on server side with at lot of shared code
+                                <li>need JavaScript on server side
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Angular 1, Web Components</em>
+                            <ul>
+                                <li>need a DOM to render
+                                <li>only possible via pre-rendering using headless browser
+                                <li><a href="http://phantomjs.org/" target="_blank">Phantomjs</a>
+                                <li><a href="https://scotch.io/tutorials/server-side-web-components-how-and-why"
+                                target="_blank">Rendering Web-Components using Electron</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="Webcomponents-Bashing.png" style="width: 900px;">
+                    <p><small><a href="https://twitter.com/mjackson/status/639907104560541696" target="_blank">@mjackson</a></small></p>
                 </section>
 
 
@@ -615,11 +686,6 @@ bootstrap(App);
                             </ul>
                         </li>
                     </ul>
-                </section>
-
-                <section>
-                    <img src="Webcomponents-Bashing.png" style="width: 900px;">
-                    <p><small><a href="https://twitter.com/mjackson/status/639907104560541696" target="_blank">@mjackson</a></small></p>
                 </section>
 
 

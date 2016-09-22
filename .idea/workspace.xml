@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016.html" afterPath="$PROJECT_DIR$/2016.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_webtechcon.html" afterPath="$PROJECT_DIR$/2016_webtechcon.html" />
     </list>
     <ignored path="javascript-web-frameworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,13 +24,32 @@
     <favorites_list name="javascript-web-frameworks" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2016.html" pinned="false" current-in-tab="true">
+    <leaf>
+      <file leaf-file-name="2016.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2016.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="442" column="129" selection-start-line="442" selection-start-column="74" selection-end-line="442" selection-end-column="129" />
+            <state relative-caret-position="189">
+              <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular2-mtn.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular2-mtn.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="626" column="26" selection-start-line="626" selection-start-column="26" selection-end-line="626" selection-end-column="26" />
+              <folding>
+                <marker date="1474549280000" expanded="false" signature="27720:27734" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,7 +67,7 @@
       <file leaf-file-name="2016_jax.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2016_jax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6975">
+            <state relative-caret-position="465">
               <caret line="465" column="0" selection-start-line="463" selection-start-column="0" selection-end-line="465" selection-end-column="0" />
               <folding />
             </state>
@@ -133,8 +152,8 @@
         <option value="$PROJECT_DIR$/code/react-redux/public/index.html" />
         <option value="$PROJECT_DIR$/code/react-redux/src/HelloMessage.js" />
         <option value="$PROJECT_DIR$/2016_latest.html" />
-        <option value="$PROJECT_DIR$/2016_webtechcon.html" />
         <option value="$PROJECT_DIR$/2016.html" />
+        <option value="$PROJECT_DIR$/2016_webtechcon.html" />
       </list>
     </option>
   </component>
@@ -243,9 +262,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1017,14 +1036,9 @@
       <workItem from="1472140564562" duration="11000" />
       <workItem from="1473405806148" duration="7627000" />
       <workItem from="1474010281279" duration="2624000" />
-      <workItem from="1474199390661" duration="1532000" />
-    </task>
-    <task id="LOCAL-00040" summary="added polyfill to make web component example run in any browser">
-      <created>1447497673776</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1447497673776</updated>
+      <workItem from="1474199390661" duration="1582000" />
+      <workItem from="1474284958441" duration="116000" />
+      <workItem from="1474474841641" duration="1124000" />
     </task>
     <task id="LOCAL-00041" summary="added web components es6 / webpack / babel / example">
       <created>1447501028745</created>
@@ -1362,11 +1376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474199745059</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="final">
+      <created>1474212043488</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1474212043488</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137613000" />
+    <option name="totallyTimeSpent" value="138903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1380,8 +1401,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35095447" sideWeight="0.503231" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23348017" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29159936" sideWeight="0.5477707" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23348017" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33480176" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38472834" sideWeight="0.49676898" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1447,7 +1468,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="eich tc39" />
     <MESSAGE value="updates for JAX 2016" />
     <MESSAGE value="Details" />
     <MESSAGE value="Angular 2 way data binding" />
@@ -1472,20 +1492,14 @@
     <MESSAGE value="added external bit.ly links" />
     <MESSAGE value="added server side rendering criterion" />
     <MESSAGE value="added personal intro" />
-    <option name="LAST_COMMIT_MESSAGE" value="added personal intro" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/angular2-systemjs/app/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/angular2-playground/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1784,21 +1798,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#ul#0;n#section#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#ul#0;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#ul#0;n#section#8;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2016_jax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6975">
+        <state relative-caret-position="465">
           <caret line="465" column="0" selection-start-line="463" selection-start-column="0" selection-end-line="465" selection-end-column="0" />
           <folding />
         </state>
@@ -1814,9 +1816,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="442" column="129" selection-start-line="442" selection-start-column="74" selection-end-line="442" selection-end-column="129" />
+        <state relative-caret-position="189">
+          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular2-mtn.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="626" column="26" selection-start-line="626" selection-start-column="26" selection-end-line="626" selection-end-column="26" />
+          <folding>
+            <marker date="1474549280000" expanded="false" signature="27720:27734" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
