@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twitter-react-angular2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular2-react.html" afterPath="$PROJECT_DIR$/angular2-react.html" />
     </list>
@@ -42,8 +41,8 @@
       <file leaf-file-name="angular2-react.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular2-react.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+            <state relative-caret-position="228">
+              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -993,14 +992,7 @@
       <workItem from="1475583900762" duration="824000" />
       <workItem from="1476090124365" duration="5815000" />
       <workItem from="1476352176071" duration="629000" />
-      <workItem from="1476376549624" duration="6503000" />
-    </task>
-    <task id="LOCAL-00045" summary="updated build">
-      <created>1451732940002</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1451732940002</updated>
+      <workItem from="1476376549624" duration="6662000" />
     </task>
     <task id="LOCAL-00046" summary="two-way binding for angular 2 example updated to 2.0beta">
       <created>1451733051021</created>
@@ -1338,11 +1330,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476647403444</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="references">
+      <created>1476648559579</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1476648559579</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154309000" />
+    <option name="totallyTimeSpent" value="154468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1423,7 +1422,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="embarc reference" />
     <MESSAGE value="removed chess timer info" />
     <MESSAGE value="more images" />
     <MESSAGE value="added data binding" />
@@ -1448,7 +1446,8 @@
     <MESSAGE value="details" />
     <MESSAGE value="skeleton for angular 2 / react talk" />
     <MESSAGE value="final version for webtechcon 2016" />
-    <option name="LAST_COMMIT_MESSAGE" value="final version for webtechcon 2016" />
+    <MESSAGE value="references" />
+    <option name="LAST_COMMIT_MESSAGE" value="references" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1790,8 +1789,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular2-react.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+        <state relative-caret-position="228">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
