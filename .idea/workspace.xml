@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backgrounds/light-handle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateofjs-frameworks-overview-numbers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateofjs-frameworks-overview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stateofjs-frameworks-tldr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twitter-angular2-js.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twitter-react-angular2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016.html" afterPath="$PROJECT_DIR$/2016.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_webtechcon.html" afterPath="$PROJECT_DIR$/2016_webtechcon.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular2-react.html" afterPath="$PROJECT_DIR$/angular2-react.html" />
     </list>
     <ignored path="javascript-web-frameworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,24 +26,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="809" column="31" selection-start-line="809" selection-start-column="31" selection-end-line="809" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="600" column="0" selection-start-line="595" selection-start-column="0" selection-end-line="600" selection-end-column="0" />
               <folding>
+                <element signature="n#style#0;n#img#0;n#section#36;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1476647346000" expanded="false" signature="24215:24229" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular2-react.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="angular2-react.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular2-react.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,9 +128,9 @@
         <option value="$PROJECT_DIR$/code/react-redux/src/HelloMessage.js" />
         <option value="$PROJECT_DIR$/2016_latest.html" />
         <option value="$PROJECT_DIR$/angula2-react.html" />
-        <option value="$PROJECT_DIR$/angular2-react.html" />
         <option value="$PROJECT_DIR$/2016.html" />
         <option value="$PROJECT_DIR$/2016_webtechcon.html" />
+        <option value="$PROJECT_DIR$/angular2-react.html" />
       </list>
     </option>
   </component>
@@ -995,14 +993,7 @@
       <workItem from="1475583900762" duration="824000" />
       <workItem from="1476090124365" duration="5815000" />
       <workItem from="1476352176071" duration="629000" />
-      <workItem from="1476376549624" duration="5354000" />
-    </task>
-    <task id="LOCAL-00044" summary="updated react example to babel 6">
-      <created>1451729935743</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1451729935743</updated>
+      <workItem from="1476376549624" duration="6503000" />
     </task>
     <task id="LOCAL-00045" summary="updated build">
       <created>1451732940002</created>
@@ -1340,11 +1331,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476117724089</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="final version for webtechcon 2016">
+      <created>1476647403444</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1476647403444</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153160000" />
+    <option name="totallyTimeSpent" value="154309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1425,7 +1423,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Angular 2 way data binding" />
     <MESSAGE value="embarc reference" />
     <MESSAGE value="removed chess timer info" />
     <MESSAGE value="more images" />
@@ -1450,7 +1447,8 @@
     <MESSAGE value="final version webtechcon" />
     <MESSAGE value="details" />
     <MESSAGE value="skeleton for angular 2 / react talk" />
-    <option name="LAST_COMMIT_MESSAGE" value="skeleton for angular 2 / react talk" />
+    <MESSAGE value="final version for webtechcon 2016" />
+    <option name="LAST_COMMIT_MESSAGE" value="final version for webtechcon 2016" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1779,20 +1777,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular2-react.html">
+    <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="600" column="0" selection-start-line="595" selection-start-column="0" selection-end-line="600" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#section#36;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1476647346000" expanded="false" signature="24215:24229" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
+    <entry file="file://$PROJECT_DIR$/angular2-react.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="809" column="31" selection-start-line="809" selection-start-column="31" selection-end-line="809" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
           <folding>
-            <marker date="1476647346000" expanded="false" signature="24215:24229" ph="..." />
+            <element signature="n#style#0;n#img#0;n#a#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
