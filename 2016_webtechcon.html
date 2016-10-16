@@ -15,11 +15,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
-        <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
-		<!--<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">-->
         <!--<link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">-->
-		<!--<link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">-->
-        <!--<link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">-->
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">-->
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">-->
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">-->
+        <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
 
 
 		<!-- Code syntax highlighting -->
@@ -83,9 +83,10 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section>
+				<section data-transition="zoom">
                     <h2>JavaScript Frameworks for Single Page Applications</h2>
-                    <h3>Webtechcon 2016</h3>
+                    <h3><a target="_blank" href="https://webtechcon.de/session/javascript-frameworks-for-single-page-applications/">
+                        Webtechcon 2016</a></h3>
                     <p>
                         <small><a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a>
                         </small>
@@ -97,7 +98,7 @@
                         </a></p>
                 </section>
 
-                <section>
+                <section data-transition="zoom">
                     <p>
                         <a target="_blank" href="https://entwickler.de/press/javascript-fuer-java-entwickler-4-168852.html">
                             <img src="intro/s-k_JavaScript_fuer_JavaEntwickler_Auflage3_2400x_rgb-220x353@2x.jpg" width="200">
@@ -114,7 +115,7 @@
                 </section>
 
 
-                <section>
+                <section data-transition="zoom">
                     <h2>Plan</h2>
                     <ol>
                         <li>Introduction to SPAs
@@ -400,7 +401,14 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
 </code></pre>
                 </section>
 
-            <section>
+                <section>
+                    <img src="twitter-angular2-js.png">
+                    <p><small><a href="https://twitter.com/LeonardKoch_/status/786878480894009348?s=03" target="_blank">
+                        https://twitter.com/LeonardKoch_/status/786878480894009348?s=03
+                    </a></small></p>
+                </section>
+
+                <section>
                 <h4>Angular 2: TypeScript with Annotations</h4>
 <pre class="fragment" data-fragment-index="3"><code class="xml line-numbers" contenteditable>@Component({
   selector: 'greeter'
@@ -434,74 +442,6 @@ bootstrap(App);
 <!--</code></pre>-->
 
             </section>
-
-                <section>
-                    <h2>Criterion: Can I really use it?</h2>
-                </section>
-
-                <section>
-                    <h3>Angular 2</h3>
-                    <ul>
-                        <li>just recently went final
-                        <li>not a lot experience, yet
-                        <li>Google does not use it for their crucial systems (,yet?)
-                        <li>Will Angular 2 take off?: <a href="http://developer.telerik.com/featured/will-angular-2-take-off/">'Angular 1 had the right solution at the right time for the right community. Angular 2 has none of that ...'</a>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>Angular 1</h3>
-                    <ul>
-                        <li>you know there is version 2 now
-                        <li>Style gradually comes closer to Angular 2 (<a target="_blank" href="https://toddmotto.com/exploring-the-angular-1-5-component-method/">
-                        https://toddmotto.com/exploring-the-angular-1-5-component-method/</a>)
-                        <li>migration easier if you use a standard coding style
-                        <!--<li>1 and 2 share the same <a target="_blank" href="https://docs.angularjs.org/guide/component-router">Component Router</a>-->
-                        <li>Migration and Mixing 1 und 2 with <em>ngUpgrade</em>
-                        <li>but: should you migrate at all?
-                    </ul>
-                </section>
-                <section>
-                    <img src="angular2-mtn.png">
-                    <p><small><a href="https://daveceddia.com/angular-2-should-you-upgrade/" target="_blank">https://daveceddia.com/angular-2-should-you-upgrade/</a></small></p>
-                </section>
-
-                <section>
-                    <h3>Web Components: Really a standard?</h3>
-                    <ul>
-                        <li>To be standardised by W3C
-                        <li><a href="https://hacks.mozilla.org/2015/06/the-state-of-web-components/" target="_blank">
-                            Original implementaion by Google in Chrome mostly deprecated</a>
-                        <li><a href="http://caniuse.com/#search=components" target="_blank">
-                            All vendors started implementing, but progress not looking good, yet</a>
-                        <li><a target="_blank" href="http://webcomponents.org/polyfills/">Polyfills</a> exist, though
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank">
-                        Firefox will not support parts of Spec</a>
-                        <li>Parts (HTML-Templates and Shaddow-DOM) moved into DOM-/HTML-Spec
-                        <li>
-                        <a href="https://www.polymer-project.org/1.0/" target="_blank">
-                            Polymer</a> the standard lib on top of it (
-                        <a href="https://www.polymer-project.org/1.0/blog/2016-09-09-polymer-2.0.html" target="_blank">
-                            2.0
-                        </a>
-                        will support upcoming standard)
-                    </ul>
-                </section>
-
-                <section>
-                    <img src="eich-tc39.jpg" height="600">
-                    <p><small><a href="https://twitter.com/hichaelmart/status/667749535440084992/photo/1>https://twitter.com/hichaelmart/status/667749535440084992/photo/1">https://twitter.com/hichaelmart/status/667749535440084992/photo/1</a></small></p>
-                </section>
-
-                <section>
-                    <h3>React</h3>
-                    <ul>
-                        <li>has been there for many years
-                        <li>releases show interest in backward compatibility
-                        <li>used inside Facebook, Instagram, Netflix, and many more
-                        <li>it is the current hype, let's see if this is the final answer...
-                    </ul>
-                </section>
 
                 <section>
                     <h2>Criterion: Architecture and Model</h2>
@@ -658,6 +598,106 @@ bootstrap(App);
                     <p><small><a href="https://twitter.com/mjackson/status/639907104560541696" target="_blank">@mjackson</a></small></p>
                 </section>
 
+                <section>
+                    <h2>http://stateofjs.com</h2>
+                    <p>Recently published survey on the state of JavaScript</p>
+                </section>
+
+                <section>
+                    <a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        <img src="stateofjs-frameworks-tldr.png">
+                    </a>
+                    <p><small><a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        http://stateofjs.com/2016/frontend/
+                    </a></small></p>
+                </section>
+
+                <section>
+                    <a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        <img src="stateofjs-frameworks-overview.png" height="600px">
+                    </a>
+                    <p><small><a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        http://stateofjs.com/2016/frontend/
+                    </a></small></p>
+                </section>
+
+                <section>
+                    <a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        <img src="stateofjs-frameworks-overview-numbers.png" height="600px">
+                    </a>
+                    <p><small><a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        http://stateofjs.com/2016/frontend/
+                    </a></small></p>
+                </section>
+
+
+                <section>
+                    <h2>Criterion: Can you really use it?</h2>
+                </section>
+
+                <section>
+                    <h3>Angular 2</h3>
+                    <ul>
+                        <li>just recently went final
+                        <li>not a lot experience, yet
+                        <li>Google does not use it for their crucial systems (,yet?)
+                        <li>Will Angular 2 take off?: <a href="http://developer.telerik.com/featured/will-angular-2-take-off/">'Angular 1 had the right solution at the right time for the right community. Angular 2 has none of that ...'</a>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Angular 1</h3>
+                    <ul>
+                        <li>you know there is version 2 now
+                        <li>Style gradually comes closer to Angular 2 (<a target="_blank" href="https://toddmotto.com/exploring-the-angular-1-5-component-method/">
+                            https://toddmotto.com/exploring-the-angular-1-5-component-method/</a>)
+                        <li>migration easier if you use a standard coding style
+                            <!--<li>1 and 2 share the same <a target="_blank" href="https://docs.angularjs.org/guide/component-router">Component Router</a>-->
+                        <li>Migration and Mixing 1 und 2 with <em>ngUpgrade</em>
+                        <li>but: should you migrate at all?
+                    </ul>
+                </section>
+                <!--<section>-->
+                    <!--<img src="angular2-mtn.png">-->
+                    <!--<p><small><a href="https://daveceddia.com/angular-2-should-you-upgrade/" target="_blank">https://daveceddia.com/angular-2-should-you-upgrade/</a></small></p>-->
+                <!--</section>-->
+
+                <section>
+                    <h3>Web Components: Really a standard?</h3>
+                    <ul>
+                        <li>To be standardised by W3C
+                        <li><a href="https://hacks.mozilla.org/2015/06/the-state-of-web-components/" target="_blank">
+                            Original implementaion by Google in Chrome mostly deprecated</a>
+                        <li><a href="http://caniuse.com/#search=components" target="_blank">
+                            All vendors started implementing, but progress not looking good, yet</a>
+                        <li><a target="_blank" href="http://webcomponents.org/polyfills/">Polyfills</a> exist, though
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank">
+                            Firefox will not support parts of Spec</a>
+                        <li>Parts (HTML-Templates and Shaddow-DOM) moved into DOM-/HTML-Spec
+                        <li>
+                            <a href="https://www.polymer-project.org/1.0/" target="_blank">
+                                Polymer</a> the standard lib on top of it (
+                            <a href="https://www.polymer-project.org/1.0/blog/2016-09-09-polymer-2.0.html" target="_blank">
+                                2.0
+                            </a>
+                            will support upcoming standard)
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="eich-tc39.jpg" height="600">
+                    <p><small><a href="https://twitter.com/hichaelmart/status/667749535440084992/photo/1>https://twitter.com/hichaelmart/status/667749535440084992/photo/1">https://twitter.com/hichaelmart/status/667749535440084992/photo/1</a></small></p>
+                </section>
+
+                <section>
+                    <h3>React</h3>
+                    <ul>
+                        <li>has been there for many years
+                        <li>releases show interest in backward compatibility
+                        <li>used inside Facebook, Instagram, Netflix, and many more
+                        <li>it is the current hype, let's see if this is the final answer...
+                    </ul>
+                </section>
 
                 <section>
                     <h3>Criterion: How to make fun of them?</h3>
@@ -707,7 +747,7 @@ bootstrap(App);
                 <li class="fragment">use <em>SPAs</em> for a highly interactive (part of) app or need of offline
                 <li class="fragment">use <em>Angular 1.x</em> for simple form based app or not much JavaScript knowledge
                 <li class="fragment">use <em>Angular 2</em> for everything and nothing or if you want to use TypeScript
-                <li class="fragment">use <em>React</em> for a real app and if you like to choose for own stack
+                <li class="fragment">use <em>React</em> for a real app and if you like to choose your own stack
                 <li class="fragment">use <em>Web Components</em> if you like procedural code and trust in the standard
             </ul>
         </section>
@@ -726,18 +766,18 @@ bootstrap(App);
 
         </section>
 
-                <section id="elm">
-                    <h3>Bonus Level - Elm: Hype 2017?</h3>
-                    <ul class="fragment">
-                        <li><a target="_blank" href="http://elm-lang.org/">http://elm-lang.org/</a>
-                        Functional, reactive language
-                        <li>includes a pre defined web architecture similar to Redux/Flux
-                        <li>Rendering shares virtual DOM idea from React
-                        <li>Static typing with inference / no null
-                        <li>Browser is target platform
-                        <li>Translated to JavaScript using compiler (included)
-                    </ul>
-                </section>
+                <!--<section id="elm">-->
+                    <!--<h3>Bonus Level - Elm: Hype 2017?</h3>-->
+                    <!--<ul class="fragment">-->
+                        <!--<li><a target="_blank" href="http://elm-lang.org/">http://elm-lang.org/</a>-->
+                        <!--Functional, reactive language-->
+                        <!--<li>includes a pre defined web architecture similar to Redux/Flux-->
+                        <!--<li>Rendering shares virtual DOM idea from React-->
+                        <!--<li>Static typing with inference / no null-->
+                        <!--<li>Browser is target platform-->
+                        <!--<li>Translated to JavaScript using compiler (included)-->
+                    <!--</ul>-->
+                <!--</section>-->
 
             </div>
 
@@ -748,16 +788,17 @@ bootstrap(App);
         <script src="lib/jquery-2.2.4.js"></script>
     <script>
 //            $('section').attr('data-background-image', "backgrounds/light-sky3.jpg")
-        $('section').attr('data-background-image', "backgrounds/light-transparent.jpg");
+//        $('section').attr('data-background-image', "backgrounds/light-transparent.jpg");
+        $('section').attr('data-background-image', "backgrounds/light-handle.jpg");
 //        $('section').attr('data-background-image', "backgrounds/light-ring.jpg");
 
 
     </script>
     <script>
         // only presentation version has fragments
-        if (window.location.hostname.indexOf('localhost') === -1) {
+//        if (window.location.hostname.indexOf('localhost') === -1) {
             $('.fragment').removeClass('fragment');
-        }
+//        }
     </script>
 
 
@@ -771,7 +812,7 @@ bootstrap(App);
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
 				dependencies: [
