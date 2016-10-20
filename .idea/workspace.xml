@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hillary_eyebrow.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_webtechcon.html" afterPath="$PROJECT_DIR$/2016_webtechcon.html" />
     </list>
@@ -41,11 +40,11 @@
       <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="656" column="0" selection-start-line="656" selection-start-column="0" selection-end-line="656" selection-end-column="0" />
+            <state relative-caret-position="164">
+              <caret line="635" column="26" selection-start-line="635" selection-start-column="26" selection-end-line="635" selection-end-column="26" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#section#39;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1476981963000" expanded="false" signature="25729:25743" ph="..." />
+                <element signature="n#style#0;n#img#0;n#section#38;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1476986318000" expanded="false" signature="25785:25799" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1060,14 +1059,7 @@
       <workItem from="1476376549624" duration="11684000" />
       <workItem from="1476776331174" duration="9000" />
       <workItem from="1476861314838" duration="2612000" />
-      <workItem from="1476954904606" duration="4673000" />
-    </task>
-    <task id="LOCAL-00048" summary="updated angular1 example to angular 1.5">
-      <created>1451825254648</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1451825254648</updated>
+      <workItem from="1476954904606" duration="5056000" />
     </task>
     <task id="LOCAL-00049" summary="angular 2 with property">
       <created>1451839523391</created>
@@ -1405,11 +1397,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476863664340</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="final details">
+      <created>1476982012886</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1476982012887</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166784000" />
+    <option name="totallyTimeSpent" value="167167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1490,7 +1489,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added data binding" />
     <MESSAGE value="added tech stack" />
     <MESSAGE value="upgrade to react 15" />
     <MESSAGE value="added 2.0-rc1 version for systemjs and webpack build" />
@@ -1515,7 +1513,8 @@
     <MESSAGE value="references" />
     <MESSAGE value="plan" />
     <MESSAGE value="added vue as bonus framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="added vue as bonus framework" />
+    <MESSAGE value="final details" />
+    <option name="LAST_COMMIT_MESSAGE" value="final details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1853,11 +1852,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="656" column="0" selection-start-line="656" selection-start-column="0" selection-end-line="656" selection-end-column="0" />
+        <state relative-caret-position="164">
+          <caret line="635" column="26" selection-start-line="635" selection-start-column="26" selection-end-line="635" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#section#39;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1476981963000" expanded="false" signature="25729:25743" ph="..." />
+            <element signature="n#style#0;n#img#0;n#section#38;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1476986318000" expanded="false" signature="25785:25799" ph="..." />
           </folding>
         </state>
       </provider>
