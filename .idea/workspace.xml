@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hillary_eyebrow.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_webtechcon.html" afterPath="$PROJECT_DIR$/2016_webtechcon.html" />
     </list>
@@ -40,11 +41,11 @@
       <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="235" column="25" selection-start-line="235" selection-start-column="25" selection-end-line="235" selection-end-column="25" />
+            <state relative-caret-position="557">
+              <caret line="656" column="0" selection-start-line="656" selection-start-column="0" selection-end-line="656" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#section#40;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1476861474000" expanded="false" signature="25700:25714" ph="..." />
+                <element signature="n#style#0;n#img#0;n#section#39;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1476981963000" expanded="false" signature="25729:25743" ph="..." />
               </folding>
             </state>
           </provider>
@@ -240,6 +241,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,12 +278,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../angular2-react" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nvd3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -294,17 +295,17 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/angular2-webpack/src/app" />
+      <recent name="$PROJECT_DIR$/code/react-universal/src/client" />
+      <recent name="$PROJECT_DIR$/code/react-universal/src/common" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backgrounds" />
       <recent name="$PROJECT_DIR$/code/angular2-playground/src/app" />
       <recent name="$PROJECT_DIR$/code/angular2-playground/public/css" />
       <recent name="$PROJECT_DIR$/code/angular2-webpack/src/app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/code/angular2-webpack/src/app" />
-      <recent name="$PROJECT_DIR$/code/react-universal/src/client" />
-      <recent name="$PROJECT_DIR$/code/react-universal/src/common" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.sandbox.js">
@@ -1058,14 +1059,8 @@
       <workItem from="1476352176071" duration="629000" />
       <workItem from="1476376549624" duration="11684000" />
       <workItem from="1476776331174" duration="9000" />
-      <workItem from="1476861314838" duration="2033000" />
-    </task>
-    <task id="LOCAL-00047" summary="angular 1.5 component example">
-      <created>1451824450961</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1451824450961</updated>
+      <workItem from="1476861314838" duration="2612000" />
+      <workItem from="1476954904606" duration="4673000" />
     </task>
     <task id="LOCAL-00048" summary="updated angular1 example to angular 1.5">
       <created>1451825254648</created>
@@ -1403,11 +1398,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476648707307</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="added vue as bonus framework">
+      <created>1476863664340</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1476863664340</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161532000" />
+    <option name="totallyTimeSpent" value="166784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1423,11 +1425,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23348017" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29159936" sideWeight="0.5477707" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43465492" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4331865" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38472834" sideWeight="0.49676898" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19466881" sideWeight="0.4522293" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1488,7 +1490,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="more images" />
     <MESSAGE value="added data binding" />
     <MESSAGE value="added tech stack" />
     <MESSAGE value="upgrade to react 15" />
@@ -1513,7 +1514,8 @@
     <MESSAGE value="final version for webtechcon 2016" />
     <MESSAGE value="references" />
     <MESSAGE value="plan" />
-    <option name="LAST_COMMIT_MESSAGE" value="plan" />
+    <MESSAGE value="added vue as bonus framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="added vue as bonus framework" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1851,11 +1853,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="235" column="25" selection-start-line="235" selection-start-column="25" selection-end-line="235" selection-end-column="25" />
+        <state relative-caret-position="557">
+          <caret line="656" column="0" selection-start-line="656" selection-start-column="0" selection-end-line="656" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#section#40;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1476861474000" expanded="false" signature="25700:25714" ph="..." />
+            <element signature="n#style#0;n#img#0;n#section#39;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1476981963000" expanded="false" signature="25729:25743" ph="..." />
           </folding>
         </state>
       </provider>
