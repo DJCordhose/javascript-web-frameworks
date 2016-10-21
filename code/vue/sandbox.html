@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Computed Properties</title>
+</head>
+<body>
+<div id="example">
+    <input v-model="message">
+    <p>Computed reversed message: "{{ reversedMessage }}"</p>
+</div><script src="vue.js"></script>
+<p>From: <a href="http://vuejs.org/guide/computed.html" target="_blank">http://vuejs.org/guide/computed.html</a></p>
+<script>
+    var vm = new Vue({
+        el: '#example',
+        data: {
+            message: 'Hello'
+        },
+        computed: {
+            // a computed getter
+            reversedMessage: function () {
+                // `this` points to the vm instance
+                return this.message.split('').reverse().join('')
+            }
+        }
+    })
+</script>
+</body>
+</html>

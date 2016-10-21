@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/vue/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/vue/vue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/vue/sandbox.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_webtechcon.html" afterPath="$PROJECT_DIR$/2016_webtechcon.html" />
     </list>
     <ignored path="javascript-web-frameworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,14 +28,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/vue/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="26" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="64">
+              <caret line="9" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
@@ -46,6 +44,16 @@
                 <element signature="n#style#0;n#img#0;n#section#42;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1477061669000" expanded="false" signature="26600:26614" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sandbox.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/vue/sandbox.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/angular2-quickstart/index.html" />
         <option value="$PROJECT_DIR$/code/angular2-quickstart/style.css" />
         <option value="$PROJECT_DIR$/code/angular2-quickstart/app/app.component.ts" />
         <option value="$PROJECT_DIR$/code/angular2-webpack/package.json" />
@@ -130,6 +137,7 @@
         <option value="$PROJECT_DIR$/code/web-components-v1/greeter.js" />
         <option value="$PROJECT_DIR$/code/vue/index.html" />
         <option value="$PROJECT_DIR$/2016_webtechcon.html" />
+        <option value="$PROJECT_DIR$/code/vue/sandbox.html" />
       </list>
     </option>
   </component>
@@ -1099,14 +1107,7 @@
       <workItem from="1476376549624" duration="11684000" />
       <workItem from="1476776331174" duration="9000" />
       <workItem from="1476861314838" duration="2612000" />
-      <workItem from="1476954904606" duration="14033000" />
-    </task>
-    <task id="LOCAL-00052" summary="jax talk done minus new imgaes">
-      <created>1451846246141</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1451846246141</updated>
+      <workItem from="1476954904606" duration="14445000" />
     </task>
     <task id="LOCAL-00053" summary="Details">
       <created>1451849513774</created>
@@ -1444,11 +1445,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477055462606</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="added vue example">
+      <created>1477061824148</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1477061824148</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176144000" />
+    <option name="totallyTimeSpent" value="176556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1529,7 +1537,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="upgrade to react 15" />
     <MESSAGE value="added 2.0-rc1 version for systemjs and webpack build" />
     <MESSAGE value="updated angular 2 webpack to our demo app" />
     <MESSAGE value="removed outdated version of angular 2 sample" />
@@ -1554,20 +1561,14 @@
     <MESSAGE value="final details" />
     <MESSAGE value="details" />
     <MESSAGE value="added v1 web components for chrome" />
-    <option name="LAST_COMMIT_MESSAGE" value="added v1 web components for chrome" />
+    <MESSAGE value="added vue example" />
+    <option name="LAST_COMMIT_MESSAGE" value="added vue example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/rxjs-sandbox/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/rxjs-sandbox/node_modules/@reactivex/rxjs/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1914,14 +1915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/vue/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="26" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1930,6 +1923,22 @@
             <element signature="n#style#0;n#img#0;n#section#42;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1477061669000" expanded="false" signature="26600:26614" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/vue/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/vue/sandbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
