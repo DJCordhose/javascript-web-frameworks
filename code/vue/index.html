@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Hello World</title>
+</head>
+<body>
+<div id="app">
+    <input ref="in" v-model="greeting">
+    <p>{{ greeting }}, World!</p>
+    <input v-on:click="reset" type="button" value="Clear">
+</div>
+<script src="vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            greeting: 'Hello'
+        },
+        methods: {
+            reset: function () {
+                this.greeting = '';
+                this.$refs.in.focus();
+            }
+        }
+    });
+</script>
+</body>
+</html>

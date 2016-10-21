@@ -830,6 +830,31 @@ bootstrap(App);
                             Flux-like (<a target="_blank" href="http://vuex.vuejs.org/">http://vuex.vuejs.org/</a>) state management
                     </ul>
                 </section>
+                <section>
+                    <h4>Hello World</h4>
+<pre class="fragment"><code data-trim contenteditable class="line-numbers" data-leftpad>
+&lt;div id="app">
+    &lt;input ref="in" v-model="greeting">
+    &lt;p>{{ greeting }}, World!</p>
+    &lt;input v-on:click="reset" type="button" value="Clear">
+&lt;/div>
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable class="line-numbers" data-leftpad>
+const app = new Vue({
+    el: '#app',
+    data: {
+        greeting: 'Hello'
+    },
+    methods: {
+        reset: function () {
+            this.greeting = '';
+            this.$refs.in.focus();
+        }
+    }
+});
+</code></pre>
+
+                </section>
 
                 <!--<section id="elm">-->
                     <!--<h3>Bonus Level - Elm: Hype 2017?</h3>-->
