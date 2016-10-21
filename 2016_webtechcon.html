@@ -327,15 +327,21 @@
                     <h1>Part III: Comparision</h1>
                 </section>
 
-                <!--<section>-->
-                    <!--<h2>Global Criterion</h2>-->
-                    <!--<p><em>Simple things should be simple, complex things should be possible.</em>-->
-                    <!--</p>-->
-                    <!--<p><small>Alan Kay<br> (<a target="_blank" href="https://en.wikiquote.org/wiki/Alan_Kay">https://en.wikiquote.org/wiki/Alan_Kay</a>)</small></p>-->
-                <!--</section>-->
+                <section>
+                    <h2>Global Criterion</h2>
+                    <p><em>Simple things should be simple, complex things should be possible.</em>
+                    </p>
+                    <p><small>Alan Kay<br> (<a target="_blank" href="https://en.wikiquote.org/wiki/Alan_Kay">https://en.wikiquote.org/wiki/Alan_Kay</a>)</small></p>
+                </section>
 
                 <section>
                     <h2>Criterion: Coding Style</h2>
+                </section>
+
+                <section>
+                    <h3>Challenge</h3>
+                    <p>Implement <em>Hello, World</em> in all 4 frameworks</p>
+                    <p><a target="_blank" href="code/react/public/index.html">Run</a></p>
                 </section>
 
                 <section>
@@ -368,6 +374,14 @@ angular.module('hello', [])
 </code></pre>
 
                 </section>
+
+                <section>
+                    <h3>Web Components V1 just landed in Chrome 54 stable</h3>
+                    <a target="_blank" href="https://twitter.com/ebidel/status/786696885495095296?s=09">
+                        <img src="web-components-v1.png">
+                    </a>
+                </section>
+
                <section>
                     <h4>Web Components: procedural, free style (here ES6)</h4>
 <pre class="fragment" data-fragment-index="4"><code data-trim contenteditable class="javascript">
@@ -378,17 +392,18 @@ import template from './template.html';
 
                    <pre class="fragment" data-fragment-index="3"><code data-trim contenteditable class="javascript line-numbers">
 class Greeter extends HTMLElement {
+
   constructor() {
-    this.attachShadow({mode: 'closed'}).innerHTML = template;
+    this.createShadowRoot({mode: 'open'}).innerHTML = template;
     this.shadowRoot.querySelector("#in").addEventListener("keyup",
         event => this.setModel(event.target.value));
-    this.setModel(this.getAttribute("greeting"));
+    this.shadowRoot.querySelector("#btn").addEventListener("click",
+        event => {
+           this.setModel("");
+           this.input.focus();
+    });
   }
-  attributeChangedCallback(name, oldValue, newValue) {
-    if (name === "greeting") {
-      this.setModel(newValue);
-    }
-  }
+
   setModel(value) {
     this.shadowRoot.querySelector("#log").textContent = value;
     this.shadowRoot.querySelector("#in").value = value;
@@ -401,6 +416,12 @@ customElements.define('greeter-element', Greeter); // v1
 <pre class="fragment" data-fragment-index="1"><code data-trim contenteditable class="html">
 &lt;greeter-element greeting="Hello">&lt;/greeter-element>
 </code></pre>
+                </section>
+
+                <section>
+                    <h3>Native Support in Chrome</h3>
+                    <img src="web-components-chrome.png">
+                    <p><a target="_blank" href="code/web-components-v1/index.html">Try it (if you have Chrome >=54)</a></p>
                 </section>
 
                 <section>
