@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/vue/sandbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twitter-vue.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_webtechcon.html" afterPath="$PROJECT_DIR$/2016_webtechcon.html" />
     </list>
     <ignored path="javascript-web-frameworks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,24 +36,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="853" column="3" selection-start-line="853" selection-start-column="3" selection-end-line="853" selection-end-column="3" />
+            <state relative-caret-position="67">
+              <caret line="823" column="60" selection-start-line="823" selection-start-column="60" selection-end-line="823" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#section#42;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1477061669000" expanded="false" signature="26600:26614" ph="..." />
+                <marker date="1477062958000" expanded="false" signature="26600:26614" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sandbox.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sandbox.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/vue/sandbox.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="165">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -136,8 +137,8 @@
         <option value="$PROJECT_DIR$/code/web-components-v1/index.html" />
         <option value="$PROJECT_DIR$/code/web-components-v1/greeter.js" />
         <option value="$PROJECT_DIR$/code/vue/index.html" />
-        <option value="$PROJECT_DIR$/2016_webtechcon.html" />
         <option value="$PROJECT_DIR$/code/vue/sandbox.html" />
+        <option value="$PROJECT_DIR$/2016_webtechcon.html" />
       </list>
     </option>
   </component>
@@ -348,8 +349,8 @@
       <recent name="$PROJECT_DIR$/code/react-universal/src/common" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/code/vue" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/code/vue" />
       <recent name="$PROJECT_DIR$/code/web-components-v1" />
       <recent name="$PROJECT_DIR$/backgrounds" />
       <recent name="$PROJECT_DIR$/code/angular2-playground/src/app" />
@@ -1107,14 +1108,7 @@
       <workItem from="1476376549624" duration="11684000" />
       <workItem from="1476776331174" duration="9000" />
       <workItem from="1476861314838" duration="2612000" />
-      <workItem from="1476954904606" duration="14445000" />
-    </task>
-    <task id="LOCAL-00053" summary="Details">
-      <created>1451849513774</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1451849513774</updated>
+      <workItem from="1476954904606" duration="15149000" />
     </task>
     <task id="LOCAL-00054" summary="new versions of libs">
       <created>1453365678002</created>
@@ -1452,11 +1446,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477061824148</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="added computed properties experiment">
+      <created>1477062244032</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1477062244032</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176556000" />
+    <option name="totallyTimeSpent" value="177260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1537,7 +1538,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added 2.0-rc1 version for systemjs and webpack build" />
     <MESSAGE value="updated angular 2 webpack to our demo app" />
     <MESSAGE value="removed outdated version of angular 2 sample" />
     <MESSAGE value="stuff" />
@@ -1562,7 +1562,8 @@
     <MESSAGE value="details" />
     <MESSAGE value="added v1 web components for chrome" />
     <MESSAGE value="added vue example" />
-    <option name="LAST_COMMIT_MESSAGE" value="added vue example" />
+    <MESSAGE value="added computed properties experiment" />
+    <option name="LAST_COMMIT_MESSAGE" value="added computed properties experiment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1915,17 +1916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="853" column="3" selection-start-line="853" selection-start-column="3" selection-end-line="853" selection-end-column="3" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#section#42;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1477061669000" expanded="false" signature="26600:26614" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/vue/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1936,9 +1926,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/vue/sandbox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="165">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="823" column="60" selection-start-line="823" selection-start-column="60" selection-end-line="823" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#section#42;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1477062958000" expanded="false" signature="26600:26614" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
