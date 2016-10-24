@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda9bcbe-fc25-4a0d-8d05-4bbbd5cc7094" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world.mov" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016_webtechcon.html" afterPath="$PROJECT_DIR$/2016_webtechcon.html" />
     </list>
@@ -40,12 +38,12 @@
       <file leaf-file-name="2016_webtechcon.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="348" column="47" selection-start-line="348" selection-start-column="47" selection-end-line="348" selection-end-column="47" />
+            <state relative-caret-position="345">
+              <caret line="375" column="0" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#section#16;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#section#40;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1477220546000" expanded="false" signature="26998:27012" ph="..." />
+                <element signature="n#style#0;n#img#0;n#section#44;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1477283744000" expanded="false" signature="29621:29635" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1006,14 +1004,7 @@
       <workItem from="1476376549624" duration="11684000" />
       <workItem from="1476776331174" duration="9000" />
       <workItem from="1476861314838" duration="2612000" />
-      <workItem from="1476954904606" duration="19369000" />
-    </task>
-    <task id="LOCAL-00056" summary="updated angular2 example to latest angular 2 beta">
-      <created>1455391832584</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1455391832584</updated>
+      <workItem from="1476954904606" duration="22042000" />
     </task>
     <task id="LOCAL-00057" summary="updated angular2 example to latest angular 2 beta">
       <created>1455766182230</created>
@@ -1351,11 +1342,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477130116539</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="small screencast of hello world app">
+      <created>1477220604759</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1477220604759</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181480000" />
+    <option name="totallyTimeSpent" value="184153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1436,7 +1434,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="removed outdated version of angular 2 sample" />
     <MESSAGE value="stuff" />
     <MESSAGE value="rxjs sandbox" />
     <MESSAGE value="more todos" />
@@ -1461,7 +1458,8 @@
     <MESSAGE value="added computed properties experiment" />
     <MESSAGE value="details" />
     <MESSAGE value="added fighting monsters" />
-    <option name="LAST_COMMIT_MESSAGE" value="added fighting monsters" />
+    <MESSAGE value="small screencast of hello world app" />
+    <option name="LAST_COMMIT_MESSAGE" value="small screencast of hello world app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1832,12 +1830,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2016_webtechcon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="348" column="47" selection-start-line="348" selection-start-column="47" selection-end-line="348" selection-end-column="47" />
+        <state relative-caret-position="345">
+          <caret line="375" column="0" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#section#16;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#section#40;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1477220546000" expanded="false" signature="26998:27012" ph="..." />
+            <element signature="n#style#0;n#img#0;n#section#44;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1477283744000" expanded="false" signature="29621:29635" ph="..." />
           </folding>
         </state>
       </provider>

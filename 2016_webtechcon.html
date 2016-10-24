@@ -194,7 +194,7 @@
                         <li>good if there already are existing elements
                         <li>unobtrusive
                         <li>not so good, if there is nothing to begin with
-                        <li>not so good for controlling page flow
+                        <li>not so good for controlling page/view flow
                     </ul>
                 </section>
 
@@ -331,6 +331,19 @@
                 </section>
 
                 <section>
+                    <h3>Web Components V1 just landed in Chrome 54 stable</h3>
+                    <a target="_blank" href="https://twitter.com/ebidel/status/786696885495095296?s=09">
+                        <img src="web-components-v1.png" height="500px">
+                    </a>
+
+                    <p><small>
+                    <a target="_blank" href="https://twitter.com/ebidel/status/786696885495095296?s=09">
+                        October 13th, 2016: https://twitter.com/ebidel/status/786696885495095296?s=09
+                    </a>
+                    </small></p>
+                </section>
+
+                <section>
                     <h1>Part III: Comparision</h1>
                 </section>
 
@@ -347,6 +360,17 @@
                     <p><a target="_blank" href="code/react/public/index.html">Run</a></p>
                     <video src="hello-world.mov" poster="hello-world.gif"></video>
                     <p><small><a target="_blank" href="http://ezgif.com/video-to-gif">http://ezgif.com/video-to-gif</a></small></p>
+                </section>
+
+                <section>
+                    <h2>Bottom Line Angular 1 Coding Style</h2>
+                    <ul>
+                        <li>Directives in templates (<em>ng-model, ng-if, ng-click</em>)
+                        <li>Controller function is invoked with new like a contstructor
+                        <li>Controller object directly holds model and methods (called <em>vm</em>)
+                        <li>bindings for component rather cryptic in syntax and semantics
+                        <li>does not feel natural to experienced JavaScript developer
+                    </ul>
                 </section>
 
                 <section>
@@ -381,14 +405,19 @@ angular.module('hello', [])
                 </section>
 
                 <section>
-                    <h3>Web Components V1 just landed in Chrome 54 stable</h3>
-                    <a target="_blank" href="https://twitter.com/ebidel/status/786696885495095296?s=09">
-                        <img src="web-components-v1.png">
-                    </a>
+                    <h2>Bottom Line Web Components Coding Style</h2>
+                    <ul>
+                        <li>Still follows semantics of browser DOM closely
+                        <li>Templates can be whatever you like
+                        <li>You can also use the tepmplate engine of your choice
+                        <li>Programming style naturally procedural / listener based
+                        <li>Component is an ES5/ES6 class (ES6 transpilers might clash with this)
+                        <li>Other than that, no restriction to programming style
+                    </ul>
                 </section>
 
-               <section>
-                    <h4>Web Components: procedural, free style (here ES6)</h4>
+                <section>
+                    <h4>Web Components V1: procedural, free style (here ES6)</h4>
 <pre class="fragment" data-fragment-index="4"><code data-trim contenteditable class="javascript">
 // just plain HTML using ES6 import
 import template from './template.html';
@@ -416,7 +445,7 @@ class Greeter extends HTMLElement {
 }
 </code></pre>
 <pre class="fragment" data-fragment-index="2"><code data-trim contenteditable class="javascript">
-customElements.define('greeter-element', Greeter); // v1
+customElements.define('greeter-element', Greeter);
 </code></pre>
 <pre class="fragment" data-fragment-index="1"><code data-trim contenteditable class="html">
 &lt;greeter-element greeting="Hello">&lt;/greeter-element>
@@ -427,6 +456,17 @@ customElements.define('greeter-element', Greeter); // v1
                     <h3>Native Support in Chrome</h3>
                     <img src="web-components-chrome.png">
                     <p><a target="_blank" href="code/web-components-v1/index.html">Try it (if you have Chrome >=54)</a></p>
+                </section>
+
+                <section>
+                    <h2>Bottom Line React Coding Style</h2>
+                    <ul>
+                        <li>Template and UI-logic co-located
+                        <li>Template more or less just JavaScript
+                        <li>Modern Component is just an ES6 class (or even a pure function)
+                        <li>Encourages functional programming
+                        <li>Encourages immutability
+                    </ul>
                 </section>
 
                 <section>
@@ -466,6 +506,17 @@ ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
                         <!--https://twitter.com/LeonardKoch_/status/786878480894009348?s=03-->
                     <!--</a></small></p>-->
                 <!--</section>-->
+
+                <section>
+                    <h2>Bottom Line Angular 2 Coding Style</h2>
+                    <ul>
+                        <li>Template and UI-logic either co-located or separated
+                        <li>Directives in templates (<em>[(ngModel)], click</em>)
+                        <li>TypeScript is natural style
+                        <li>ES5, ES6, and Dart also possible
+                        <li>TypeScript decorators (<em>@...</em>) used extensively
+                    </ul>
+                </section>
 
                 <section>
                 <h4>Angular 2: TypeScript with Annotations</h4>
@@ -823,12 +874,10 @@ bootstrap(App);
 
         </section>
 
-                <section >
-                    <h3>Bonus Level</h3>
-                    <a href="https://twitter.com/ThePracticalDev/status/789482622900641792">
-                        <img src="twitter-vue.png" height="600px">
-                    </a>
+                <section>
+                    <h1>Bonus Level</h1>
                 </section>
+
                 <section id="vue">
                     <h3>Vue: Hype 2017?</h3>
                     <ul class="fragment">
@@ -841,6 +890,17 @@ bootstrap(App);
                             Flux-like (<a target="_blank" href="http://vuex.vuejs.org/">http://vuex.vuejs.org/</a>) state management
                     </ul>
                 </section>
+
+                <section>
+                    <a href="https://twitter.com/ThePracticalDev/status/789482622900641792">
+                        <img src="twitter-vue.png" height="600px">
+                    </a>
+                    <p><small><a href="https://twitter.com/ThePracticalDev/status/789482622900641792">
+                        https://twitter.com/ThePracticalDev/status/789482622900641792
+                    </a></small></p>
+                </section>
+
+
                 <section>
                     <h4>Hello World</h4>
 <pre class="fragment"><code data-trim contenteditable class="line-numbers" data-leftpad>
