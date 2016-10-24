@@ -957,12 +957,15 @@ const app = new Vue({
 
     </script>
     <script>
-        // only presentation version has fragments
-//        if (window.location.hostname.indexOf('localhost') === -1) {
+        Reveal.addEventListener( 'ready', function( event ) {
+            // no fragments, never
             $('.fragment').removeClass('fragment');
-//        }
+            // only applies presentation version
+            if (window.location.hostname.indexOf('localhost') !== -1) {
+                Reveal.configure({ controls: false });
+            }
+        } );
     </script>
-
 
     <script>
 
