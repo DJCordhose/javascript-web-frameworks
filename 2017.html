@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JavaScript SPA Frameworks</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">-->
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">-->
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">-->
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">-->
+        <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
+
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+		<style>
+			/*pre code {*/
+				/*display: block;*/
+				/*padding: 0.5em;*/
+				/*background: #FFFFFF !important;*/
+				/*color: #000000 !important;*/
+			/*}*/
+			/*.right-img {*/
+				/*margin-left: 10px !important;*/
+				/*float: right;*/
+				/*height: 500px;*/
+			/*}*/
+            .todo:before {
+                content: 'TODO: ';
+            }
+            .todo {
+                color: red !important;
+            }
+            code span.line-number {
+                color: lightcoral;
+            }
+
+        </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-transition="zoom">
+                    <h2>JavaScript Frameworks for Single Page Applications</h2>
+                        <small><a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a>
+                        </small>
+                    </p>
+
+                    <p>Slides:
+                        <a href="http://djcordhose.github.io/javascript-web-frameworks/2017.html">
+                            http://djcordhose.github.io/javascript-web-frameworks/2017.html
+                        </a></p>
+                </section>
+
+                <section>
+                    <h1>Part I: Introduction to SPAs</h1>
+                </section>
+
+                <section>
+                    <h2>Classic Web Application</h2>
+                    <ul>
+                        <li>Browser sends HTTP-Request and receivers HTML
+                        <li>Content is rendered on the server side
+                        <li>Each interaction repeats this cycle
+                        <li>UI/UX restricted by this rendering cycle
+                        <li>Pure form hardly seen anymore
+                        <li>Minor UI-changes can be done on client side using JavaScript snippets
+                        <li>Sometimes full blown Single-Page Applications sort of happen as parts of Classic Web Applications
+                    </ul>
+                </section>
+
+                <section>
+        <h3>Classic Web Application</h3>
+
+        <ul>
+            <img src="Classic_Web_Application.png" style="height: 500px;">
+        </ul>
+        <!--<p><small>Copyright 2015, Oliver Zeigermann</small></p>-->
+    </section>
+                <section>
+                    <h3>Single-Page Applications (SPAs)</h3>
+                    <ul>
+                        <li>only a single page containing the application is loaded into the browser
+                        <li>all rendering and controll now in the browser using JavaScript
+                        <li>thus, major parts of the application now in the browser
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>SPA #1</h3>
+                    <ul>
+                        <img src="SPA_Lean.jpg" style="height: 500px;">
+                    </ul>
+                    <!--<p><small>Copyright 2015, Oliver Zeigermann</small></p>-->
+                </section>
+
+                <section>
+                    <h3>SPAs to an extreme</h3>
+                    <ul>
+                        <li>you can also move (parts of) the business logic into the browser
+                        <li>allowing for offline option
+                        <li>you can even go as far as to move the complete application into the browser
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>SPA #2</h3>
+                    <ul>
+                        <img src="SPA_Fat.jpg" style="height: 500px;">
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Part II: Introducing SPA frameworks</h1>
+                </section>
+
+                <section>
+                    <h3>Why not just jQuery?</h3>
+                    <ul>
+                        <li>jQuery is very good at changing sets of existing elements
+                        <li>good if there already are existing elements
+                        <li>unobtrusive
+                        <li>not so good, if there is nothing to begin with
+                        <li>not so good for controlling page/view flow
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Why use a standard Framework?</h3>
+                    <ul>
+                        <li>avoid the risk of accidentally creating your own
+                        <li>use something proven and tested
+                        <li>community, documentation
+                        <li>easily find skill and talent
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>http://stateofjs.com</h2>
+                    <p>Recently published survey on the state of JavaScript</p>
+                </section>
+
+                <section>
+                    <a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        <img src="stateofjs-frameworks-tldr.png">
+                    </a>
+                    <p><small><a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        http://stateofjs.com/2016/frontend/
+                    </a></small></p>
+                </section>
+
+                <section>
+                    <a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        <img src="stateofjs-frameworks-overview.png" height="600px">
+                    </a>
+                    <p><small><a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        http://stateofjs.com/2016/frontend/
+                    </a></small></p>
+                </section>
+
+                <section>
+                    <a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        <img src="stateofjs-frameworks-overview-numbers.png" height="600px">
+                    </a>
+                    <p><small><a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                        http://stateofjs.com/2016/frontend/
+                    </a></small></p>
+                </section>
+
+                <section>
+                    <h2>Our Candidates for Today</h2>
+                    <div>
+                    <ol>
+                        <li class="fragment grow">The Classic: Angular 1.x
+                        <li class="fragment grow">From Anti-Patterns to Best-Practices: React
+                        <li class="fragment grow">One for all: Angular 2
+                        <li class="fragment grow">The Standard: Web Components
+                        <li class="fragment grow">(We have seen there are more)
+                    </ol>
+                    </div>
+                    <br>
+                    <div style="float: right">
+                        <img src="monster-fight.gif" height="250px">
+                    </div>
+
+                </section>
+
+                <section id="angular1">
+                    <h2>Angular 1</h2>
+                    <ul class="fragment">
+                        <li>The classic from Google
+                        <li>Plenty of developers, discussion groups, integrations, etc.
+                        <li>3 Ds
+                            <ul>
+                                <li>Data Binding (2-Way)
+                                <li>Dependency Injection
+                                <li>Directives (=== Components)
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="react">
+                    <h2>React</h2>
+                    <ul class="fragment">
+                        <li>Framework for Facebook and many more
+                        <li>Components encapsulate template and logic
+                        <li class="fragment">Abstraction from DOM: <em>f(model) -> UI</em>
+                        <li>Minimal API
+                        <li>One-Way-Data-Binding: When state changes, components re-render
+                        <li>Uses virtual DOM to gurantee decent performance
+                        <li>Can render on client and on server
+                    </ul>
+                </section>
+
+                <section id="angular2">
+                    <h2>Angular 2</h2>
+                    <ul class="fragment">
+                        <li>Successor of Angular 1
+                        <li>Announcement (fall 2014) has led to irritations
+                            <ul>
+                                <li>Concepts very different from Angular 1
+                                <li>No migration path (at that time)
+                            </ul>
+                        </li>
+                        <li>Developed in Microsoft's TypeScript (ES5, ES6 and Dart also supported)
+                        <li>Optimised for speed
+                        <li>Server side rendering also supported
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Angular 2 Final Release</h3>
+                    <a href="http://angularjs.blogspot.de/2016/09/angular2-final.html" target="_blank">
+                        <img src="twitter-angular2-final.png">
+                    </a>
+                    <p>
+                    <a href="http://angularjs.blogspot.de/2016/09/angular2-final.html" target="_blank">
+                        http://angularjs.blogspot.de/2016/09/angular2-final.html
+                    </a>
+                    </p>
+
+                </section>
+
+                <section id="webcomponents">
+                    <h2>Web Components</h2>
+                    <ul>
+                        <li class="fragment"><a href="https://www.w3.org/TR/#tr_Web_Components" target="_blank">Components as a Standard</a>
+                            <ol>
+                                <li class="fragment">Custom Elements: define your own tags
+                                <li class="fragment">HTML Templates: simple templates as part of a HTML page
+                                (<a target="_blank" href="https://www.w3.org/TR/html5/scripting-1.html#the-template-element">now in HTML Standard</a>)
+                                <li class="fragment">Shadow DOM: Local encapsulation of DOM and CSS
+                                (<a href="https://www.w3.org/TR/shadow-dom/" target="_blank">will be moved into DOM/HTML Standard</a>
+                                <li class="fragment">HTML Imports: Importing of HTML fragments / Web Components
+                            </ol>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Web Components V1 just landed in Chrome 54 stable</h3>
+                    <a target="_blank" href="https://twitter.com/ebidel/status/786696885495095296?s=09">
+                        <img src="web-components-v1.png" height="500px">
+                    </a>
+
+                    <p><small>
+                    <a target="_blank" href="https://twitter.com/ebidel/status/786696885495095296?s=09">
+                        October 13th, 2016: https://twitter.com/ebidel/status/786696885495095296?s=09
+                    </a>
+                    </small></p>
+                </section>
+
+                <section>
+                    <h1>Part III: Comparision</h1>
+                </section>
+
+                <section>
+                    <h2>Global Criterion</h2>
+                    <p><em>Simple things should be simple, complex things should be possible.</em>
+                    </p>
+                    <p><small>Alan Kay<br> (<a target="_blank" href="https://en.wikiquote.org/wiki/Alan_Kay">https://en.wikiquote.org/wiki/Alan_Kay</a>)</small></p>
+                </section>
+
+                <section>
+                    <h2>Criterion: Coding Style</h2>
+                    <p>Implement <em>Hello, World</em> in all 4 frameworks</p>
+                    <p><a target="_blank" href="code/react/public/index.html">Run</a></p>
+                    <video src="hello-world.mov" poster="hello-world.gif"></video>
+                    <p><small><a target="_blank" href="http://ezgif.com/video-to-gif">http://ezgif.com/video-to-gif</a></small></p>
+                </section>
+
+                <section>
+                    <h2>Bottom Line Angular 1 Coding Style</h2>
+                    <ul>
+                        <li>Directives in templates (<em>ng-model, ng-if, ng-click</em>)
+                        <li>Controller function is invoked with new like a contstructor
+                        <li>Controller object directly holds model and methods (called <em>vm</em>)
+                        <li>bindings for component rather cryptic in syntax and semantics
+                        <li>does not feel natural to experienced JavaScript developer
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>AngularJS 1.5: Angular Style</h4>
+<pre class="fragment"><code data-trim contenteditable class="line-numbers" data-leftpad><!--index.html-->
+&lt;body ng-app="hello">
+  &lt;greeter greeting="Hello">&lt;/greeter>
+&lt;/body></code></pre>
+<pre class="fragment"><code data-trim contenteditable class="line-numbers" data-leftpad><!--greeter.html-->
+&lt;input ng-model="greeter.greeting" id="in">
+&lt;p>{{greeter.greeting}}, World!&lt;/p>
+&lt;input type="button" value="Clear" ng-click="greeter.clear()">
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable class="line-numbers">
+// component.js
+angular.module('hello', [])
+    .component('greeter', {
+        bindings: {
+            greeting: "@"
+        },
+        controller: function () {
+            var vm = this;
+            vm.clear = function () {
+                vm.greeting = '';
+                document.getElementById('in').focus();
+            };
+        },
+        templateUrl: 'greeter.html'
+    });
+</code></pre>
+
+                </section>
+
+                <section>
+                    <h2>Bottom Line Web Components Coding Style</h2>
+                    <ul>
+                        <li>Still follows semantics of browser DOM closely
+                        <li>Templates can be whatever you like
+                        <li>You can also use the tepmplate engine of your choice
+                        <li>Programming style naturally procedural / listener based
+                        <li>Component is an ES5/ES6 class (ES6 transpilers might clash with this)
+                        <li>Other than that, no restriction to programming style
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Web Components V1: procedural, free style (here ES6)</h4>
+<pre class="fragment" data-fragment-index="4"><code data-trim contenteditable class="javascript">
+// just plain HTML using ES6 import
+import template from './template.html';
+</code></pre>
+
+
+                   <pre class="fragment" data-fragment-index="3"><code data-trim contenteditable class="javascript line-numbers">
+class Greeter extends HTMLElement {
+
+  constructor() {
+    this.createShadowRoot({mode: 'open'}).innerHTML = template;
+    this.shadowRoot.querySelector("#in").addEventListener("keyup",
+        event => this.setModel(event.target.value));
+    this.shadowRoot.querySelector("#btn").addEventListener("click",
+        event => {
+           this.setModel("");
+           this.input.focus();
+    });
+  }
+
+  setModel(value) {
+    this.shadowRoot.querySelector("#log").textContent = value;
+    this.shadowRoot.querySelector("#in").value = value;
+  }
+}
+</code></pre>
+<pre class="fragment" data-fragment-index="2"><code data-trim contenteditable class="javascript">
+customElements.define('greeter-element', Greeter);
+</code></pre>
+<pre class="fragment" data-fragment-index="1"><code data-trim contenteditable class="html">
+&lt;greeter-element greeting="Hello">&lt;/greeter-element>
+</code></pre>
+                </section>
+
+                <section>
+                    <h3>Native Support in Chrome</h3>
+                    <img src="web-components-chrome.png">
+                    <p><a target="_blank" href="code/web-components-v1/index.html">Try it (if you have Chrome >=54)</a></p>
+                </section>
+
+                <section>
+                    <h2>Bottom Line React Coding Style</h2>
+                    <ul>
+                        <li>Template and UI-logic co-located
+                        <li>Template more or less just JavaScript
+                        <li>Modern Component is just an ES6 class (or even a pure function)
+                        <li>Encourages functional programming
+                        <li>Encourages immutability
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>React: ES6 with JSX (optionally Flow or TypeScript)</h4>
+<pre class="fragment" data-fragment-index="3"><code data-trim contenteditable class="line-numbers">
+class HelloMessage extends React.Component {
+  render() {
+    return <div>
+      &lt;input value={this.state.greeting} ref="in"
+        onChange={e => this.setState({greeting: e.target.value}} />
+      <p>{this.state.greeting}, World</p>
+      &lt;button onClick={this.reset.bind(this)}>Clear&lt;/button>
+    </div>;
+  }
+  constructor(props) {
+    this.state = {greeting: this.props.greeting};
+  }
+  reset() {
+    this.setState({greeting: ""});
+    this.refs.in.focus();
+  }
+}</code></pre>
+<pre class="fragment" data-fragment-index="2"><code data-trim contenteditable class="html">
+&lt;body>&lt;div id="mount">&lt;/div>&lt;/body>
+</code></pre>
+<pre class="fragment" data-fragment-index="1"><code data-trim contenteditable class="javascript line-numbers">
+import HelloMessage from './HelloMessage';
+
+const mountNode = document.getElementById('mount');
+ReactDOM.render(&lt;HelloMessage greeting="Hello"/>, mountNode);
+</code></pre>
+                </section>
+
+                <!--<section>-->
+                    <!--<img src="twitter-angular2-js.png">-->
+                    <!--<p><small><a href="https://twitter.com/LeonardKoch_/status/786878480894009348?s=03" target="_blank">-->
+                        <!--https://twitter.com/LeonardKoch_/status/786878480894009348?s=03-->
+                    <!--</a></small></p>-->
+                <!--</section>-->
+
+                <section>
+                    <h2>Bottom Line Angular 2 Coding Style</h2>
+                    <ul>
+                        <li>Template and UI-logic either co-located or separated
+                        <li>Directives in templates (<em>[(ngModel)], click</em>)
+                        <li>TypeScript is natural style
+                        <li>ES5, ES6, and Dart also possible
+                        <li>TypeScript decorators (<em>@...</em>) used extensively
+                    </ul>
+                </section>
+
+                <section>
+                <h4>Angular 2: TypeScript with Annotations</h4>
+<pre class="fragment" data-fragment-index="3"><code class="xml line-numbers" contenteditable>@Component({
+  selector: 'greeter'
+  template:
+  `&lt;input [(ngModel)]="greeting" #in>
+   &lt;p>{{greeting}}, World&lt;/p>
+   &lt;button (click)="reset(in)">Clear&lt;/button>`
+})</code></pre>
+<pre class="fragment" data-fragment-index="2"><code class="java line-numbers" contenteditable>class Greeter {
+    @Input() greeting: string;
+    reset(input: HTMLInputElement) {
+        this.greeting = '';
+        input.focus();
+    }
+}
+</code></pre>
+<pre class="fragment" data-fragment-index="1"><code contenteditable class="java line-numbers">@Component({
+    selector: 'hello-app',
+    directives: [Greeter],
+    template: '<greeter greeting="Hello"></greeter>'
+})
+class App {
+}
+bootstrap(App);
+</code></pre>
+<!--<pre class="fragment"><code data-trim contenteditable>-->
+<!--&lt;body>-->
+    <!--&lt;hello-app>&lt;/hello-app>-->
+    <!--&lt;script>System.import('app');&lt;/script>-->
+<!--&lt;/body>-->
+<!--</code></pre>-->
+
+            </section>
+
+                <section>
+                    <h2>Criterion: Architecture and Model</h2>
+                </section>
+
+                <section>
+                    <h3>Angular 1</h3>
+                    <ul>
+                        <li>2-Way Data-Binding with Mutable State!
+                        <li>Convoluted change detection
+                        <li>Automatic updates of UI
+                        <li>Good for simple forms
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>2-Way Data-Binding with Mutable State</h3>
+                    <p>A good idea?</p>
+                    <img class="fragment" src="2-way-data-binding.gif">
+                </section>
+
+
+                <section>
+                    <h3>React</h3>
+                    <ul>
+                        <li>1-Way Data-Binding
+                        <li>Immutable state recommended (Immutable.js)
+                        <li>Data should flow in hierarchy only
+                        <li>Model is <em>special state</em>-property of component
+                        <li>Re-Rendering triggered by <code>setState</code>
+                        <li>Clear and fast change detection on level of <em>virtual DOM</em>
+                        <li>Flux Architecture for larger apps
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Angular 2</h3>
+                    <ul>
+                        <li>1-Way Data-Binding
+                        <li>Immutable state recommended (Immutable.js)
+                        <li>Data flows inside of clear hierarchy (@Input, @Output)
+                        <li>Model can be <em>any property</em> of component
+                        <li>Clear and fast change detection on <em>model</em> level
+                        <li>Re-Rendering triggered when model-change is detected, using <code>zones</code>
+                        <li>https://github.com/ngrx/store for larger apps
+                        <li>Observables for events
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Web Components</h3>
+                    <ul>
+                        <li>Whatever you want as a model
+                        <li>Might be tricky to synchronize Properties and Attributes
+                        <li>no change detection of model or automatic re-rendering
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Criterion: Scope of Application</h3>
+                    <ul>
+                        <li class="fragment"><em>Angular 1, 2</em>
+                            <ul>
+                                <li>JEE style, Batteries included
+                                <li>Full framework
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>React</em>
+                            <ul>
+                                <li>Create your own stack
+                                <li>Starter Kits exist
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Web Components</em>
+                            <ul>
+                                <li>Just needs the Browser
+                                <li>The rest is up to you
+                                <li>Polymer as standard stack
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>React Fatigue</h3>
+                    <div>
+                        <img src="react-fatigue.png">
+                        <p><small><a href="https://forums.meteor.com/t/meteor-tooling-is-the-cure-for-javascript-fatigue/21292" target="_blank">https://forums.meteor.com/t/meteor-tooling-is-the-cure-for-javascript-fatigue/21292</a></small></p>
+                    </div>
+                    <p><a href="https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html"
+                          target="_blank">Create React App</a> for the rescue?</p>
+                </section>
+
+                <section>
+                    <h3>Criterion: 3rd Party Integration</h3>
+                    <p>How well do they play with jquery, d3, etc.?</p>
+                    </p>
+                    <ul>
+                        <li class="fragment"><em>Angular 1</em>
+                            <ul>
+                                <li>Angular 1 owns the DOM
+                                <li>should write a directive per usage
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Angular 2</em>
+                            <ul>
+                                <li>similar philosophy as Angular 1
+                                <li>technical means should exist to make integration easy
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>React</em>
+                            <ul>
+                                <li>no problem
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Web Components</em>
+                            <ul>
+                                <li>no problem
+                            </ul>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <!--<section>-->
+                    <!--<img src="ng-click.png" style="height: 500px;">-->
+                    <!--<p><small><a href="https://twitter.com/hollandben/status/526792275041746944" target="_blank">@hollandben</a></small></p>-->
+                <!--</section>-->
+
+                <section>
+                    <h3>Criterion: Server Side Rendering</h3>
+                    <p>Relevant mostly for SEO and fast first-page-impression</p>
+                    <ul>
+                        <li class="fragment"><em>Angular 2, React</em>
+                            <ul>
+                                <li>can also render on server side with at lot of shared code
+                                <li>need JavaScript on server side
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Angular 1, Web Components</em>
+                            <ul>
+                                <li>need a DOM to render
+                                <li>only possible via pre-rendering using headless browser
+                                <li><a href="http://phantomjs.org/" target="_blank">Phantomjs</a>
+                                <li><a href="https://scotch.io/tutorials/server-side-web-components-how-and-why"
+                                target="_blank">Rendering Web-Components using Electron</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <!--<section>-->
+                    <!--<img src="Webcomponents-Bashing.png" style="width: 900px;">-->
+                    <!--<p><small><a href="https://twitter.com/mjackson/status/639907104560541696" target="_blank">@mjackson</a></small></p>-->
+                <!--</section>-->
+
+                <section>
+                    <h2>Criterion: Can you really use it?</h2>
+                </section>
+
+                <section>
+                    <h3>Angular 2</h3>
+                    <ul>
+                        <li>just recently went final
+                        <li>not a lot experience, yet
+                        <li><a target="_blank" href="https://angularjs.blogspot.de/2016/10/versioning-and-releasing-angular.html">
+                            Every 6 month a new major release (3.0 and 4.0 in 2017)
+                        </a>
+                        <li>Google uses it for <a href="https://docs.google.com/document/d/1rC5dz7AkCZP813daT_bccbS-20OLmXgBVi50CSKx148/pub">
+                            50+ internal teams
+                        </a> already
+                        <li>Will Angular 2 take off?
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Angular 2: Most Opinionated
+                    </h3>
+                    <p>
+                    <a href="http://developer.telerik.com/featured/will-angular-2-take-off/">'Angular 1 had the right solution at the right time for the right community. Angular 2 has none of that ...'</a>
+                    </p>
+                    <img src="hillary_eyebrow.gif">
+                    <p><a href="http://developer.telerik.com/featured/will-angular-2-take-off/">'Personally I think Angular 2 is an ideal fit for big companies building big apps.'</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Angular 1</h3>
+                    <ul>
+                        <li>you know there is version 2 now
+                        <li>Style gradually comes closer to Angular 2 (<a target="_blank" href="https://toddmotto.com/exploring-the-angular-1-5-component-method/">
+                            https://toddmotto.com/exploring-the-angular-1-5-component-method/</a>)
+                        <li>migration easier if you use a standard coding style
+                            <!--<li>1 and 2 share the same <a target="_blank" href="https://docs.angularjs.org/guide/component-router">Component Router</a>-->
+                        <li>Migration and Mixing 1 und 2 with <em>ngUpgrade</em>
+                        <li>but: should you migrate at all?
+                    </ul>
+                </section>
+                <!--<section>-->
+                    <!--<img src="angular2-mtn.png">-->
+                    <!--<p><small><a href="https://daveceddia.com/angular-2-should-you-upgrade/" target="_blank">https://daveceddia.com/angular-2-should-you-upgrade/</a></small></p>-->
+                <!--</section>-->
+
+                <section>
+                    <h3>Web Components: Really a standard?</h3>
+                    <ul>
+                        <li>To be standardised by W3C
+                        <li><a href="https://hacks.mozilla.org/2015/06/the-state-of-web-components/" target="_blank">
+                            Original implementaion by Google in Chrome mostly deprecated</a>
+                        <li><a href="http://caniuse.com/#search=components" target="_blank">
+                            All vendors started implementing, but progress not looking good, yet</a>
+                        <li><a target="_blank" href="http://webcomponents.org/polyfills/">Polyfills</a> exist, though
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank">
+                            Firefox will not support parts of Spec</a>
+                        <li>Parts (HTML-Templates and Shaddow-DOM) moved into DOM-/HTML-Spec
+                        <li>
+                            <a href="https://www.polymer-project.org/1.0/" target="_blank">
+                                Polymer</a> the standard lib on top of it (
+                            <a href="https://www.polymer-project.org/1.0/blog/2016-09-09-polymer-2.0.html" target="_blank">
+                                2.0
+                            </a>
+                            will support upcoming standard)
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Google is Microsoft, Microsoft is Mozilla, Apple is Apple</h3>
+                    <img src="tc-39.png" height="500px">
+                    <!--<p><small><a href="https://twitter.com/hichaelmart/status/667749535440084992/photo/1">>https://twitter.com/hichaelmart/status/667749535440084992/photo/1</a></small></p>-->
+                    <p><small><a href="https://www.oreilly.com/ideas/brendan-eich-javascript-fluent-2016">
+                        Keynote FluentConf 2016, Brendan Eich, minute 6:00
+                    </a></small></p>
+
+                </section>
+
+                <section>
+                    <h3>React</h3>
+                    <ul>
+                        <li>has been there for many years
+                        <li>releases show interest in backward compatibility
+                        <li>used inside Facebook, Instagram, Netflix, and many more
+                        <li>it is the current hype, let's see if this is the final answer...
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Criterion: How to make fun of them?</h3>
+                    <ul>
+                        <li class="fragment"><em>Angular 1</em>
+                            <ul>
+                                <li>JavaScript for Java-People
+                                <li>Magic that you need a Magician (Consultant) for
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>React</em>
+                            <ul>
+                                <li>Hipster-Framework
+                                <li>JavaScript-Fatigue
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Angular 2</em>
+                            <ul>
+                                <li>Second-System-Syndrom
+                                <li>"This time we make everything right"!
+                            </ul>
+                        </li>
+                        <li class="fragment"><em>Web Components</em>
+                            <ul>
+                                <li>Not even important enough to make jokes about :D
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <!--<section>-->
+                    <!--<h1>Part IV: Deep Dive on the Hype</h1>-->
+                    <!--<h3 class="fragment">Angular 2 vs React</h3>-->
+<!--<pre class="todo">-->
+<!-- - im 2. Teil React vs Angular 2 Deep Dive, nachdem Web Components und Angular 1 ausgeschieden sind-->
+  <!-- - Genauerer Vergleich von React und Angular 2-->
+  <!-- - Komponenten verschachteln, Properties übergeben. 3rd Party einbinden.-->
+  <!-- - Schleife machen, ober-Komponente mit Architektur-->
+  <!-- - Die anderen Frameworks auch beachten, aber komplexe Lösungen auslassen-->
+<!--</pre>-->
+                <!--</section>-->
+
+        <section>
+            <h3>Wrap-Up</h3>
+            <ul>
+                <li class="fragment">use <em>SPAs</em> for a highly interactive (part of) app or need of offline
+                <li class="fragment">use <em>Angular 1.x</em> for simple form based app or not much JavaScript knowledge
+                <li class="fragment">use <em>Angular 2</em> for everything and nothing or if you want to use TypeScript
+                <li class="fragment">use <em>React</em> for a real app and if you like to choose your own stack
+                <li class="fragment">use <em>Web Components</em> if you like procedural code and trust in the standard
+            </ul>
+        </section>
+
+        <section>
+            <a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                <img src="stateofjs-frameworks-overview.png" height="600px">
+            </a>
+            <p><small><a href="http://stateofjs.com/2016/frontend/" target="_blank">
+                http://stateofjs.com/2016/frontend/
+            </a></small></p>
+        </section>
+
+                <section>
+                    <h1>Bonus Level</h1>
+                </section>
+
+                <section id="vue">
+                    <h3>Vue: Hype 2017?</h3>
+                    <ul class="fragment">
+                        <li><a target="_blank" href="http://vuejs.org/">http://vuejs.org/</a>
+                        <li>similar to React in scope and concept
+                        <li><a target="_blank" href="http://vuejs.org/guide/comparison.html">http://vuejs.org/guide/comparison.html</a>
+                        <li>in most cases faster than React and with less optimization effort
+                        <li>templates rather Angular 1 style
+                        <li>Matching Router (<a target="_blank" href="http://router.vuejs.org/">http://router.vuejs.org/</a>) and
+                            Flux-like (<a target="_blank" href="http://vuex.vuejs.org/">http://vuex.vuejs.org/</a>) state management
+                    </ul>
+                </section>
+
+                <section>
+                    <a href="https://twitter.com/ThePracticalDev/status/789482622900641792">
+                        <img src="twitter-vue.png" height="600px">
+                    </a>
+                    <p><small><a href="https://twitter.com/ThePracticalDev/status/789482622900641792">
+                        https://twitter.com/ThePracticalDev/status/789482622900641792
+                    </a></small></p>
+                </section>
+
+
+                <section>
+                    <h4>Hello World</h4>
+<pre class="fragment"><code data-trim contenteditable class="line-numbers" data-leftpad>
+&lt;div id="app">
+    &lt;input ref="in" v-model="greeting">
+    &lt;p>{{ greeting }}, World!</p>
+    &lt;input v-on:click="reset" type="button" value="Clear">
+&lt;/div>
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable class="line-numbers" data-leftpad>
+const app = new Vue({
+    el: '#app',
+    data: {
+        greeting: 'Hello'
+    },
+    methods: {
+        reset: function () {
+            this.greeting = '';
+            this.$refs.in.focus();
+        }
+    }
+});
+</code></pre>
+
+
+                    <section id="elm">
+                        <h3>Bonus Level - Elm: Hype 2017?</h3>
+                        <ul class="fragment">
+                            <li><a target="_blank" href="http://elm-lang.org/">http://elm-lang.org/</a>
+                                Functional, reactive language
+                            <li>includes a pre defined web architecture similar to Redux/Flux
+                            <li>Rendering shares virtual DOM idea from React
+                            <li>Static typing with inference / no null
+                            <li>Browser is target platform
+                            <li>Translated to JavaScript using compiler (included)
+                        </ul>
+                    </section>
+
+                    <section>
+
+                        <h1>Thank you!</h1>
+
+                        <h2>Questions / Discussion</h2>
+                        <p>
+                            <a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a>
+
+                        </p>
+                        <p><a href="http://djcordhose.github.io/javascript-web-frameworks/2017.html">
+                            http://djcordhose.github.io/javascript-web-frameworks/2017.html
+                        </a></p>
+
+                    </section>
+
+                </section>
+
+            </div>
+
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+        <script src="lib/jquery-2.2.4.js"></script>
+    <script>
+//            $('section').attr('data-background-image', "backgrounds/light-sky3.jpg")
+//        $('section').attr('data-background-image', "backgrounds/light-transparent.jpg");
+        $('section').attr('data-background-image', "backgrounds/light-handle.jpg");
+//        $('section').attr('data-background-image', "backgrounds/light-ring.jpg");
+
+
+    </script>
+    <script>
+        Reveal.addEventListener( 'ready', function( event ) {
+            // no fragments, never
+            $('.fragment').removeClass('fragment');
+            // only applies presentation version
+            if (window.location.hostname.indexOf('localhost') !== -1) {
+                Reveal.configure({ controls: false });
+            }
+        } );
+    </script>
+
+    <script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+                    { src: 'lib/js/line-numbers.js'}
+                ]
+			});
+
+		</script>
+
+	</body>
+</html>
