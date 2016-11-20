@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+  <title>Polymer 2</title>
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="greeter.html">
+</head>
+
+<body>
+<greeter-element greeting="Hello"></greeter-element>
+<p><a  target="_blank" href="https://www.polymer-project.org/2.0/docs/about_20">https://www.polymer-project.org/2.0/docs/about_20</a></p>
+<script>
+  setTimeout(function() {
+    const greeter = document.querySelector('greeter-element');
+    greeter.setAttribute('greeting', 'Hi');
+  }, 1000)
+</script>
+</html>

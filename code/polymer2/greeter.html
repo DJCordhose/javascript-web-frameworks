@@ -1,0 +1,38 @@
+<!-- Load the Polymer.Element base class -->
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+
+<dom-module id="greeter-element">
+  <template>
+
+    <!-- Styles MUST be inside template -->
+    <style>
+    </style>
+
+    <input id="in">
+    <p>{{greeting}}, World</p>
+    <input id="btn" type="button" value="Clear" on-click="previous">
+
+  </template>
+
+  <script>
+
+    class Greeter extends Polymer.Element {
+
+      static get is() { return 'greeter-element' }
+
+      static get config() {
+        return {
+          properties: {
+            greeting: {
+              type: Object
+            }
+          }
+        };
+      }
+
+      connectedCallback() {
+      }
+    }
+    customElements.define(Greeter.is, Greeter);
+  </script>
+</dom-module>

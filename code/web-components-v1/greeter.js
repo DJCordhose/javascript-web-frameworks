@@ -11,8 +11,11 @@ class Greeter extends HTMLElement {
     constructor() {
         super();
         this.render();
+    }
+
+    connectedCallback() {
         this.bind();
-        this.setModel(this.getAttribute("greeting"));
+        this.model = this.getAttribute("greeting");
     }
 
     bind() {
@@ -32,10 +35,10 @@ class Greeter extends HTMLElement {
     }
     attributeChangedCallback(name, oldValue, newValue) {
         if (name === "greeting") {
-            this.setModel(newValue);
+            this.model = newValue;
         }
     }
-    setModel(value) {
+    set model(value) {
         this.log.textContent = value;
         this.input.value = value;
     }
