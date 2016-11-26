@@ -1,29 +1,35 @@
--- Read more about this program in the official Elm guide:
+-- Derived from
 -- https://guide.elm-lang.org/architecture/user_input/buttons.html
 
-import Html exposing (beginnerProgram, div, button, text)
-import Html.Events exposing (onClick)
-
+import Dom
+import Html exposing (beginnerProgram, div, p, button, text, input)
+import Html.Attributes exposing (..)
+import Html.Events exposing (onInput, onClick)
 
 main =
-  beginnerProgram { model = 0, view = view, update = update }
-
+  beginnerProgram { model = "Hello", view = view, update = update }
 
 view model =
   div []
-    [ button [ onClick Decrement ] [ text "-" ]
-    , div [] [ text (toString model) ]
-    , button [ onClick Increment ] [ text "+" ]
-    ]
+  [
+     input [ id "input", onInput Set, value model ] [],
+     p [] [ (text model), (text ", World")  ],
+     button [ onClick Clear ] [ text "Clear" ]
+  ]
 
 
-type Msg = Increment | Decrement
+type Msg = Set String | Clear
 
 
+--update : Msg -> String
 update msg model =
   case msg of
-    Increment ->
-      model + 1
+    Clear ->
+        let
+            -- todo: how to execute this??? (https://github.com/evancz/elm-todomvc/blob/master/Todo.elm)
+            focus = Dom.focus "input"
+        in
+            ""
 
-    Decrement ->
-      model - 1
+    Set text ->
+      text
