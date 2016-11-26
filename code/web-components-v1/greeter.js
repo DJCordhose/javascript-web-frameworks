@@ -19,9 +19,9 @@ class Greeter extends HTMLElement {
     }
 
     bind() {
-        this.input.addEventListener("keyup", event => this.setModel(event.target.value));
+        this.input.addEventListener("keyup", event => this.model = event.target.value);
         this.button.addEventListener("click", event => {
-            this.setModel("");
+            this.model = "";
             this.input.focus();
         });
     }
